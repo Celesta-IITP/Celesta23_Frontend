@@ -1,0 +1,21 @@
+input, .register, .main-header {
+    background-color: rgba(76, 76, 76, 0.7);
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.input {
+    width: 80%;
+    padding: 8px 20px;
+    border-radius: 2px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border: 1px solid #fff;
+}
