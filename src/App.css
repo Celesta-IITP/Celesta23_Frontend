@@ -35,28 +35,74 @@
 }
 
 .celesta-text {
-  position: relative;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-transform: uppercase;
+  min-height: 200px;
+  margin-bottom: 280px;
 }
 
-.celesta-top {
+/* .celesta-top {
   font-family: "Swis721 BlkEx BT";
   text-transform: uppercase;
   color: #fff500;
+} */
+
+.celesta-cut {
+  font-family: "Arsis";
+  display: inline-block;
+  transform: scale(1, 2.5);
+  z-index: -1;
 }
 
 .celesta {
   font-size: 5rem;
-  text-transform: uppercase;
 }
 
-.celesta-dawn {
-  /* add font-family of SpeedometerW03-300R*/
-  line-height: 3.5em;
+.celesta-glow-container {
+  position: relative;
+  width: 400px;
+  height: 50px;
+  background-color: #000000;
+  transform: translateY(68px);
 }
+
+.celesta-glow {
+  position: absolute;
+  font-family: "Swis721 BlkEx BT";
+  font-size: 2.4rem;
+  letter-spacing: 0.81rem;
+}
+
+.glow1 {
+  left: 53px;
+  color: #fdfefe;
+  z-index: 3;
+}
+
+.glow2 {
+  left: 50px;
+  color: #cc0f39;
+}
+
+.glow3 {
+  left: 54px;
+  top: 1px;
+  color: #cdc764;
+  z-index: 2;
+}
+
+.glow4 {
+  left: 55px;
+  top: 1px;
+  color: #0ffbf9;
+}
+/* .celesta-dawn {
+  /* add font-family of SpeedometerW03-300R
+  line-height: 3.5em;
+} */
 
 .services {
   /* background-image: url('/images/img-2.jpg'); */
@@ -83,4 +129,25 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+}
+
+@media screen and (max-width: 426px) {
+  .celesta {
+    font-size: 3rem;
+  }
+
+  .celesta-glow-container {
+    position: relative;
+    width: 290px;
+    height: 25px;
+    background-color: #000000;
+    transform: translateY(40px);
+  }
+
+  .celesta-glow {
+    position: absolute;
+    font-family: "Swis721 BlkEx BT";
+    font-size: 1.2rem;
+    letter-spacing: 0.81rem;
+  }
 }
