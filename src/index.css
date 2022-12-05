@@ -4,6 +4,6 @@
 }
 
 @font-face {
-  font-family: "SpeedometerW03-300R";
-  src: url(./fonts/Speedometer\ W03\ 300R.ttf) format("truetype");
+  font-family: "Arsis";
+  src: local("Arsis") url(./fonts/ARS.TTF) format("truetype");
 }

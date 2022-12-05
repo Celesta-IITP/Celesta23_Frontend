@@ -13,6 +13,15 @@ function Home() {
       <Description heading="About" content="lorem30" />
       <Image location={DawnImage} />
       <Description heading="Theme" content="lorem30" />
+      <div className="celesta-text">
+        <div className="celesta-glow-container">
+          <h3 className="celesta-glow glow1">celesta</h3>
+          <h3 className="celesta-glow glow2">celesta</h3>
+          <h3 className="celesta-glow glow3">celesta</h3>
+          <h3 className="celesta-glow glow4">celesta</h3>
+        </div>
+        <h2 className="celesta celesta-cut">Celesta</h2>
+      </div>
       {/* <div className="celesta-text">
         <span className="celesta-top">Chrysalis____Dawn</span>
         <h2 className="celesta celesta-dawn">Celesta</h2>
