@@ -1,11 +1,12 @@
 import React from "react";
-import "./About.css";
+import "./Description.css";
 
-function About() {
+function Description({ heading, content }) {
   return (
     <section className="about">
-      <h2 className="header">About</h2>
+      <h2 className="header">{heading}</h2>
       <p className="content">
+        {content}
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non
         quis exercitationem culpa nesciunt nihil aut nostrum explicabo
         reprehenderit optio amet ab temporibus asperiores quasi cupiditate.
@@ -15,4 +16,4 @@ function About() {
   );
 }
 
-export default About;
+export default Description;
