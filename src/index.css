@@ -2,3 +2,8 @@
   font-family: "Swis721 BlkEx BT";
   src: local("Swis721 BlkEx BT") url(./fonts/swz721k.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "SpeedometerW03-300R";
+  src: url(./fonts/Speedometer\ W03\ 300R.ttf) format("truetype");
+}
