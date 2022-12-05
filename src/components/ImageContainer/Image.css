@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 240px;
+}
+
+.img {
+  width: 100%;
+  object-fit: contain;
+}
