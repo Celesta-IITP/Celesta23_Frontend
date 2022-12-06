@@ -7,3 +7,9 @@
   font-family: "Arsis";
   src: local("Arsis") url(./fonts/ARS.TTF) format("truetype");
 }
+
+@font-face {
+  font-family: "ElFont Urban Calligraphy";
+  src: local("ElFont Urban Calligraphy") url(./fonts/Urban\ Calligraphy.ttf)
+    format("truetype");
+}

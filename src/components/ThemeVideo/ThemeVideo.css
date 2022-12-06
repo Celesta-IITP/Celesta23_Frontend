@@ -1,0 +1,55 @@
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 240px;
+}
+
+.header {
+  color: white;
+  position: relative;
+}
+
+.header-theme {
+  font-family: "Swis721 BlkEx BT";
+  font-size: 4rem;
+  color: #00e0ff;
+}
+
+.header-video {
+  /* TODO: add the font and do positioning*/
+  font-family: "ElFont Urban Calligraphy";
+  font-size: 3rem;
+  color: #fff500;
+}
+
+.video-element {
+  /* background-color: white; */
+  border-radius: 10px;
+  box-shadow: inset 0 0 12px 6px #33e9e9;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.elem-size {
+  width: 500px;
+  height: 400px;
+}
+
+@media screen and (max-width: 520px) {
+  .header-theme {
+    font-family: "Swis721 BlkEx BT";
+    font-size: 3.5rem;
+    color: #00e0ff;
+  }
+
+  .header-video {
+    font-family: "ElFont Urban Calligraphy";
+    font-size: 2.5rem;
+    color: #fff500;
+  }
+  .elem-size {
+    width: 90vw;
+    height: 40vh;
+  }
+}
