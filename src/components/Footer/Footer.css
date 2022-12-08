@@ -11,6 +11,8 @@
   background-image: url(../../assets/footer/bg_footer_web.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  box-shadow: inset 0 4px 12px 4px black;
+
   min-height: 850px;
 
   display: flex;
