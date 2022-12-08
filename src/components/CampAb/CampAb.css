@@ -1,0 +1,79 @@
+*{
+    
+}
+
+.CampAb_bg{
+    background-color: #000000;
+    height: 100vh;
+    width: 100vw;
+    /*background-size: cover;
+    overflow: hidden;*/
+}
+
+@media screen and (max-width: 600px) {
+    .CampAb_Image{
+        display: block;
+        width: 100%;
+        height:70vh;
+        margin: auto;
+
+    }
+    .CampAb_Header{
+        z-index: 1;
+        position: relative;
+        top: 33vh;
+        left: 10%;
+        width: 80%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5vw;
+        line-height: 29px;
+        text-align: center;
+        color: #000000;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        background-color: white;
+        font-family: 'Swis721 BlkEx BT';
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .CampAb_Image{
+        display: block;
+        width: 80%;
+        height:70vh;
+        margin: auto;
+
+    }
+
+    .CampAb_Header{
+        z-index: 1;
+        position: relative;
+        top: 33vh;
+        left: 30%;
+        width: 40%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3vw;
+        line-height: 29px;
+        text-align: center;
+        color: #000000;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        background-color: white;
+        font-family: 'Swis721 BlkEx BT';
+    }
+}
+
+.CampAb_Desc{
+    z-index: 1;
+    position: relative;
+    top: 60vh;
+    left: 20%;
+    width: 60%;
+    letter-spacing: 0.05rem;
+    font-family: "Gotham", sans-serif;
+    text-align: justify;
+    color: #FFFFFF;
+}
+

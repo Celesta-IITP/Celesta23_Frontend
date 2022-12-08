@@ -1,0 +1,134 @@
+.modal_header{
+    border: 0;
+}
+
+.Event_ModelBox{
+    width: 833px;
+    height: 452px;
+    background: #FFFFFF;
+}
+
+.Event_bg{
+    display: block;
+    margin: 5vh 5vw 5vh 5vw;
+}
+
+.Event_Name{
+    font-family: 'Gotham Black';
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    
+    line-height: 71px;
+/* identical to box height */
+    font-size: 50.8px;
+    text-align: center;
+    letter-spacing: -0.045em;
+
+    color: #000000;
+
+}
+
+.EventDateTime{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    
+}
+
+.EventDate{
+    font-family: 'Gotham';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 14px;
+text-align: left;
+
+color: #000000;
+
+}
+
+.EventTime{
+    font-family: 'Gotham';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 14px;
+text-align: right;
+
+color: #000000;
+
+}
+
+.EventVenue{
+    font-family: 'Gotham';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 14px;
+text-align: left;
+letter-spacing: -0.045em;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+.EventTeamSize{
+    font-family: 'Gotham';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 14px;
+text-align: right;
+letter-spacing: -0.045em;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+.Event_Description{
+    margin: 5% 20% 5% 20%;
+    text-align:justify;
+    text-justify: inter-word;
+    text-align-last:center;
+    font-family: 'Swiss 721';
+}
+
+.Event_Buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.Event_Register{
+    background-color: black;
+    color: white;
+    width: 30%;
+    height: 41px;
+    font-family: 'Gotham';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 11px;
+letter-spacing: -0.045em;
+color: #FFFFFF;
+
+
+}
+
+.Event_Rulebook{
+    position: relative;
+    left: 40%;
+    background-color: #000000;
+    color: white;
+    width: 30%;
+    height: 41px;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 11px;
+    letter-spacing: -0.045em;
+    
+    color: #FFFFFF;
+
+}
