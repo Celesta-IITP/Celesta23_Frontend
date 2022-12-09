@@ -31,7 +31,7 @@ function Home() {
       <Description heading="About" content="lorem30" />
       <Image location={isMobile ? DawnImage : DawnImageWeb} />
       <Description heading="Theme" content="lorem30" />
-<<<<<<< HEAD
+
       
       <div className="celesta-text">
         <div className="celesta-glow-container">
@@ -39,7 +39,7 @@ function Home() {
           <h3 className="celesta-glow glow2">celesta</h3>
           <h3 className="celesta-glow glow3">celesta</h3>
           <h3 className="celesta-glow glow4">celesta</h3>
-=======
+
       {isMobile ? (
         <div className="celesta-text">
           <div className="celesta-glow-container">
@@ -49,7 +49,7 @@ function Home() {
             <h3 className="celesta-glow glow4">celesta</h3>
           </div>
           <h2 className="celesta celesta-cut">Celesta</h2>
->>>>>>> fdfda10dcceaad42341df58675f959f65eebf7e6
+
         </div>
       ) : (
         <Image location={ChrysalisWeb} />
@@ -61,10 +61,10 @@ function Home() {
 <<<<<<< HEAD
   </div> */}
 
-=======
-      </div> */}
+
+      </div> 
       <Chrysalis isMobile={isMobile} />
->>>>>>> fdfda10dcceaad42341df58675f959f65eebf7e6
+
       <Footer />
     </>
   );
