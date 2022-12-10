@@ -44,12 +44,6 @@
   margin-bottom: 280px;
 }
 
-/* .celesta-top {
-  font-family: "Swis721 BlkEx BT";
-  text-transform: uppercase;
-  color: #fff500;
-} */
-
 .celesta-cut {
   font-family: "Arsis";
   display: inline-block;
@@ -99,10 +93,17 @@
   top: 1px;
   color: #0ffbf9;
 }
-/* .celesta-dawn {
-  /* add font-family of SpeedometerW03-300R
+
+.celesta-top {
+  font-family: "Swis721 BlkEx BT";
+  text-transform: uppercase;
+  color: #fff500;
+}
+
+.celesta-dawn {
+  font-family: "Speedometer";
   line-height: 3.5em;
-} */
+}
 
 .services {
   /* background-image: url('/images/img-2.jpg'); */
