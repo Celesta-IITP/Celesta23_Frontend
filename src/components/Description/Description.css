@@ -18,9 +18,15 @@
 }
 
 .content {
-  width: 60%;
+  width: 40%;
   letter-spacing: 0.05rem;
   font-family: "Gotham", sans-serif;
   text-align: justify;
   margin-bottom: 240px;
+}
+
+@media screen and (max-width: 426px) {
+  .content {
+    width: 60%;
+  }
 }
