@@ -7,46 +7,72 @@ function Events() {
     const [searchElement, setSearchElement] = useState(false);
     const [search, setSearch] = useState("");
     const [eventsSearchOver, setEventsSearchOver] = useState(false);
+    const [showDetails, setShowDetails] = useState(false);
+    const [showEvent, setShowEvent] = useState({});
     const [eventsDesc, setEventsDesc] = useState([
         {
-            image: 'https://www.pexels.com/photo/sun-fire-hot-research-87611/',
-            title: "Event 1",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni."
+            title: "Event 1 ch",
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
+            date: "29JAN2023",
+            time: "10:00",
+            venue: "IIT PATNA",
+            teamsize: 2
         },
         {
-            image: 'https://www.pexels.com/photo/sun-fire-hot-research-87611/',
-            title: "Event 2",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni."
+            title: "Event 2 ch",
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
+            date: "29JAN2023",
+            time: "10:00",
+            venue: "IIT PATNA",
+            teamsize: 2
         },
         {
-            image: 'https://www.pexels.com/photo/sun-fire-hot-research-87611/',
             title: "Event 3 ch",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni."
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
+            date: "29JAN2023",
+            time: "10:00",
+            venue: "IIT PATNA",
+            teamsize: 2
         },
         {
-            image: 'https://www.pexels.com/photo/sun-fire-hot-research-87611/',
             title: "Event 4",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni."
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
+            date: "29JAN2023",
+            time: "10:00",
+            venue: "IIT PATNA",
+            teamsize: 2
         },
         {
-            image: 'https://www.pexels.com/photo/sun-fire-hot-research-87611/',
             title: "Event 5 ch",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni."
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
+            date: "29JAN2023",
+            time: "10:00",
+            venue: "IIT PATNA",
+            teamsize: 2
         },
         {
-            image: 'https://www.pexels.com/photo/sun-fire-hot-research-87611/',
             title: "Event 6 ch",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni."
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
+            date: "29JAN2023",
+            time: "10:00",
+            venue: "IIT PATNA",
+            teamsize: 2
         },
         {
-            image: 'https://www.pexels.com/photo/sun-fire-hot-research-87611/',
-            title: "Event 7",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni."
+            title: "Event 7 ch",
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
+            date: "29JAN2023",
+            time: "10:00",
+            venue: "IIT PATNA",
+            teamsize: 2
         },
         {
-            image: 'https://www.pexels.com/photo/sun-fire-hot-research-87611/',
             title: "Event 8",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni."
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
+            date: "29JAN2023",
+            time: "10:00",
+            venue: "IIT PATNA",
+            teamsize: 2
         }
     ]);
     var imgArray = new Array();
@@ -70,7 +96,7 @@ function Events() {
     imgArray[5].src = 'https://images.pexels.com/photos/1028646/pexels-photo-1028646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
 
     imgArray[6] = new Image();
-    imgArray[6].src = 'https://images.pexels.com/photos/1028646/pexels-photo-1028646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+    imgArray[6].src = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg';
 
     imgArray[7] = new Image();
     imgArray[7].src = 'https://images.pexels.com/photos/1028646/pexels-photo-1028646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
@@ -90,14 +116,20 @@ function Events() {
         setEventsSearchOver(true);
         //{Events_Display(searchEventsDesc)};
     }
+    const ShowDetails = ()=>{
+        setShowDetails((prev) => !prev);
+    }
+    
     const Events_Display = (arrEvents)=>{
+
         return(
         <div className='Events_Display'>
             {
                 arrEvents.map((Event) => {
+                    
                     return(
                         <>
-                            <EventDetails Event={Event} index={eventsDesc.indexOf(Event)}/>
+                            <div onClick={() => setShowEvent(Event)} className='Display'><img onClick={ShowDetails} key={Event.title} className='EventDisplay' src={imgArray[eventsDesc.indexOf(Event)].src} alt={Event.title} /></div>
                             
                         </>
                         
@@ -111,15 +143,19 @@ function Events() {
         setSearchElement((prev) => !prev);
     }
   return (
-    
-        <div className='Events_bg'>
+    <>
+        
             
-                <h1 className='Events_Header1'>EVENTS</h1>  
-                <h1 className='Events_Header2'>EVENTS</h1>
+                
+                    <h1 className='Events_Header1'>EVENTS</h1>
+                    <h2 className='Events_Header1'>EVENTS</h2>
+                    
+                
             
                 
             
                
+            <div>
             {(searchElement==false)?
                 <button className='Events_search' onClick={changeSearchElement}>TAP TO SEARCH</button>
             :
@@ -128,15 +164,23 @@ function Events() {
                 </form>
 
             }
+            </div>
+            
             
             {(eventsSearchOver==false)?
                 Events_Display(eventsDesc)
                 :
                 Events_Display(searchEventsDesc)
             }
+            {showDetails && 
+            <div className='showDetails'>
+                <div className='closeButton'><button className='button' onClick={() => setShowDetails((prev) => !prev)}>X</button></div>
+                <EventDetails Name={showEvent.title} Description={showEvent.desc} Date={showEvent.date} Time={showEvent.time} Venue={showEvent.venue} TeamSize={showEvent.teamsize}/>
+                </div>}
             
-        </div>
+            
         
+        </>
         
     
   )

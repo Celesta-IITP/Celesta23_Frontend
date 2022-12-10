@@ -1,134 +1,153 @@
-.modal_header{
-    border: 0;
+
+
+.Details{
+    height: 70%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 4fr 1fr 1fr 12fr 2fr;
+    background-color: #FFFFFF;
+    grid-row-gap: 0;
 }
 
-.Event_ModelBox{
-    width: 833px;
-    height: 452px;
-    background: #FFFFFF;
-}
-
-.Event_bg{
-    display: block;
-    margin: 5vh 5vw 5vh 5vw;
-}
-
-.Event_Name{
+.Name{
+    grid-column: 1 / span 2;
+    background-color: #FFFFFF;
+    text-align: center;
     font-family: 'Gotham Black';
-    width: 100%;
     font-style: normal;
     font-weight: 500;
-    
-    line-height: 71px;
-/* identical to box height */
-    font-size: 50.8px;
-    text-align: center;
+    font-size: 7vh;
     letter-spacing: -0.045em;
+    margin-bottom: 0%;
+}
 
-    color: #000000;
+.Date{
+    background-color: #FFFFFF;
+    text-align: left;
+    font-family: 'Gotham Black';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5vh;
 
 }
 
-.EventDateTime{
-    display: grid;
-    grid-template-columns: auto auto;
-    text-align: center;
-    
+.Time{
+    background-color: #FFFFFF;
+    text-align: right;
+    font-family: 'Gotham Black';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5vh;
 }
 
-.EventDate{
-    font-family: 'Gotham';
-font-style: normal;
-font-weight: 700;
-font-size: 15px;
-line-height: 14px;
-text-align: left;
-
-color: #000000;
-
+.Venue{
+    background-color: #FFFFFF;
+    text-align: left;
+    font-family: 'Gotham Black';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vh;
 }
 
-.EventTime{
-    font-family: 'Gotham';
-font-style: normal;
-font-weight: 700;
-font-size: 15px;
-line-height: 14px;
-text-align: right;
-
-color: #000000;
-
+.TeamSize{
+    background-color: #FFFFFF;
+    text-align: right;
+    font-family: 'Gotham Black';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vh;
 }
 
-.EventVenue{
-    font-family: 'Gotham';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 14px;
-text-align: left;
-letter-spacing: -0.045em;
-text-transform: uppercase;
-
-color: #000000;
-}
-
-.EventTeamSize{
-    font-family: 'Gotham';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 14px;
-text-align: right;
-letter-spacing: -0.045em;
-text-transform: uppercase;
-
-color: #000000;
-}
-
-.Event_Description{
-    margin: 5% 20% 5% 20%;
-    text-align:justify;
-    text-justify: inter-word;
-    text-align-last:center;
+.Description{
+    grid-column: 1 / span 2;
+    background-color: #FFFFFF;
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1.4vw;
     font-family: 'Swiss 721';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.03em;
 }
 
-.Event_Buttons{
-    display: grid;
-    grid-template-columns: auto auto;
+.Register{
+    background-color: #FFFFFF;
 }
 
-.Event_Register{
-    background-color: black;
-    color: white;
-    width: 30%;
-    height: 41px;
-    font-family: 'Gotham';
-font-style: normal;
-font-weight: 700;
-font-size: 12px;
-line-height: 11px;
-letter-spacing: -0.045em;
-color: #FFFFFF;
-
-
+.Rulebook{
+    background-color: #FFFFFF;
 }
 
-.Event_Rulebook{
-    position: relative;
-    left: 40%;
+.Date, .Time, .Venue, .TeamSize, .Description{
+    margin-bottom: 0%;
+}
+
+.Button1, .Button2{
     background-color: #000000;
-    color: white;
-    width: 30%;
-    height: 41px;
+    width: 40%;
+    color: #FFFFFF;
     font-family: 'Gotham';
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 11px;
     letter-spacing: -0.045em;
-    
-    color: #FFFFFF;
+    font-size: 2vh;
+}
 
+.Button2{
+    position: relative;
+    left: 60%;
+}
+
+@media screen and (max-width: 767px) {
+    .closeButton{
+        height: 10%;
+    }
+
+    .button{
+        top: -10%;
+        font-size: 10px;
+    }
+    .Details{
+        height: 80%;
+        grid-template-rows: 4fr 1fr 1fr 10fr 4fr;
+    }
+
+    .Name{
+        font-size: 4vh;
+    }
+
+    .Date, .Time, .Venue, .TeamSize{
+        font-size: 1.2vh;
+    }
+
+    .Button1, .Button2{
+        font-size: 1.2vh;
+        width: 50%;
+    }
+
+    .Button2{
+        position: relative;
+        left: 50%;
+    }
+
+    .Description{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .Description{
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 900px) {
+    .Description{
+        font-size: 14px;
+        margin-left: 14%;
+        margin-right: 14%;
+    }
 }
