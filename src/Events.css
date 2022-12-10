@@ -82,6 +82,23 @@
     padding: 0.2% 0.5% 0.5% 0.5%;
 }
 
+.Events_search:hover{
+    animation-name: searchHover;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes searchHover {
+    from{
+        letter-spacing: 0.28em;
+    }
+
+    to{
+        letter-spacing: 0.7rem;
+    }
+}
+
 .Events_searchInput{
    
     /*padding: 0.5% 0.5% 0.5% 0.5%;
@@ -235,11 +252,13 @@
 
 .button{
     position: relative;
-    left: 3%;
-    top: 30%;
-    font-size: 18px;
+    left: 2%;
+    top: 20%;
+    height: 3.5vh;
+    width: 3.5vh;
+    font-size: 1.9vh;
     background-color: #FFFFFF;
-    border: 0;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 767px) {
@@ -248,8 +267,11 @@
     }
 
     .button{
-        top: -10%;
-        font-size: 10px;
+        top: 10%;
+        height: 2.5vh;
+        width: 2.5vh;
+        
+        font-size: 1.1vh;
     }    
 
     .showDetails{
