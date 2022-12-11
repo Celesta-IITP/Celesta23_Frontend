@@ -1,12 +1,14 @@
 import React from "react";
 import "./ThemeVideo.css";
+import Video from "../../assets/video_text.svg";
 
 function ThemeVideo() {
   return (
     <div className="video-container">
       <div className="header">
         <h2 className="header-theme">Theme</h2>
-        <h2 className="header-video">Video</h2>
+        {/* <h2 className="header-video">Video</h2> */}
+        <img src={Video} className="header-video"></img>
       </div>
       <div className="video-box">
         <video

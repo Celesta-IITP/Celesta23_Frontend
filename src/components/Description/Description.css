@@ -4,12 +4,11 @@
   justify-content: center;
   align-items: center;
   color: white;
-  padding-top: 240px;
-  padding-bottom: 120px;
+  margin-bottom: 63vh;
 }
 
 .header {
-  font-family: "swis721-blk-bt-black", sans-serif;
+  font-family: "Swis721 BlkEx BT", sans-serif;
   font-weight: 900;
   line-height: 50px;
   font-size: 4rem;
@@ -22,7 +21,6 @@
   letter-spacing: 0.05rem;
   font-family: "Gotham", sans-serif;
   text-align: justify;
-  margin-bottom: 240px;
 }
 
 @media screen and (max-width: 426px) {

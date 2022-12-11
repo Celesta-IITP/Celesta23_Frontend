@@ -5,11 +5,12 @@ import "./Background.css";
 import WebBackground from "../../assets/landing/bg_web1.png";
 import WebLogo from "../../assets/landing/logo_landing_web.png";
 
-function BackgroundContainer({ isMobile }) {
+function BackgroundContainer() {
+  const screenSize = window.innerWidth;
   return (
     <>
       <div className="landing-container">
-        {!isMobile && (
+        {screenSize > 426 && (
           <>
             <div className="background-container">
               <img src={WebBackground} className="web-background"></img>
