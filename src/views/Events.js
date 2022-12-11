@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../Events.css'
-import EventDetails from './components/Events/EventDetails.js'
+import EventDetails from '../components/Events/EventDetails.js'
+
 
 function Events() {
     const [searchElement, setSearchElement] = useState(false);
@@ -10,7 +11,7 @@ function Events() {
     const [showEvent, setShowEvent] = useState({});
     const [eventsDesc, setEventsDesc] = useState([
         {
-            title: "Event 1 ch",
+            title: "Event 1",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
             date: "29JAN2023",
             time: "10:00",
@@ -26,7 +27,7 @@ function Events() {
             teamsize: 2
         },
         {
-            title: "Event 3 ch",
+            title: "Event 3",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
             date: "29JAN2023",
             time: "10:00",
@@ -50,7 +51,7 @@ function Events() {
             teamsize: 2
         },
         {
-            title: "Event 6 ch",
+            title: "Event 6",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
             date: "29JAN2023",
             time: "10:00",
@@ -116,7 +117,7 @@ function Events() {
         //{Events_Display(searchEventsDesc)};
     }
     const ShowDetails = ()=>{
-        setShowDetails((prev) => !prev);
+        setShowDetails(true);
     }
     
     const Events_Display = (arrEvents)=>{
@@ -128,7 +129,9 @@ function Events() {
                     
                     return(
                         <>
+                            <div className='Container'>
                             <div onClick={() => setShowEvent(Event)} className='Display'><img onClick={ShowDetails} key={Event.title} className='EventDisplay' src={imgArray[eventsDesc.indexOf(Event)].src} alt={Event.title} /></div>
+                            </div>
                             
                         </>
                         
@@ -145,9 +148,12 @@ function Events() {
     <>
         
             
-                
+                <div className='Header'>
                     <h1 className='Events_Header1'>EVENTS</h1>
-                    <h2 className='Events_Header1'>EVENTS</h2>
+                    <h2 className='Events_Header2'>EVENTS</h2>
+                    
+                </div>
+                    
                     {/*<h2 className='Events_Header2'>EVENTS</h2>*/}
                 
             
@@ -172,8 +178,9 @@ function Events() {
                 Events_Display(searchEventsDesc)
             }
             {showDetails && 
+            
             <div className='showDetails'>
-                <div className='closeButton'><button className='button' onClick={() => setShowDetails((prev) => !prev)}>✖</button></div>
+                <div className='closeButton'><button className='button' onClick={() => setShowDetails(false)}>✖</button></div>
                 <EventDetails Name={showEvent.title} Description={showEvent.desc} Date={showEvent.date} Time={showEvent.time} Venue={showEvent.venue} TeamSize={showEvent.teamsize}/>
                 </div>}
             

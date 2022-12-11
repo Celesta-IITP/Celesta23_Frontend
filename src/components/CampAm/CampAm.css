@@ -1,6 +1,6 @@
 .CampAb_bg{
-    background-color: #000000;
-    height: 100vh;
+    background-color: #1E1E1E;
+    
 }
 
 .CampAb_Image{
@@ -28,8 +28,8 @@
 }*/
 
 .CampAb_Header{
-    position: absolute;
-    bottom: 60vh;
+    position: relative;
+    bottom: 37vh;
     width: 70vw;
     margin: 0 15vw 0 15vw;
     
@@ -46,8 +46,8 @@
 }
 
 .CampAb_Desc{
-    position: absolute;
-    top: 53vh;
+    position: relative;
+    top: -15vh;
     width: 50vw;
     margin: 0 25vw 0 25vw;
     letter-spacing: 0.05rem;
