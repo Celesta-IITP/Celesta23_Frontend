@@ -10,14 +10,14 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="footer-container">
+    <div className="footer-container fade-in">
       <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
-            <Link to="/">Events</Link>
+            <Link to="/events">Events</Link>
           </div>
           <div className="footer-link-items">
-            <Link to="/">Register</Link>
+            <Link to="/sign-up">Register</Link>
           </div>
           <div className="footer-link-items">
             <Link to="/">CA Programs</Link>
@@ -27,46 +27,46 @@ function Footer() {
       <section className="social-media">
         <div className="social-media-wrap">
           <div className="social-icons">
-            <Link
+            <a
               className="social-icon-link instagram"
-              to="/"
+              href="https://instagram.com/"
               target="_blank"
               aria-label="Instagram"
             >
               <img src={instagramLogo}></img>
-            </Link>
-            <Link
+            </a>
+            <a
               className="social-icon-link facebook"
-              to="/"
+              href="https://facebook.com/"
               target="_blank"
               aria-label="Facebook"
             >
               <img src={facebookLogo}></img>
-            </Link>
-            <Link
+            </a>
+            <a
               className="social-icon-link linkedin"
-              to="/"
+              href="https://linkedin.com/"
               target="_blank"
               aria-label="LinkedIn"
             >
               <img src={linkedInLogo}></img>
-            </Link>
-            <Link
+            </a>
+            <a
               className="social-icon-link twitter"
-              to="/"
+              href="https://twitter.com/"
               target="_blank"
               aria-label="Twitter"
             >
               <img src={twitterLogo}></img>
-            </Link>
-            <Link
+            </a>
+            <a
               className="social-icon-link youtube"
-              to="/"
+              href="https://youtube.com/"
               target="_blank"
               aria-label="Youtube"
             >
               <img src={youtubeLogo}></img>
-            </Link>
+            </a>
           </div>
           <a href="" className="website-rights">
             CELESTAEMAILID@IDK.COM

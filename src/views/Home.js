@@ -30,6 +30,28 @@ function Home() {
 
   const isMobile = width <= 767;
 
+  const options = { threshold: 0.1 };
+
+  useEffect(() => {
+    const faders = document.querySelectorAll(".fade-in");
+    const appearOnScroll = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("appear");
+      });
+    }, options);
+
+    faders.forEach((fader) => {
+      appearOnScroll.observe(fader);
+    });
+
+    return () => {
+      faders.forEach((fader) => {
+        appearOnScroll.unobserve(fader);
+      });
+    };
+  }, [options]);
+
   return (
     <>
       <BackgroundContainer />
@@ -38,7 +60,7 @@ function Home() {
       <Description heading="Theme" content="lorem30" />
       {isMobile ? (
         <>
-          <div className="celesta-text">
+          <div className="celesta-text fade-in">
             <div className="celesta-glow-container">
               <h3 className="celesta-glow glow1">celesta</h3>
               <h3 className="celesta-glow glow2">celesta</h3>
@@ -47,7 +69,7 @@ function Home() {
             </div>
             <h2 className="celesta celesta-cut">Celesta</h2>
           </div>
-          <div className="celesta-text">
+          <div className="celesta-text fade-in">
             <img src={CelestaChrysalis} className="img"></img>
           </div>
         </>
@@ -57,14 +79,14 @@ function Home() {
       <ThemeVideo />
       {!isMobile && (
         <>
-          <div className="celesta-text">
+          <div className="celesta-text fade-in">
             <img src={CelestaChrysalisWeb}></img>
           </div>
           <TilesContainer />
         </>
       )}
-      <CampAm/>
-      <OurPartners/>
+      <CampAm />
+      <OurPartners />
       <Chrysalis isMobile={isMobile} />
       {isMobile && <TilesContainer />}
       <Footer />

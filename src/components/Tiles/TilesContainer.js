@@ -18,7 +18,7 @@ function TilesContainer() {
   }
   return (
     <>
-      <div className="tiles-container">
+      <div className="tiles-container fade-in">
         <Tiles
           image1={DawnImage}
           image2={DawnImage}
@@ -47,7 +47,7 @@ function TilesContainer() {
           style="style2"
         />
       </div>
-      <div className="expand-btn" onClick={expandTiles}>
+      <div className="expand-btn fade-in" onClick={expandTiles}>
         <img src={ArrowHead} className="normal"></img>
       </div>
     </>

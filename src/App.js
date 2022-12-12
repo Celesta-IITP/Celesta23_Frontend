@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "./components/Nav/Navbar";
 import "./App.css";
-import Home from "./views/Home"
+import Home from "./views/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Events from "./views/Events";
 
@@ -32,6 +32,7 @@ function App() {
       localStorage.removeItem("--variable-height");
     };
   }, []);
+
   return (
     <>
       <Router>

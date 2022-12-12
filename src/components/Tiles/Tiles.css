@@ -33,6 +33,7 @@
 
 .tiles-container::before {
   content: "";
+  z-index: 2;
   position: absolute;
   width: 90%;
   height: 50px;

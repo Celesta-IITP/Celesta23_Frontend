@@ -4,10 +4,10 @@ import Video from "../../assets/video_text.svg";
 
 function ThemeVideo() {
   return (
-    <div className="video-container">
+    <div className="video-container fade-in">
       <div className="header">
         <h2 className="header-theme">Theme</h2>
-        {/* <h2 className="header-video">Video</h2> */}
+
         <img src={Video} className="header-video"></img>
       </div>
       <div className="video-box">
@@ -17,8 +17,8 @@ function ThemeVideo() {
           controls
           className="video-element elem-size"
         >
-          <source src="movie.mp4" type="video/mp4" />
-          <source src="movie.ogg" type="video/ogg" />
+          <source src="" type="video/mp4" />
+          <source src="" type="video/ogg" />
           Your browser does not support the video tag.
         </video>
         <div className="overlay overlay-1"></div>

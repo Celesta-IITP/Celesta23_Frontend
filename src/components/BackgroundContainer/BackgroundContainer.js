@@ -9,7 +9,7 @@ function BackgroundContainer() {
   const screenSize = window.innerWidth;
   return (
     <>
-      <div className="landing-container">
+      <div className="landing-container fade-in">
         {screenSize > 426 && (
           <>
             <div className="background-container">
@@ -21,7 +21,7 @@ function BackgroundContainer() {
           </>
         )}
       </div>
-      <div className="landing-btns">
+      <div className="landing-btns fade-in">
         <Link to="/events" className="landing-links">
           Events
         </Link>
