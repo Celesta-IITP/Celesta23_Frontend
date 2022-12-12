@@ -1,0 +1,78 @@
+:root {
+  --variable-height: 0px;
+}
+
+.tiles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5%;
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+  transition-duration: 1200ms;
+  transition-property: max-height;
+  transition-timing-function: ease-in-out;
+}
+
+.height-container {
+  max-height: var(--variable-height);
+}
+
+.normal {
+  transition-duration: 1000ms;
+  transition-property: transform;
+  transform: rotate(0deg);
+}
+
+.reverted {
+  transition-duration: 1000ms;
+  transition-property: transform;
+  transform: rotate(180deg);
+}
+
+.tiles-container::before {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  width: 90%;
+  height: 50px;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, black);
+}
+
+.expand-btn {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 100vh;
+}
+
+.grid-row {
+  display: grid;
+  gap: 2vw;
+  grid-template-columns: auto auto auto auto;
+  margin-bottom: 2vw;
+}
+
+.tiles-image-container {
+  max-height: 25vh;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.tiles-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+  .grid-row {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .span-2 {
+    grid-column: span 2;
+  }
+}

@@ -5,7 +5,7 @@ import "./Chrysalis.css";
 
 function Chrysalis({ isMobile }) {
   return (
-    <div className="chrysalis-container">
+    <div className="chrysalis-container fade-in">
       <div className="image-container">
         <img
           src={isMobile ? ChrysalisMobile : ChrysalisWeb}

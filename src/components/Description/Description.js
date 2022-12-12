@@ -3,7 +3,7 @@ import "./Description.css";
 
 function Description({ heading, content }) {
   return (
-    <section className="about">
+    <section className="about fade-in">
       <h2 className="header">{heading}</h2>
       <p className="content">
         {content}

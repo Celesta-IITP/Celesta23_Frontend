@@ -9,7 +9,11 @@
 }
 
 @font-face {
-  font-family: "ElFont Urban Calligraphy";
-  src: local("ElFont Urban Calligraphy") url(./fonts/Urban\ Calligraphy.ttf)
-    format("truetype");
+  font-family: "UrbanCalligraphy";
+  src: url(./fonts/UrbanCalligraphy.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SpeedometerW03300R.ttf";
+  src: url(./fonts/SpeedometerW03300R.ttf) format("truetype");
 }

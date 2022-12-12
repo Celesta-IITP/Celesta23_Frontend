@@ -1,0 +1,156 @@
+.OurPartners_bg {
+  margin-bottom: 75vh;
+}
+
+.OurPartners_Head {
+  margin: 4vh 0 2vh 0;
+  font-family: "Swis721 BlkEx BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 96px;
+  text-align: center;
+  text-shadow: 0px 0px 9px #6bc0fe, 0px 0px 31px #6bc0fe;
+}
+
+.OurPartners_Partners {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 4.67vw;
+  grid-row-gap: 7vh;
+  margin: 15vh 15vw 35vh 15vw;
+}
+
+.OurPartners_Partner {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.Partner {
+  height: 20vh;
+}
+
+@media screen and (min-width: 450px) and (max-width: 600px) {
+  .OurPartners_Partners {
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 4.67vw;
+    grid-row-gap: 7vh;
+    margin: 5vh 15vw 5vh 15vw;
+  }
+
+  .OurPartners_Head {
+    font-size: 3.5rem;
+  }
+
+  .Partner {
+    height: 15vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .OurPartners_Partners {
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 4.67vw;
+    grid-row-gap: 7vh;
+    margin: 3vh 15vw 5vh 15vw;
+  }
+
+  .OurPartners_Head {
+    font-size: 2.5rem;
+  }
+
+  .Partner {
+    height: 12vh;
+  }
+}
+
+/*@media screen and (max-width: 450px) {
+    .OurPartners_Head{
+        padding-top: 1vh;
+        text-align: center;
+        
+    }
+}
+
+@media screen and (min-width:450px) and (max-width: 600px) {
+    .OurPartners_Head{
+        padding-top: 9vh;
+        text-align: center;
+        font-family: 'Swis721 BlkEx BT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10vw;
+        line-height: 96px;
+        text-align: center;
+        text-shadow: 0px 0px 9px #6BC0FE, 0px 0px 31px #6BC0FE;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .OurPartners_Head{
+        padding-top: 9vh;
+        text-align: center;
+        font-family: 'Swis721 BlkEx BT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8vw;
+        line-height: 96px;
+        text-align: center;
+        text-shadow: 0px 0px 9px #6BC0FE, 0px 0px 31px #6BC0FE;
+    }
+}
+
+.OurPartners_Partners{
+    
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 4.67vw;
+    grid-row-gap: 2rem;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    border: 0;
+}
+
+.OurPartners_Partner{
+    object-fit: cover;
+    width: 14vw;
+    height: 26.3vh;
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px){
+    .OurPartners_Partners{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-column-gap: 6vw;
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+
+    .OurPartners_Partner{
+        width: 16vw;
+        height: 15vh;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .OurPartners_Partners{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-column-gap: 6vw;
+        grid-row-gap: 4vh;
+        margin-top: 3vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        
+    }
+
+    .OurPartners_Partner{
+        width: 37vw;
+        height: 15vh;
+        border-radius: 10px;
+    }
+}*/

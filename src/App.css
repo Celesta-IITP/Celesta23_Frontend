@@ -4,13 +4,24 @@
   padding: 0;
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(25%);
+  transition: all 700ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   background-color: rgba(102, 100, 100, 0.8);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(37, 37, 270, 0.75);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 100px;
 }
 
@@ -20,7 +31,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(37, 37, 270, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .home,
@@ -41,14 +52,8 @@
   align-items: center;
   text-transform: uppercase;
   min-height: 200px;
-  margin-bottom: 280px;
+  margin-bottom: 100vh;
 }
-
-/* .celesta-top {
-  font-family: "Swis721 BlkEx BT";
-  text-transform: uppercase;
-  color: #fff500;
-} */
 
 .celesta-cut {
   font-family: "Arsis";
@@ -99,13 +104,19 @@
   top: 1px;
   color: #0ffbf9;
 }
-/* .celesta-dawn {
-  /* add font-family of SpeedometerW03-300R
+
+.celesta-top {
+  font-family: "Swis721 BlkEx BT";
+  text-transform: uppercase;
+  color: #fff500;
+}
+
+.celesta-dawn {
+  font-family: "Speedometer";
   line-height: 3.5em;
-} */
+}
 
 .services {
-  /* background-image: url('/images/img-2.jpg'); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -114,7 +125,6 @@
 }
 
 .products {
-  /* background-image: url('/images/img-1.jpg'); */
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -123,7 +133,6 @@
 }
 
 .sign-up {
-  /* background-image: url('/images/img-8.jpg'); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
