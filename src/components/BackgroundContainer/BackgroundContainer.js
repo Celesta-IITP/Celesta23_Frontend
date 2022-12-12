@@ -7,6 +7,7 @@ import WebLogo from "../../assets/landing/logo_landing_web.png";
 
 function BackgroundContainer() {
   const screenSize = window.innerWidth;
+  // console.log(screenSize);
   return (
     <>
       <div className="landing-container fade-in">
@@ -21,7 +22,7 @@ function BackgroundContainer() {
           </>
         )}
       </div>
-      <div className="landing-btns fade-in">
+      <div className="landing-btns">
         <Link to="/events" className="landing-links">
           Events
         </Link>

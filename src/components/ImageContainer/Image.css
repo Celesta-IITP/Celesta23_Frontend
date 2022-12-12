@@ -1,12 +1,12 @@
 .container {
   width: 100%;
   position: relative;
-  margin-bottom: 75vh;
+  margin-bottom: 40vh;
   display: flex;
   justify-content: center;
 }
 
 .img {
-  width: 85%;
+  width: 80%;
   object-fit: contain;
 }
