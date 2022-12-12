@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 63vh;
+}
+
+.header {
+  font-family: "Swis721 BlkEx BT", sans-serif;
+  font-weight: 900;
+  line-height: 50px;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.content {
+  width: 40%;
+  letter-spacing: 0.05rem;
+  font-family: "Gotham", sans-serif;
+  text-align: justify;
+}
+
+@media screen and (max-width: 426px) {
+  .content {
+    width: 60%;
+  }
+}

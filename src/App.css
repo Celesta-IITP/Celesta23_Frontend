@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(25%);
+  transition: all 700ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(102, 100, 100, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px black;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.home,
+.services,
+.products,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.celesta-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  min-height: 200px;
+  margin-bottom: 100vh;
+}
+
+.celesta-cut {
+  font-family: "Arsis";
+  display: inline-block;
+  transform: scale(1, 2.5);
+  z-index: -1;
+}
+
+.celesta {
+  font-size: 5rem;
+}
+
+.celesta-glow-container {
+  position: relative;
+  width: 400px;
+  height: 50px;
+  background-color: #000000;
+  transform: translateY(68px);
+}
+
+.celesta-glow {
+  position: absolute;
+  font-family: "Swis721 BlkEx BT";
+  font-size: 2.4rem;
+  letter-spacing: 0.81rem;
+}
+
+.glow1 {
+  left: 53px;
+  color: #fdfefe;
+  z-index: 3;
+}
+
+.glow2 {
+  left: 50px;
+  color: #cc0f39;
+}
+
+.glow3 {
+  left: 54px;
+  top: 1px;
+  color: #cdc764;
+  z-index: 2;
+}
+
+.glow4 {
+  left: 55px;
+  top: 1px;
+  color: #0ffbf9;
+}
+
+.celesta-top {
+  font-family: "Swis721 BlkEx BT";
+  text-transform: uppercase;
+  color: #fff500;
+}
+
+.celesta-dawn {
+  font-family: "Speedometer";
+  line-height: 3.5em;
+}
+
+.services {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.products {
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+@media screen and (max-width: 426px) {
+  .celesta {
+    font-size: 3rem;
+  }
+
+  .celesta-glow-container {
+    position: relative;
+    width: 290px;
+    height: 25px;
+    background-color: #000000;
+    transform: translateY(40px);
+  }
+
+  .celesta-glow {
+    position: absolute;
+    font-family: "Swis721 BlkEx BT";
+    font-size: 1.2rem;
+    letter-spacing: 0.81rem;
+  }
+}

@@ -1,0 +1,32 @@
+.chrysalis-container {
+  position: relative;
+  margin-bottom: 85vh;
+}
+
+.chrysalis-text {
+  position: absolute;
+  font-size: 1.4rem;
+  font-family: "Swis721 BlkEx BT";
+  font-weight: 400;
+  color: #bdff00;
+  left: 41.5%;
+  bottom: 22%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 800px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 769px) {
+  .chrysalis-text {
+    font-size: 2.5vw;
+    left: 34vw;
+  }
+}

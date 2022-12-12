@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 75vh;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  width: 85%;
+  object-fit: contain;
+}
