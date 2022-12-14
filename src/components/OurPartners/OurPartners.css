@@ -1,18 +1,27 @@
 .OurPartners_bg{
-    background-color: #1E1E1E;
-
+    
+    margin-bottom: 20vh;
     
 }
 
 .OurPartners_Head{
     margin: 4vh 0 2vh 0;
+    
+    text-align: center;
+    
+    text-shadow: 0px 0px 9px #6BC0FE, 0px 0px 31px #6BC0FE;
+}
+
+.PartnerHead{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: 'Swis721 BlkEx BT';
     font-style: normal;
     font-weight: 400;
-    font-size: 8vw;
+    font-size: 7vw;
     line-height: 96px;
-    text-align: center;
-    text-shadow: 0px 0px 9px #6BC0FE, 0px 0px 31px #6BC0FE;
+    background-color: 1px solid #6BC0FE;
 }
 
 .OurPartners_Partners{

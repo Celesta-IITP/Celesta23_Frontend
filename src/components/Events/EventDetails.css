@@ -72,9 +72,14 @@
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.03em;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
-
+.Description::-webkit-scrollbar {
+    display: none;
+  }
 
 .Register{
     background-color: #FFFFFF;
@@ -98,6 +103,7 @@
     font-weight: 700;
     letter-spacing: -0.045em;
     font-size: 2vh;
+    cursor: pointer;
 }
 
 .Button2{

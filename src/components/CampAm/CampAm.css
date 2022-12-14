@@ -1,10 +1,16 @@
+@font-face {
+    src: url(https://fonts.cdnfonts.com/css/swiss-721-3);
+    font-family: swz721k;
+
+}
+
 .CampAb_bg{
     background-color: #1E1E1E;
-    
+    margin-bottom: 10vh;
 }
 
 .CampAb_Image{
-    margin: 0 10vw 0 10vw;
+    margin: 0 20vw 0 20vw;
     height: 70vh;
 }
 
@@ -14,11 +20,7 @@
     width: 100%;
 }
 
-@media screen and (max-width: 500px) {
-    .CampAb_Image{
-        margin: 0;
-    }
-}
+
 
 /*.CampAb_content{
     position: relative;
@@ -29,55 +31,119 @@
 
 .CampAb_Header{
     position: relative;
-    bottom: 37vh;
-    width: 70vw;
-    margin: 0 15vw 0 15vw;
+    bottom: 40vh;
+    width: 28vw;
+    margin: 0 36vw 0 36vw;
     
     font-style: normal;
         font-weight: 400;
-        font-size: 3vw;
+        font-size: 19px;
         line-height: 29px;
         text-align: center;
         color: #000000;
         padding-top: 3vh;
         padding-bottom: 3vh;
         background-color: white;
-        font-family: 'Swis721 BlkEx BT';
+        font-family: 'swz721k';
+}
+
+@media screen and (min-width:620px) and (max-width:800px) {
+    .CampAb_Header{
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and (max-width:700px) {
+    .CampAb_Header{
+        width: 50vw;
+        margin: 0 25vw 0 25vw;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .CampAb_Header{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .CampAb_Image{
+        margin: 0;
+    }
+
+    .CampAb_Header{
+        width: 80vw;
+        margin: 0 10vw 0 10vw;
+    }
 }
 
 .CampAb_Desc{
     position: relative;
     top: -15vh;
-    width: 50vw;
-    margin: 0 25vw 0 25vw;
+    width: 26vw;
+    margin: 0 37vw 0 37vw;
     letter-spacing: 0.05rem;
     font-family: "Gotham", sans-serif;
     text-align: justify;
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 600px) {
-    .CampAb_Header{
-        font-size: 5vw;
-    }
-
+@media screen and (max-width:700px) {
     .CampAb_Desc{
-        width: 66vw;
-        margin: 0 17vw 0 17vw;
+        width: 40vw;
+        margin: 0 30vw 0 30vw;
     }
 }
 
-.CampAb_Leaderboard{
-
+@media screen and (max-width:450px) {
+    .CampAb_Desc{
+        font-size: 10px;
+    }
 }
 
-.button{
-    display: block;
-    width: 40vw;
-    margin: 0 30vw 0 30vw;
-    background-color: #000000;
+.Leaderboard{
+    position: relative;
+    top: -15vh;
+    height: 3.8vh;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 1vh;
+    font-family: 'Gotham';
+font-style: normal;
+font-weight: 700;
+line-height: 15px;
+color: #FFFFFF;
+}
+
+
+
+.Leaderboardbutton{
+    background-color: #1E1E1E;
     color: #FFFFFF;
-    border-color: #000000 #000000 #FFFFFF;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    top: -15%;
+    font-weight: 700;
+    border: 2px solid #FFFFFF;
+    font-size: 8px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:450px) {
+    .Leaderboard{
+        font-size: 15.43px;
+    }
+
+    .Leaderboardbutton{
+        top: -13%;
+        height: 11.3px;
+        width: 11.3px;
+        font-size: 5px;
+    }
 }
 /*@media screen and (max-width: 600px) {
     .CampAb_Image{
