@@ -2,7 +2,7 @@ import React from "react";
 
 function Tiles({ image1, image2, image3, image4 }) {
   return (
-    <div className="grid-row">
+    <div className="grid-row fade-in">
       <div className="tiles-image-container">
         <img src={image1} className="tiles-image"></img>
       </div>

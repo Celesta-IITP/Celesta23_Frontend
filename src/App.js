@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "./components/Nav/Navbar";
 import "./App.css";
-import Home from "./views/Home"
+import Home from "./views/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Events from "./views/Events";
 
@@ -20,12 +20,19 @@ function App() {
     }
 
     const container = document.getElementsByClassName("tiles-container")[0];
+    // console.log(container);
     const maxHeight = container.scrollHeight;
+    // console.log(maxHeight);
     document
       .querySelector(":root")
       .style.setProperty("--variable-height", maxHeight + "px");
     localStorage.setItem("--variable-height", maxHeight + "px");
+
+    return () => {
+      localStorage.removeItem("--variable-height");
+    };
   }, []);
+
   return (
     <>
       <Router>

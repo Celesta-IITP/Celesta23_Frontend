@@ -4,17 +4,16 @@
   justify-content: center;
   align-items: center;
   color: white;
-  padding-top: 240px;
-  padding-bottom: 120px;
+  margin-bottom: 40vh;
 }
 
 .header {
-  font-family: "swis721-blk-bt-black", sans-serif;
+  font-family: "Swis721 BlkEx BT", sans-serif;
   font-weight: 900;
   line-height: 50px;
-  font-size: 4rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .content {
@@ -22,11 +21,16 @@
   letter-spacing: 0.05rem;
   font-family: "Gotham", sans-serif;
   text-align: justify;
-  margin-bottom: 240px;
+  font-size: 1.15em;
 }
 
 @media screen and (max-width: 426px) {
+  .header {
+    font-size: 4.2em;
+  }
+
   .content {
     width: 60%;
+    font-size: 1em;
   }
 }
