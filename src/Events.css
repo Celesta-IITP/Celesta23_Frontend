@@ -1,7 +1,3 @@
-/*@font-face {
-    src: url(Gotham-Bold.woff);
-    font-family: gotham;
-}*/
 
 .Header {
   height: 22vh;
@@ -58,10 +54,17 @@
   /*margin-bottom: 0%;
     text-align: center;
     color: #FFFFFF;
-    font-family: 'Swis721 BlkEx BT';
+    font-family: '';
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.89em;*/
+    position: absolute;
+    font-size: 5vh;
+    color: #FFFFFF;
+    font-family: 'Swis721 BlkEx BT';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.2em;
   position: absolute;
   font-size: 5vh;
   color: #ffffff;
@@ -79,6 +82,22 @@
     letter-spacing: 0.24em;
 }*/
 
+.Events_search{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 5vh;
+    background-color: #1E1E1E;
+    font-family: 'Gotham';
+    font-size: 0.9rem;
+    letter-spacing: 0.28em;
+    border: 1px solid #1E1E1E;
+    color: #FFFFFF;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 0.2% 0.5% 0.5% 0.5%;
+    cursor: pointer;
 .Events_search {
   position: relative;
   left: 25%;
@@ -159,6 +178,79 @@
   }
 }
 
+.Container{
+    height: 20vh;
+    width: 14vw;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Events_Display{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 4.67vw;
+    grid-row-gap: 7vh;
+    margin: 8vh 15vw 8vh 15vw;
+    height: 50vh;
+}
+
+.Display{
+    height: 100%;
+    width: 100%;
+}
+
+.Event_Display{
+    object-fit: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media screen and (min-width:450px) and (max-width: 600px) {
+    .Events_Display{
+        grid-template-columns: repeat(3, auto);
+        grid-column-gap: 5vw;
+        grid-row-gap: 5vh;
+        margin: 5vh 15vw 5vh 15vw;
+        height: 56vh;
+    }
+
+    .Events_search{
+        margin-top: 2vh;
+    }
+
+    .Events_searchInput{
+        margin-top: 2vh;
+    }
+
+    .Container{
+        height: 15vh;
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width:450px){
+    .Events_Display{
+        grid-template-columns: repeat(2, auto);
+        grid-column-gap: 10vw;
+        grid-row-gap: 4vh;
+        margin: 2vh 15vw 5vh 15vw;
+        height: 60vh;
+    }
+
+    .Events_search{
+        margin-top: 2vh;
+    }
+
+    .Events_searchInput{
+        margin-top: 2vh;
+    }
+
+    .Container{
+        height: 12vh;
+        width: 30vw;
+    }
+
 .Container {
   height: 20vh;
   width: 14vw;
@@ -227,6 +319,7 @@
     height: 12vh;
     width: 30vw;
   }
+
 }
 
 /*@media screen and (max-width: 900px) {
@@ -270,6 +363,16 @@
 
 */
 
+
+.showDetails{
+    position: fixed;
+    top: 15vh;
+    left: 20%;
+    height: 70vh;
+    width: 60%;
+    background: #FFFFFF;
+    z-index: 2;
+
 .showDetails {
   position: fixed;
   top: 15vh;
@@ -277,12 +380,137 @@
   height: 70vh;
   width: 60%;
   background: #ffffff;
+
 }
 
 .closeButton {
   background-color: #ffffff;
   height: 15%;
 }
+
+
+.button{
+    display: inline;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    top: 20%;
+    left: 3%;
+    height: 3.5vh;
+    width: 3.5vh;
+    text-align: center;
+    font-size: 1.9vh;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: solid #000000;
+    color: #000000;
+    cursor: pointer;
+}
+
+.Box1{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 15vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.Box2{
+    position: fixed;
+    top: 15%;
+    left: 0%;
+    height: 70vh;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.Box3{
+    position: fixed;
+    top: 15%;
+    left: 80%;
+    height: 70vh;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.Box4{
+    position: fixed;
+    top: 85%;
+    left: 0%;
+    height: 15vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+@media screen and (max-width: 767px) {
+    .closeButton{
+        height: 10%;
+    }
+
+    .button{
+        top: 10%;
+        left: 1.5%;
+        height: 2.5vh;
+        width: 2.5vh;
+        border: 2px solid #000000;
+        font-size: 1.1vh;
+        font-weight: 600;
+    }    
+
+    .showDetails{
+        top: 35vh;
+        left: 3%;
+        height: 30vh;
+        width: 94%;
+    }
+
+    .Box1{
+        top: 0vh;
+        left: 0%;
+        height: 35vh;
+        width: 100%;
+    }
+
+    .Box2{
+        top: 35vh;
+        left: 0%;
+        height: 30vh;
+        width: 3%;
+    }
+
+    .Box3{
+        top: 35vh;
+        left: 97%;
+        height: 30vh;
+        width: 3%;
+    }
+
+    .Box4{
+        top: 65vh;
+        left: 0%;
+        height: 35vh;
+        width: 100%;
+    }
+}
+
+.searchBox{
+    z-index: 1;
+    position: absolute;
+    top: 32vh;
+    left: 20%;
+    max-height: 10vh;
+    width: 60%;
+    overflow-y: scroll;
+}
+
+.searchBoxEvents{
+    background-color: #FFFFFF;
 
 .button {
   display: inline;
@@ -323,4 +551,5 @@
     height: 30vh;
     width: 94%;
   }
+
 }
