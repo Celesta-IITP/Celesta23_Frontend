@@ -1,4 +1,4 @@
-import { React, useRef, useEffect } from "react";
+import { React, useEffect } from "react";
 import Tiles from "./Tiles";
 import "./Tiles.css";
 import DawnImage from "../../assets/dawn_img.png";
@@ -7,8 +7,6 @@ import ArrowHead from "../../assets/gallery/Vector.png";
 function TilesContainer() {
   // const [show, setShow] = useState(false);
   let flag = false;
-
-  const container = useRef(null);
 
   useEffect(() => {
     if (localStorage.getItem("--variable-height") != null) {
@@ -21,10 +19,10 @@ function TilesContainer() {
       return;
     }
 
-    // const container = document.getElementsByClassName("tiles-container")[0];
+    const container = document.getElementsByClassName("tiles-container")[0];
     // const container = useRef(null);
     // console.log(container);
-    const maxHeight = container.current.scrollHeight;
+    const maxHeight = container.scrollHeight;
     console.log(maxHeight);
     document
       .querySelector(":root")
@@ -46,7 +44,7 @@ function TilesContainer() {
   }
   return (
     <>
-      <div className="tiles-container fade-in" ref={container}>
+      <div className="tiles-container fade-in">
         <Tiles
           image1={DawnImage}
           image2={DawnImage}
