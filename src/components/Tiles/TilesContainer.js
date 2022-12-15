@@ -1,12 +1,40 @@
-import { React, useState } from "react";
+import { React, useRef, useEffect } from "react";
 import Tiles from "./Tiles";
 import "./Tiles.css";
 import DawnImage from "../../assets/dawn_img.png";
 import ArrowHead from "../../assets/gallery/Vector.png";
 
 function TilesContainer() {
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
   let flag = false;
+
+  const container = useRef(null);
+
+  useEffect(() => {
+    if (localStorage.getItem("--variable-height") != null) {
+      document
+        .querySelector(":root")
+        .style.setProperty(
+          "--variable-height",
+          localStorage.getItem("--variable-height")
+        );
+      return;
+    }
+
+    // const container = document.getElementsByClassName("tiles-container")[0];
+    // const container = useRef(null);
+    // console.log(container);
+    const maxHeight = container.current.scrollHeight;
+    console.log(maxHeight);
+    document
+      .querySelector(":root")
+      .style.setProperty("--variable-height", maxHeight + "px");
+    localStorage.setItem("--variable-height", maxHeight + "px");
+
+    return () => {
+      localStorage.removeItem("--variable-height");
+    };
+  }, []);
 
   function expandTiles(e) {
     const button = e.target;
@@ -14,11 +42,11 @@ function TilesContainer() {
     button.classList.toggle("reverted");
     button.classList.toggle("normal");
     container.classList.toggle("height-container");
-    setShow(!show);
+    // setShow(!show);
   }
   return (
     <>
-      <div className="tiles-container fade-in">
+      <div className="tiles-container fade-in" ref={container}>
         <Tiles
           image1={DawnImage}
           image2={DawnImage}
