@@ -197,6 +197,7 @@ function Events() {
             value={search}
             placeholder="SEARCH"
             onChange={searchFilter}
+            onBlur={changeSearchElement}
           ></input>
         )}
       </div>

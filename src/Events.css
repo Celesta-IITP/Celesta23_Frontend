@@ -109,23 +109,13 @@
   margin-top: 5vh;
   margin-bottom: 5vh;
   padding: 0.2% 0.5% 0.5% 0.5%;
+
+  transition: letter-spacing 800ms ease;
+  letter-spacing: 0.28em;
 }
 
 .Events_search:hover {
-  animation-name: searchHover;
-  animation-duration: 0.4s;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-}
-
-@keyframes searchHover {
-  from {
-    letter-spacing: 0.28em;
-  }
-
-  to {
-    letter-spacing: 0.7rem;
-  }
+  letter-spacing: 0.7em;
 }
 
 .Events_searchInput {
