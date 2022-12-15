@@ -8,31 +8,6 @@ import Events from "./views/Events";
 import SignUp from "./views/SignUp";
 
 function App() {
-  useEffect(() => {
-    if (localStorage.getItem("--variable-height") != null) {
-      document
-        .querySelector(":root")
-        .style.setProperty(
-          "--variable-height",
-          localStorage.getItem("--variable-height")
-        );
-      return;
-    }
-
-    const container = document.getElementsByClassName("tiles-container")[0];
-    // console.log(container);
-    const maxHeight = container.scrollHeight;
-    // console.log(maxHeight);
-    document
-      .querySelector(":root")
-      .style.setProperty("--variable-height", maxHeight + "px");
-    localStorage.setItem("--variable-height", maxHeight + "px");
-
-    return () => {
-      localStorage.removeItem("--variable-height");
-    };
-  }, []);
-
   return (
     <>
       <Router>
