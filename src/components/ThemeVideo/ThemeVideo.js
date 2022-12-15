@@ -5,7 +5,7 @@ import Video from "../../assets/video_text.svg";
 function ThemeVideo() {
   return (
     <div className="video-container fade-in">
-      <div className="header">
+      <div className="theme-header">
         <h2 className="header-theme">Theme</h2>
 
         <img src={Video} className="header-video"></img>

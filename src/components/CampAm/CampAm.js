@@ -1,11 +1,11 @@
-import { React, useEffect, useState } from "react";
+import { React, useState } from "react";
 import Campab from "../../assets/Campab/Campab.png";
 import Campab_mobile from "../../assets/Campab/Campab_mobile.png";
 import "./CampAm.css";
 
 function CampAb() {
   const [width, setWidth] = useState(window.innerWidth);
-  const isMobile = width <= 767;
+  const isMobile = width <= 700;
   return (
     <>
       <div className="CampAb_bg fade-in">
@@ -24,6 +24,10 @@ function CampAb() {
           nemo, qui tenetur! Sit ratione nulla, soluta perspiciatis cupiditate
           eius amet.
         </p>
+        <div className="Leaderboard">
+          Leaderboard
+          <button className="Leaderboardbutton">➔</button>
+        </div>
         {/*<button className="button">Leaderboard</button>*/}
       </div>
     </>
