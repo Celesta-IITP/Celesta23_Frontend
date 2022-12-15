@@ -29,7 +29,7 @@ function Footer() {
           <div className="social-icons">
             <a
               className="social-icon-link instagram"
-              href="https://instagram.com/"
+              href="https://instagram.com/celestaiitp_official/"
               target="_blank"
               aria-label="Instagram"
             >
@@ -37,7 +37,7 @@ function Footer() {
             </a>
             <a
               className="social-icon-link facebook"
-              href="https://facebook.com/"
+              href="https://facebook.com/CelestaIITP"
               target="_blank"
               aria-label="Facebook"
             >
@@ -45,7 +45,7 @@ function Footer() {
             </a>
             <a
               className="social-icon-link linkedin"
-              href="https://linkedin.com/"
+              href="https://linkedin.com/company/celesta-iit-patna/"
               target="_blank"
               aria-label="LinkedIn"
             >
@@ -53,7 +53,7 @@ function Footer() {
             </a>
             <a
               className="social-icon-link twitter"
-              href="https://twitter.com/"
+              href="https://twitter.com/celesta_iitp"
               target="_blank"
               aria-label="Twitter"
             >
@@ -61,7 +61,7 @@ function Footer() {
             </a>
             <a
               className="social-icon-link youtube"
-              href="https://youtube.com/"
+              href="https://youtube.com/@CelestaIITPatna"
               target="_blank"
               aria-label="Youtube"
             >
