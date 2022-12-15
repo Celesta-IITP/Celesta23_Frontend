@@ -115,7 +115,7 @@
   animation-name: searchHover;
   animation-duration: 0.4s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 @keyframes searchHover {
