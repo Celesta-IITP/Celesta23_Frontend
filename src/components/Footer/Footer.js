@@ -33,7 +33,7 @@ function Footer() {
               target="_blank"
               aria-label="Instagram"
             >
-              <img src={instagramLogo}></img>
+              <img src={instagramLogo} alt="instagram-logo"></img>
             </a>
             <a
               className="social-icon-link facebook"
@@ -41,7 +41,7 @@ function Footer() {
               target="_blank"
               aria-label="Facebook"
             >
-              <img src={facebookLogo}></img>
+              <img src={facebookLogo} alt="facebook-logo"></img>
             </a>
             <a
               className="social-icon-link linkedin"
@@ -49,7 +49,7 @@ function Footer() {
               target="_blank"
               aria-label="LinkedIn"
             >
-              <img src={linkedInLogo}></img>
+              <img src={linkedInLogo} alt="linkedin-logo"></img>
             </a>
             <a
               className="social-icon-link twitter"
@@ -57,7 +57,7 @@ function Footer() {
               target="_blank"
               aria-label="Twitter"
             >
-              <img src={twitterLogo}></img>
+              <img src={twitterLogo} alt="twitter-logo"></img>
             </a>
             <a
               className="social-icon-link youtube"
@@ -65,7 +65,7 @@ function Footer() {
               target="_blank"
               aria-label="Youtube"
             >
-              <img src={youtubeLogo}></img>
+              <img src={youtubeLogo} alt="youtube-logo"></img>
             </a>
           </div>
           <a href="" className="website-rights">
