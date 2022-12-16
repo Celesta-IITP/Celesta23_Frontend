@@ -4,7 +4,7 @@ import "./Image.css";
 function Image({ location }) {
   return (
     <div className="container fade-in">
-      <img src={location} className="img"></img>
+      <img src={location} className="img" alt="images"></img>
     </div>
   );
 }

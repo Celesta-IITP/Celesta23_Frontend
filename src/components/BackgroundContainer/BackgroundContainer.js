@@ -14,10 +14,14 @@ function BackgroundContainer() {
         {screenSize > 426 && (
           <>
             <div className="background-container">
-              <img src={WebBackground} className="web-background"></img>
+              <img
+                src={WebBackground}
+                className="web-background"
+                alt="landing-background"
+              ></img>
             </div>
             <div className="logo-container">
-              <img src={WebLogo} className="web-logo"></img>
+              <img src={WebLogo} className="web-logo" alt="landing-title"></img>
             </div>
           </>
         )}
