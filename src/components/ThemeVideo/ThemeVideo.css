@@ -15,7 +15,7 @@
 }
 
 .header-theme {
-  font-family: "Swis721 BlkEx BT";
+  font-family: "Swiss 721";
   font-size: 5.5rem;
   color: #00e0ff;
 }
@@ -85,7 +85,7 @@
 
 @media screen and (max-width: 520px) {
   .header-theme {
-    font-family: "Swis721 BlkEx BT";
+    font-family: "Swiss 721";
     font-size: 3.5rem;
     color: #00e0ff;
   }
