@@ -1,17 +1,17 @@
-@import url(//db.onlinewebfonts.com/c/42a2faf48d222004e66477aca1ed11a4?family=Swiss+721);
+@import url(https://db.onlinewebfonts.com/c/42a2faf48d222004e66477aca1ed11a4?family=Swiss+721);
 
 @font-face {
   font-family: "Swiss 721";
-  src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot");
-  src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot?#iefix")
+  src: url("https://db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot");
+  src: url("https://db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot?#iefix")
       format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff2")
+    url("https://db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff2")
       format("woff2"),
-    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff")
+    url("https://db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff")
       format("woff"),
-    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.ttf")
+    url("https://db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.ttf")
       format("truetype"),
-    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.svg#Swiss 721")
+    url("https://db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.svg#Swiss 721")
       format("svg");
 }
 
