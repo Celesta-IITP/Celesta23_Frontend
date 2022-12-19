@@ -41,7 +41,7 @@
     left: 41.1%;
     padding: 0.1% 0 0.1% 0;
     background-color: #1E1E1E;
-    font-family: 'Swis721 BlkEx BT';
+    font-family: 'Swiss 721';
     text-align: center;
     letter-spacing: 0.89em;
     color: #FDFEFE;*/
@@ -61,7 +61,7 @@
   font-size: 2.4rem;
   color: #ffffff;
   background-color: #000000;
-  font-family: "Swis721 BlkEx BT";
+  font-family: "Swiss721";
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.2em;
@@ -69,7 +69,7 @@
 }
 
 /*.EventsHeader2{
-    font-family: 'Swis721 BlkEx BT';
+    font-family: 'Swiss 721';
     color: #FDFEFE;
     margin: auto;
     text-align: center;
