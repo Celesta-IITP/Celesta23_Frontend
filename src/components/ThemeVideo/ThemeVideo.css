@@ -1,12 +1,3 @@
-/* @font-face {
-  font-family: "Swiss721";
-  src: url(../../assets/fonts/Swiss721BT-Black.woff2) format("woff2"),
-    url(../../assets/fonts/Swiss721BT-Black.woff) format("woff");
-  font-weight: 900;
-  font-style: normal;
-  /* font-display: swap; 
-} */
-
 .video-container {
   display: flex;
   flex-direction: column;
@@ -30,7 +21,6 @@
 }
 
 .header-video {
-  /* TODO: add the font and do positioning*/
   position: absolute;
   top: 0;
   transform: translateY(-53px);

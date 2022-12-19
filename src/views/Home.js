@@ -70,11 +70,11 @@ function Home() {
             <h2 className="celesta celesta-cut">Celesta</h2>
           </div>
           <div className="celesta-text fade-in">
-            <img
-              src={CelestaChrysalis}
-              className="img"
-              alt="celesta-logo"
-            ></img>
+            <h1 className="celesta-logo-header">Celesta</h1>
+            <div className="celesta-logo-top">
+              <span className="celesta-top top1">chrysalis</span>
+              <span className="celesta-top">dawn</span>
+            </div>
           </div>
         </>
       ) : (
@@ -84,7 +84,11 @@ function Home() {
       {!isMobile && (
         <>
           <div className="celesta-text fade-in">
-            <img src={CelestaChrysalisWeb} alt="celesta-logo"></img>
+            <h1 className="celesta-logo-header">Celesta</h1>
+            <div className="celesta-logo-top">
+              <span className="celesta-top top1">chrysalis</span>
+              <span className="celesta-top">dawn</span>
+            </div>
           </div>
           <TilesContainer />
         </>

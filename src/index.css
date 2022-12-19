@@ -37,11 +37,17 @@
 }
 
 @font-face {
-  font-family: "UrbanCalligraphy";
-  src: url(./assets/fonts/UrbanCalligraphy.ttf) format("truetype");
+  font-family: "eL&FoNt(u^rBAN CallIgRAPhy!";
+  src: url(./assets/fonts/eLFoNtrBANCallIgRAPhy.woff2) format("woff2"),
+    url(./assets/fonts/eLFoNtrBANCallIgRAPhy.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "SpeedometerW03300R.ttf";
-  src: url(./assets/fonts/SpeedometerW03300R.ttf) format("truetype");
+  font-family: "SpeedometerW03-300R";
+  src: url(./assets/fonts/SpeedometerW03-300R.woff2) format("woff2"),
+    url(./assets/fonts/SpeedometerW03-300R.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
