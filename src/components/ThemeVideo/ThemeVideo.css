@@ -1,3 +1,12 @@
+/* @font-face {
+  font-family: "Swiss721";
+  src: url(../../assets/fonts/Swiss721BT-Black.woff2) format("woff2"),
+    url(../../assets/fonts/Swiss721BT-Black.woff) format("woff");
+  font-weight: 900;
+  font-style: normal;
+  /* font-display: swap; 
+} */
+
 .video-container {
   display: flex;
   flex-direction: column;
@@ -15,7 +24,7 @@
 }
 
 .header-theme {
-  font-family: "Swiss 721";
+  font-family: "Swiss721";
   font-size: 5.5rem;
   color: #00e0ff;
 }
@@ -85,8 +94,8 @@
 
 @media screen and (max-width: 520px) {
   .header-theme {
-    font-family: "Swiss 721";
-    font-size: 3.5rem;
+    font-family: "Swiss721";
+    font-size: 4rem;
     color: #00e0ff;
   }
 

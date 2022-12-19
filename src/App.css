@@ -58,7 +58,7 @@
 .celesta-cut {
   font-family: "Arsis";
   display: inline-block;
-  transform: scale(1, 2.5);
+  transform: scale(1.4, 1.7);
   z-index: -1;
 }
 
@@ -71,12 +71,12 @@
   width: 400px;
   height: 50px;
   background-color: #000000;
-  transform: translateY(68px);
+  transform: translateY(70px);
 }
 
 .celesta-glow {
   position: absolute;
-  font-family: "Swiss 721";
+  font-family: "Swiss721";
   font-size: 2.4rem;
   letter-spacing: 0.81rem;
 }
@@ -106,7 +106,7 @@
 }
 
 .celesta-top {
-  font-family: "Swiss 721";
+  font-family: "Swiss721";
   text-transform: uppercase;
   color: #fff500;
 }
@@ -142,21 +142,21 @@
 
 @media screen and (max-width: 426px) {
   .celesta {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   .celesta-glow-container {
     position: relative;
-    width: 290px;
-    height: 25px;
+    width: 280px;
+    height: 30px;
     background-color: #000000;
-    transform: translateY(40px);
+    transform: translateY(61px);
   }
 
   .celesta-glow {
     position: absolute;
-    font-family: "Swiss 721";
-    font-size: 1.2rem;
+    font-family: "Swiss721";
+    font-size: 1.4rem;
     letter-spacing: 0.81rem;
   }
 }
