@@ -10,116 +10,38 @@ function Events() {
   const [showDetails, setShowDetails] = useState(false);
   const [showEvent, setShowEvent] = useState({});
 
-  const [eventsDesc, setEventsDesc] = useState([
-    {
-      title: "Event 1",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at ipsum numquam eos facere inventore, praesentium beatae delectus neque exercitationem aperiam iste nisi molestias, commodi odio, ducimus eaque dicta quae.",
-      date: "29JAN2023",
-      time: "10:00",
-      venue: "IIT PATNA",
-      teamsize: 2,
-    },
-    {
-      title: "Event 2 ch",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
-      date: "29JAN2023",
-      time: "10:00",
-      venue: "IIT PATNA",
-      teamsize: 2,
-    },
-    {
-      title: "Event 3",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
-      date: "29JAN2023",
-      time: "10:00",
-      venue: "IIT PATNA",
-      teamsize: 2,
-    },
-    {
-      title: "Event 4",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
-      date: "29JAN2023",
-      time: "10:00",
-      venue: "IIT PATNA",
-      teamsize: 2,
-    },
-    {
-      title: "Event 5 ch",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
-      date: "29JAN2023",
-      time: "10:00",
-      venue: "IIT PATNA",
-      teamsize: 2,
-    },
-    {
-      title: "Event 6",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
-      date: "29JAN2023",
-      time: "10:00",
-      venue: "IIT PATNA",
-      teamsize: 2,
-    },
-    {
-      title: "Event 7 ch",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
-      date: "29JAN2023",
-      time: "10:00",
-      venue: "IIT PATNA",
-      teamsize: 2,
-    },
-    {
-      title: "Event 8",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sint eligendi nostrum et inventore autem, amet maiores harum quasi libero quibusdam cum debitis totam, esse assumenda, nulla numquam excepturi magni.",
-      date: "29JAN2023",
-      time: "10:00",
-      venue: "IIT PATNA",
-      teamsize: 2,
-    },
-  ]);
+  const [eventsDesc, setEventsDesc] = useState([]);
+
+  // fetching the events data
+  useEffect(() => {
+    fetch(
+      "https://script.google.com/macros/s/AKfycbyib7IpUot8p55gwrTLnYtF1bRwJqVtXErsXCi8TD9rqziqDJGGz-KXv-xSkeOsr93ELA/exec"
+    ).then((res) => {
+      res.json().then((data) => {
+        // console.log(data);
+        setEventsDesc(data);
+      });
+    });
+  }, []);
+
+  // images for events
   var imgArray = new Array();
 
-  imgArray[0] = new Image();
-  imgArray[0].src =
-    "https://images.pexels.com/photos/1028646/pexels-photo-1028646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
-
-  imgArray[1] = new Image();
-  imgArray[1].src =
-    "https://images.pexels.com/photos/1028646/pexels-photo-1028646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
-
-  imgArray[2] = new Image();
-  imgArray[2].src =
-    "https://images.pexels.com/photos/1028646/pexels-photo-1028646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
-
-  imgArray[3] = new Image();
-  imgArray[3].src =
-    "https://images.pexels.com/photos/1028646/pexels-photo-1028646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
-
-  imgArray[4] = new Image();
-  imgArray[4].src =
-    "https://images.pexels.com/photos/1028646/pexels-photo-1028646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
-
-  imgArray[5] = new Image();
-  imgArray[5].src =
-    "https://images.pexels.com/photos/1028646/pexels-photo-1028646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
-
-  imgArray[6] = new Image();
-  imgArray[6].src =
-    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg";
-
-  imgArray[7] = new Image();
-  imgArray[7].src =
-    "https://images.pexels.com/photos/1028646/pexels-photo-1028646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
-
-  //const [emptyArray, setEmptyArray] = useState([]);
+  for (let i = 0; i < eventsDesc.length; i++) {
+    imgArray[i] = new Image();
+    imgArray[i].src =
+      "https://images.pexels.com/photos/1028646/pexels-photo-1028646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+  }
 
   const ShowDetails = () => {
     setShowDetails(true);
   };
 
-  const Events_Display = (arrEvents) => {
+  // events to display
+  const Events_Display = (eventsDesc) => {
     return (
       <div className="Events_Display">
-        {arrEvents.map((Event) => {
+        {eventsDesc.map((Event) => {
           return (
             <>
               <div className="Container">
@@ -139,14 +61,18 @@ function Events() {
       </div>
     );
   };
+
+  // search bar
   const changeSearchElement = () => {
     setSearchElement((prev) => !prev);
   };
+
+  // searching feature
   const searchEventsDesc = useMemo(() => {
     return eventsDesc.filter((Event) => {
       return (
-        Event.title.toLowerCase().includes(search.toLowerCase()) ||
-        Event.desc.toLowerCase().includes(search.toLowerCase())
+        Event.eventName.toLowerCase().includes(search.toLowerCase()) ||
+        Event.description.toLowerCase().includes(search.toLowerCase())
       );
     });
   }, [eventsDesc, search]);
@@ -154,6 +80,7 @@ function Events() {
     setSearch(e.target.value);
   };
 
+  // the fading effect animation
   const options = { threshold: 0.1 };
 
   useEffect(() => {
@@ -176,6 +103,7 @@ function Events() {
     };
   }, [options]);
 
+  // return the jsx
   return (
     <>
       <div className="Header">
@@ -217,12 +145,14 @@ function Events() {
               </button>
             </div>
             <EventDetails
-              Name={showEvent.title}
-              Description={showEvent.desc}
-              Date={showEvent.date}
-              Time={showEvent.time}
-              Venue={showEvent.venue}
+              Name={showEvent.eventName}
+              Description={showEvent.description}
+              Date={showEvent.eventDate}
+              Time={showEvent.eventTime}
+              Venue={"IIT Patna"}
               TeamSize={showEvent.teamsize}
+              Register={showEvent.registrationFormLink}
+              Rulebook={showEvent.ruleBook}
             />
           </div>
         </>
