@@ -1,4 +1,12 @@
-
+@font-face {
+    font-family: "Swiss 721"; 
+    src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot"); 
+    src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.svg#Swiss 721") format("svg");
+}
 
 .Details{
     height: 70%;
@@ -67,14 +75,13 @@
     margin-left: 15%;
     margin-right: 15%;
     text-align: justify;
-    font-size: 1.5vw;
+    font-size: 12.8px;
     font-family: 'Swiss 721';
     font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.03em;
+    font-weight: 300;
     overflow-y: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .Description::-webkit-scrollbar {

@@ -9,18 +9,7 @@ function CampAb() {
   return (
     <>
 
-        <div className='CampAb_bg'>
-          <div className='CampAb_Image'><img src={((window.innerWidth)<=700) ? Campab_mobile : Campab} alt="CA" className='Image' /></div>
-            
         
-            
-                <h1 className='CampAb_Header'>CAMPUS AMBASSADOR</h1>
-                <p className='CampAb_Desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eum voluptas obcaecati velit fugiat quis adipisci cum tempora dolores nemo, qui tenetur! Sit ratione nulla, soluta perspiciatis cupiditate eius amet.</p>
-                <div className="Leaderboard">Leaderboard
-                <button className="Leaderboardbutton">➔</button>
-                
-                </div>
-                {/*<button className="button">Leaderboard</button>*/}
             
             
 
@@ -36,11 +25,11 @@ function CampAb() {
 
         <h1 className="CampAb_Header">CAMPUS AMBASSADOR</h1>
         <p className="CampAb_Desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          eum voluptas obcaecati velit fugiat quis adipisci cum tempora dolores
-          nemo, qui tenetur! Sit ratione nulla, soluta perspiciatis cupiditate
-          eius amet.
+        Take a lead role in spreading the words of the fest into your college side by side building your overall personality.
         </p>
+        <div className="Leaderboard">Leaderboard
+          <button className="Leaderboardbutton">➔</button>      
+        </div>
         {/*<button className="button">Leaderboard</button>*/}
       </div>
     </>

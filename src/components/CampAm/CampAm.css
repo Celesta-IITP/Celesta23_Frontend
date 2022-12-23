@@ -1,24 +1,28 @@
-
-
-
-.CampAb_bg{
-    background-color: #1E1E1E;
-    margin-bottom: 10vh;
+@font-face {
+    font-family: "Swiss 721"; 
+    src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot"); 
+    src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.svg#Swiss 721") format("svg");
 }
 
 .CampAb_Image{
     margin: 0 20vw 0 20vw;
     height: 70vh;
-
-.CampAb_bg {
-  margin-bottom: 40vh;
 }
 
-.CampAb_Image {
+.CampAb_bg {
+    background-color: #000000;
+  margin-bottom: 20vh;
+}
+
+/*.CampAb_Image {
   margin: 0 10vw 0 10vw;
   height: 70vh;
 
-}
+}*/
 
 .Image {
   align-items: center;
@@ -50,25 +54,36 @@
     
     font-style: normal;
         font-weight: 400;
-        font-size: 19px;
+        font-size: 17px;
         line-height: 29px;
         text-align: center;
         color: #000000;
         padding-top: 3vh;
         padding-bottom: 3vh;
         background-color: white;
-        font-family: 'swz721k';
+        font-family: "Swiss 721";
 }
 
-@media screen and (min-width:620px) and (max-width:800px) {
+@media screen and (min-width:900px) and (max-width:1050px) {
+    .CampAb_Header{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (min-width:620px) and (max-width:700px) {
     .CampAb_Header{
         font-size: 14px;
     }
 }
 
+@media screen and (min-width:700px) and (max-width:900px) {
+    .CampAb_Header{
+        font-size: 13px;
+    }
+}
 
-
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
     .CampAb_Header{
         width: 50vw;
         margin: 0 25vw 0 25vw;
@@ -77,7 +92,7 @@
 
 @media screen and (max-width:620px) {
     .CampAb_Header{
-        font-size: 14px;
+        font-size: 14.5px;
     }
 }
 
@@ -103,7 +118,7 @@
     color: #FFFFFF;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
     .CampAb_Desc{
         width: 40vw;
         margin: 0 30vw 0 30vw;
@@ -157,8 +172,9 @@ color: #FFFFFF;
         width: 11.3px;
         font-size: 5px;
     }
+}
 
-.CampAb_Header {
+/*.CampAb_Header {
   position: relative;
   bottom: 37vh;
   width: 70vw;
@@ -206,7 +222,7 @@ color: #FFFFFF;
   color: #ffffff;
   border-color: #000000 #000000 #ffffff;
 
-}
+}*/
 /*@media screen and (max-width: 600px) {
     .CampAb_Image{
         display: block;

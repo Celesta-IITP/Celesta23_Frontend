@@ -15,8 +15,8 @@ function EventDetails(props) {
         <h3 className='TeamSize'>TEAM SIZE: {props.TeamSize}</h3>
       
       <p className='Description'>{props.Description}</p>
-      <div className='Register'><button className='Button1'>REGISTER</button></div>
-      <div className='Rulebook'><button className='Button2'>RULEBOOK</button></div>
+      <div className='Register'><a href={props.Reglink}><button className='Button1'>REGISTER</button></a></div>
+      <div className='Rulebook'><a href={props.Rulelink}><button className='Button2'>RULEBOOK</button></a></div>
       </div>
     </>
   );
