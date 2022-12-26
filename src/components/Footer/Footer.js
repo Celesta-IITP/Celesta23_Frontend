@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import { Button } from "../Button/Button";
 import instagramLogo from "../../assets/footer/ic_instagram.png";
 import facebookLogo from "../../assets/footer/ic_facebook.png";
 import linkedInLogo from "../../assets/footer/ic_linkedin.png";
