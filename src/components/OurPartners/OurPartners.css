@@ -15,9 +15,14 @@
 }
 
 .OurPartners_Head{
-    margin: 4vh 0 2vh 0;
-    
-    text-align: center;
+  margin: 4vh 0 2vh 0;
+  font-family: "Swis721 BlkEx BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 96px;
+  text-align: center;
+  text-shadow: 0px 0px 9px #6bc0fe, 0px 0px 31px #6bc0fe;
     
     
 }
