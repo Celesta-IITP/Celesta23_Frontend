@@ -6,6 +6,7 @@ import linkedInLogo from "../../assets/footer/ic_linkedin.png";
 import twitterLogo from "../../assets/footer/ic_twitter.png";
 import youtubeLogo from "../../assets/footer/ic_youtube.png";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Footer() {
   return (
@@ -16,10 +17,12 @@ function Footer() {
             <Link to="/events">Events</Link>
           </div>
           <div className="footer-link-items">
-            <Link to="/sign-up">Register</Link>
+            <Link to="/">Register</Link>
           </div>
           <div className="footer-link-items">
-            <Link to="/">CA Programs</Link>
+            <HashLink to="#CA" smooth={true}>
+              CA Programs
+            </HashLink>
           </div>
         </div>
       </div>
