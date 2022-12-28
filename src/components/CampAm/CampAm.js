@@ -1,31 +1,32 @@
-import { React, useState } from "react";
+import { React, useEffect, useState } from "react";
 import Campab from "../../assets/Campab/Campab.png";
 import Campab_mobile from "../../assets/Campab/Campab_mobile.png";
 import "./CampAm.css";
 
 function CampAb() {
-  const [width] = useState(window.innerWidth);
+  const [width, setWidth] = useState(window.innerWidth);
   const isMobile = width <= 700;
   return (
     <>
       <div className="CampAb_bg fade-in" id="CA">
         <div className="CampAb_Image">
           <img
-            src={isMobile <= 767 ? Campab_mobile : Campab}
+            src={window.innerWidth <= 767 ? Campab_mobile : Campab}
             alt="CA"
             className="Image"
           />
+
         </div>
 
         <h1 className="CampAb_Header">CAMPUS AMBASSADOR</h1>
         <p className="CampAb_Desc">
-          Take a lead role in spreading the words of the fest into your college
-          side by side building your overall personality.
+        Take a lead role in spreading the words of the fest into your college side by side building your overall personality.
         </p>
-        <div className="Leaderboard">
-          Leaderboard
-          <button className="Leaderboardbutton">➔</button>
+        <div className="Leaderboard">Leaderboard
+          <button className="Leaderboardbutton">➔</button>      
+          <div className="whiteline"></div>
         </div>
+        
         {/*<button className="button">Leaderboard</button>*/}
       </div>
     </>
