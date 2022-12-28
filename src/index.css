@@ -1,19 +1,53 @@
+/* @import url(https://db.onlinewebfonts.com/c/42a2faf48d222004e66477aca1ed11a4?family=Swiss+721);
+
 @font-face {
+  font-family: "Swiss 721";
+  src: url("https://db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot");
+  src: url("https://db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.svg#Swiss 721")
+      format("svg");
+} */
+
+/* @font-face {
   font-family: "Swis721 BlkEx BT";
   src: local("Swis721 BlkEx BT") url(./fonts/swz721k.ttf) format("truetype");
+} */
+
+@font-face {
+  font-family: "Swiss721";
+  src: url(./assets/fonts/Swiss721BT-Black.woff2) format("woff2"),
+    url(./assets/fonts/Swiss721BT-Black.woff) format("woff");
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Arsis";
-  src: local("Arsis") url(./fonts/ARS.TTF) format("truetype");
+  src: url(./assets/fonts/Arsis-Regular.woff2) format("woff2"),
+    url(./assets/fonts/Arsis-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "UrbanCalligraphy";
-  src: url(./fonts/UrbanCalligraphy.ttf) format("truetype");
+  font-family: "eL&FoNt(u^rBAN CallIgRAPhy!";
+  src: url(./assets/fonts/eLFoNtrBANCallIgRAPhy.woff2) format("woff2"),
+    url(./assets/fonts/eLFoNtrBANCallIgRAPhy.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "SpeedometerW03300R.ttf";
-  src: url(./fonts/SpeedometerW03300R.ttf) format("truetype");
+  font-family: "SpeedometerW03-300R";
+  src: url(./assets/fonts/SpeedometerW03-300R.woff2) format("woff2"),
+    url(./assets/fonts/SpeedometerW03-300R.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
 }

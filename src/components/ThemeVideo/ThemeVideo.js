@@ -8,7 +8,7 @@ function ThemeVideo() {
       <div className="theme-header">
         <h2 className="header-theme">Theme</h2>
 
-        <img src={Video} className="header-video"></img>
+        <img src={Video} className="header-video" alt="header-title"></img>
       </div>
       <div className="video-box">
         <video

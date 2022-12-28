@@ -1,188 +1,188 @@
 @font-face {
-    font-family: "Swiss 721"; 
-    src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot"); 
-    src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot?#iefix") format("embedded-opentype"), 
-    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff2") format("woff2"), 
-    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff") format("woff"), 
-    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.ttf") format("truetype"), 
-    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.svg#Swiss 721") format("svg");
+  font-family: "Swiss 721"; 
+  src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot"); 
+  src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot?#iefix") format("embedded-opentype"), 
+  url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff2") format("woff2"), 
+  url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff") format("woff"), 
+  url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.ttf") format("truetype"), 
+  url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.svg#Swiss 721") format("svg");
 }
 
 .Details{
-    height: 70%;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: 4fr 1fr 1fr 12fr 2fr;
-    background-color: #FFFFFF;
-    grid-row-gap: 0;
+  height: 70%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 4fr 1fr 1fr 12fr 2fr;
+  background-color: #FFFFFF;
+  grid-row-gap: 0;
 }
 
 .Name{
-    grid-column: 1 / span 2;
-    background-color: #FFFFFF;
-    text-align: center;
-    font-family: 'Gotham Black';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 7vh;
-    letter-spacing: -0.045em;
-    margin-bottom: 0%;
+  grid-column: 1 / span 2;
+  background-color: #FFFFFF;
+  text-align: center;
+  font-family: 'Gotham Black';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7vh;
+  letter-spacing: -0.045em;
+  margin-bottom: 0%;
 }
 
 .Date{
-    background-color: #FFFFFF;
-    text-align: left;
-    font-family: 'Gotham Black';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.5vh;
+  background-color: #FFFFFF;
+  text-align: left;
+  font-family: 'Gotham Black';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5vh;
 
 }
 
 .Time{
-    background-color: #FFFFFF;
-    text-align: right;
-    font-family: 'Gotham Black';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.5vh;
+  background-color: #FFFFFF;
+  text-align: right;
+  font-family: 'Gotham Black';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5vh;
 }
 
 .Venue{
-    background-color: #FFFFFF;
-    text-align: left;
-    font-family: 'Gotham Black';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.5vh;
+  background-color: #FFFFFF;
+  text-align: left;
+  font-family: 'Gotham Black';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vh;
 }
 
 .TeamSize{
-    background-color: #FFFFFF;
-    text-align: right;
-    font-family: 'Gotham Black';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.5vh;
+  background-color: #FFFFFF;
+  text-align: right;
+  font-family: 'Gotham Black';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vh;
 }
 
 .Description{
-    grid-column: 1 / span 2;
-    background-color: #FFFFFF;
-    margin-left: 15%;
-    margin-right: 15%;
-    text-align: justify;
-    font-size: 12.8px;
-    font-family: 'Swiss 721';
-    font-style: normal;
-    font-weight: 300;
-    overflow-y: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+  grid-column: 1 / span 2;
+  background-color: #FFFFFF;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: justify;
+  font-size: 12.8px;
+  font-family: 'Swiss 721';
+  font-style: normal;
+  font-weight: 300;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .Description::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
 
 .Register{
-    background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
 .Rulebook{
-    background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
 .Date, .Time, .Venue, .TeamSize{
-    margin-bottom: 4%;
+  margin-bottom: 4%;
 }
 
 .Button1, .Button2{
-    background-color: #000000;
-    height: 100%;
-    width: 50%;
-    color: #FFFFFF;
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: -0.045em;
-    font-size: 2vh;
-    cursor: pointer;
+  background-color: #000000;
+  height: 100%;
+  width: 50%;
+  color: #FFFFFF;
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  font-size: 2vh;
+  cursor: pointer;
 }
 
 .Button2{
-    position: relative;
-    left: 50%;
+  position: relative;
+  left: 50%;
 }
 
 @media screen and (max-width: 767px) {
-    
-    .Details{
-        height: 80%;
-        grid-template-rows: 4fr 1fr 1fr 10fr 4fr;
-    }
+  
+  .Details{
+      height: 80%;
+      grid-template-rows: 4fr 1fr 1fr 10fr 4fr;
+  }
 
-    .Name{
-        font-size: 4vh;
-    }
+  .Name{
+      font-size: 4vh;
+  }
 
-    .Date, .Time, .Venue, .TeamSize{
-        font-size: 1.2vh;
-    }
+  .Date, .Time, .Venue, .TeamSize{
+      font-size: 1.2vh;
+  }
 
-    .Button1, .Button2{
-        font-size: 1.2vh;
-        width: 50%;
-    }
+  .Button1, .Button2{
+      font-size: 1.2vh;
+      width: 50%;
+  }
 
-    .Button2{
-        position: relative;
-        left: 50%;
-    }
+  .Button2{
+      position: relative;
+      left: 50%;
+  }
 
-    .Description{
-        margin-left: 8%;
-        margin-right: 8%;
-    }
+  .Description{
+      margin-left: 8%;
+      margin-right: 8%;
+  }
 
-    .Description{
-        font-size: 1.8vw;
-    }
+  .Description{
+      font-size: 7px;
+  }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-    .Description{
-        font-size: 1.8vw;
+/*@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .Description{
+      font-size: 1.8vw;
 
-    }
+  }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1000px) {
-    .Description{
-        font-size: 1.9vw;
+  .Description{
+      font-size: 1.9vw;
 
-    }
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 767px) {
-    .Description{
-        font-size: 1.7vw;
+  .Description{
+      font-size: 1.7vw;
 
-    }
+  }
 }
 
 @media screen and (min-width: 4000px) and (max-width: 600px) {
-    .Description{
-        font-size: 1.9vw;
-    }
+  .Description{
+      font-size: 1.9vw;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .Description{
-        font-size: 2.2vw;
+  .Description{
+      font-size: 2.2vw;
 
-    }
-}
+  }
+}*/

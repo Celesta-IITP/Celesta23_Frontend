@@ -58,27 +58,29 @@
 .celesta-cut {
   font-family: "Arsis";
   display: inline-block;
-  transform: scale(1, 2.5);
+  transform: scale(1.4, 1.7);
   z-index: -1;
 }
 
 .celesta {
-  font-size: 5rem;
+  font-size: 8rem;
+  /* transform: scale(1.2, 1.7); */
 }
 
 .celesta-glow-container {
   position: relative;
   width: 400px;
-  height: 50px;
+  height: 43px;
   background-color: #000000;
-  transform: translateY(68px);
+  transform: translateY(85px);
 }
 
 .celesta-glow {
   position: absolute;
-  font-family: "Swis721 BlkEx BT";
-  font-size: 2.4rem;
-  letter-spacing: 0.81rem;
+  font-family: "Swiss721";
+  font-size: 2.7rem;
+  letter-spacing: 1rem;
+  padding-inline-start: 1vw;
 }
 
 .glow1 {
@@ -106,14 +108,33 @@
 }
 
 .celesta-top {
-  font-family: "Swis721 BlkEx BT";
+  font-family: "Swiss721";
   text-transform: uppercase;
   color: #fff500;
+  font-size: 1.5em;
+}
+
+.top1::after {
+  content: "_______________";
 }
 
 .celesta-dawn {
   font-family: "Speedometer";
   line-height: 3.5em;
+}
+
+.celesta-logo-header {
+  font-family: "SpeedometerW03-300R";
+  font-size: 20rem;
+  color: white;
+}
+
+.celesta-logo-top {
+  position: absolute;
+  width: 23rem;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .services {
@@ -140,23 +161,42 @@
   font-size: 100px;
 }
 
+@media screen and (max-width: 769px) {
+  .celesta-top {
+    font-size: 2.5vw;
+  }
+
+  .top1::after {
+    content: "_________________";
+  }
+
+  .celesta-logo-top {
+    width: 45vw;
+  }
+
+  .celesta-logo-header {
+    font-size: 40vw;
+  }
+}
+
 @media screen and (max-width: 426px) {
   .celesta {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   .celesta-glow-container {
     position: relative;
-    width: 290px;
-    height: 25px;
+    width: 280px;
+    height: 30px;
     background-color: #000000;
-    transform: translateY(40px);
+    transform: translateY(61px);
   }
 
   .celesta-glow {
     position: absolute;
-    font-family: "Swis721 BlkEx BT";
-    font-size: 1.2rem;
+    font-family: "Swiss721";
+    font-size: 1.4rem;
     letter-spacing: 0.81rem;
+    padding-inline-start: 0;
   }
 }

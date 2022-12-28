@@ -1,6 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/swiss-721-3");
 * {
-  font-family: "Swiss 721", sans-serif;
+  font-family: "Swiss721", sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
 }
@@ -49,7 +49,7 @@
 .footer-link-items a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -129,7 +129,7 @@
   }
 
   .footer-link-items a {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .social-media {

@@ -10,6 +10,7 @@ function Chrysalis({ isMobile }) {
         <img
           src={isMobile ? ChrysalisMobile : ChrysalisWeb}
           className="image"
+          alt="chrysalis"
         ></img>
       </div>
       <div className="chrysalis-text">

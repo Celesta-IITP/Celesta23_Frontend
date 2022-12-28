@@ -13,6 +13,7 @@
 .Header {
   height: 22vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -20,31 +21,27 @@
 .Events_Header1 {
   align-items: center;
   justify-content: center;
-  transform: scaleY(3);
   text-align: center;
+  transform: scale(3);
   color: #ffffff;
   font-family: "Arsis";
   font-style: normal;
   font-weight: 400;
-  font-size: 5vh;
-  letter-spacing: 0.2em;
+  font-size: 6vh;
+  padding: 0%;
 }
 
 .Events_Header2 {
     position: absolute;
-    font-size: 5vh;
+    top: 9.2%;
+    padding: 0%;
+    transform: translate(0.2vw);
+    font-size: 4.4vh;
     color: #FFFFFF;
     font-family: "Swiss 721";
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 0.2em;
-    position: absolute;
-    font-size: 5vh;
-    color: #ffffff;
-    font-family: "Swis721 BlkEx BT";
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.17em;
     background-color: #000000;
 }
 
@@ -148,8 +145,8 @@
     width: 100%;
 }
 
-.Event_Display{
-    object-fit: inherit;
+.EventDisplay{
+    object-fit: cover;
     height: 100%;
     width: 100%;
     
@@ -319,23 +316,21 @@
 
 
 .showDetails{
-    position: fixed;
-    top: 15vh;
-    left: 20%;
-    height: 70vh;
-    width: 60%;
-    background: #FFFFFF;
-    z-index: 2;
-}
-
-.showDetails {
   position: fixed;
   top: 15vh;
   left: 20%;
   height: 70vh;
   width: 60%;
-  background: #ffffff;
+  background: #FFFFFF;
+  z-index: 10001;
+}
 
+.overlay{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10000;
 }
 
 .closeButton {

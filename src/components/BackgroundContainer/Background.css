@@ -48,13 +48,14 @@
 }
 
 .landing-links {
+  font-size: 1.7rem;
   font-size: 2rem;
 }
 
 .landing-btns * {
   text-decoration: none;
   color: #ebe8ee;
-  font-family: Swis721 BlkEx BT, serif;
+  font-family: "Swiss721";
   /* font-weight: 600; */
   letter-spacing: -0.045rem;
   text-transform: uppercase;

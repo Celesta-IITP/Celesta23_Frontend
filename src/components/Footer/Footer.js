@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import { Button } from "../Button/Button";
 import instagramLogo from "../../assets/footer/ic_instagram.png";
 import facebookLogo from "../../assets/footer/ic_facebook.png";
 import linkedInLogo from "../../assets/footer/ic_linkedin.png";
@@ -29,43 +28,43 @@ function Footer() {
           <div className="social-icons">
             <a
               className="social-icon-link instagram"
-              href="https://instagram.com/"
+              href="https://instagram.com/celestaiitp_official/"
               target="_blank"
               aria-label="Instagram"
             >
-              <img src={instagramLogo}></img>
+              <img src={instagramLogo} alt="instagram-logo"></img>
             </a>
             <a
               className="social-icon-link facebook"
-              href="https://facebook.com/"
+              href="https://facebook.com/CelestaIITP"
               target="_blank"
               aria-label="Facebook"
             >
-              <img src={facebookLogo}></img>
+              <img src={facebookLogo} alt="facebook-logo"></img>
             </a>
             <a
               className="social-icon-link linkedin"
-              href="https://linkedin.com/"
+              href="https://linkedin.com/company/celesta-iit-patna/"
               target="_blank"
               aria-label="LinkedIn"
             >
-              <img src={linkedInLogo}></img>
+              <img src={linkedInLogo} alt="linkedin-logo"></img>
             </a>
             <a
               className="social-icon-link twitter"
-              href="https://twitter.com/"
+              href="https://twitter.com/celesta_iitp"
               target="_blank"
               aria-label="Twitter"
             >
-              <img src={twitterLogo}></img>
+              <img src={twitterLogo} alt="twitter-logo"></img>
             </a>
             <a
               className="social-icon-link youtube"
-              href="https://youtube.com/"
+              href="https://youtube.com/@CelestaIITPatna"
               target="_blank"
               aria-label="Youtube"
             >
-              <img src={youtubeLogo}></img>
+              <img src={youtubeLogo} alt="youtube-logo"></img>
             </a>
           </div>
           <a href="" className="website-rights">

@@ -29,7 +29,9 @@ function CampAb() {
         </p>
         <div className="Leaderboard">Leaderboard
           <button className="Leaderboardbutton">➔</button>      
+          <div className="whiteline"></div>
         </div>
+        
         {/*<button className="button">Leaderboard</button>*/}
       </div>
     </>

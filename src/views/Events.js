@@ -1,8 +1,24 @@
-
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 import "../Events.css";
 import EventDetails from "../components/Events/EventDetails.js";
 import Footer from "../components/Footer/Footer";
+/*function useOutsideClick(ref, callback, when){
+  const saveCallback=useRef(callback);
+    useEffect(()=>{
+      saveCallback.current = callback;
+    })
+    function handler(e){
+      if(ref.current && !ref.current.contains(e.target)){
+        saveCallback.current();
+      }
+    }
+  useEffect(()=>{
+    if(when){
+      document.addEventListener("click", handler)
+      return () => document.removeEventListener("click", handler)
+    }
+  }, [when])
+}*/
 
 function Events() {
   const [searchElement, setSearchElement] = useState(false);
@@ -112,7 +128,7 @@ function Events() {
     },
     {
         title: "Sudo OverRide",
-        desc: "Sudo Override is the Capture the Flag (CTF) event organised by NJACK, IIT Patna in collaboration with Celesta 2023. It aims to bring students with various skill sets together, where participants must reverse engineer, break, hack, decrypt, and think creatively and critically to solve the challenges and capture the flags. This is a twenty-four hour long timed CTF competition.",
+        desc: "Sudo Override is the Capture the Flag (CTF) event organised by NJACK, IIT Patna in collaboration with Celesta 2023.\n\n It aims to bring students with various skill sets together, where participants must reverse engineer, break, hack, decrypt, and think creatively and critically to solve the challenges and capture the flags. This is a twenty-four hour long timed CTF competition.",
         date: "28TH JANUARY 2023",
         time: "10:00",
         venue: "IIT PATNA",
@@ -227,26 +243,22 @@ function Events() {
         image: 'https://images.pexels.com/photos/1028646/pexels-photo-1028646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     }
 ]);
-  
-  const [searchEventsDesc, setSearchEventsDesc] = useState([]);
-  //const [emptyArray, setEmptyArray] = useState([]);
-  const submit = (e) => {
-    e.preventDefault();
-    //if(searchEventsDesc.length==0) setSearchEventsDesc([]);
-    eventsDesc.map((Event) => {
-      if (
-        (search.length <= Event.title.length &&
-          Event.title.toLowerCase().includes(search.toLowerCase())) ||
-        (search.length <= Event.desc.length &&
-          Event.desc.toLowerCase().includes(search.toLowerCase()))
-      ) {
-        searchEventsDesc.push(Event);
-      }
-    });
-    console.log(searchEventsDesc);
-    setEventsSearchOver(true);
-    //{Events_Display(searchEventsDesc)};
-  };
+/*const modal=document.querySelector("showDetails");
+document.addEventListener("click", function(event){
+  if(!event.target.contains(modal)) setShowDetails(false);
+})*/
+/*function hideDetails(){
+  setShowDetails(false);
+}
+ useOutsideClick(domNode, hideDetails, showDetails);*/
+  const searchEventsDesc = useMemo(() => {
+    return eventsDesc.filter(Event => {
+      return (Event.title.toLowerCase().includes(search.toLowerCase())||
+      Event.desc.toLowerCase().includes(search.toLowerCase())
+      )
+    }
+  )
+  }, [eventsDesc, search]);
   const ShowDetails = () => {
     setShowDetails(true);
   };
@@ -315,7 +327,7 @@ function Events() {
             TAP TO SEARCH
           </button>
         ) : (
-          <form onSubmit={submit}>
+          
             <input
               type="text"
               className="Events_searchInput"
@@ -323,14 +335,15 @@ function Events() {
               placeholder="SEARCH"
               onChange={(e) => setSearch(e.target.value)}
             ></input>
-          </form>
+          
         )}
       </div>
 
-      {eventsSearchOver == false
-        ? Events_Display(eventsDesc)
-        : Events_Display(searchEventsDesc)}
+      {Events_Display(searchEventsDesc)}
       {showDetails && (
+        <>
+        <div className="overlay" onClick={() => setShowDetails(false)}></div>
+
         <div className="showDetails">
           <div className="closeButton">
             <button className="button" onClick={() => setShowDetails(false)}>
@@ -344,8 +357,12 @@ function Events() {
             Time={showEvent.time}
             Venue={showEvent.venue}
             TeamSize={showEvent.teamsize}
+            Reglink={showEvent.regurl}
+            Rulelink={showEvent.ruleurl}
           />
         </div>
+        </>
+
       )}
 
       <Footer />
