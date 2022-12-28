@@ -1,12 +1,29 @@
-import React, { useState, useEffect, useRef, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 import "../Events.css";
 import EventDetails from "../components/Events/EventDetails.js";
 import Footer from "../components/Footer/Footer";
+/*function useOutsideClick(ref, callback, when){
+  const saveCallback=useRef(callback);
+    useEffect(()=>{
+      saveCallback.current = callback;
+    })
+    function handler(e){
+      if(ref.current && !ref.current.contains(e.target)){
+        saveCallback.current();
+      }
+    }
+  useEffect(()=>{
+    if(when){
+      document.addEventListener("click", handler)
+      return () => document.removeEventListener("click", handler)
+    }
+  }, [when])
+}*/
 
 function Events() {
   const [searchElement, setSearchElement] = useState(false);
   const [search, setSearch] = useState("");
-
+  const [eventsSearchOver, setEventsSearchOver] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
   const [showEvent, setShowEvent] = useState({});
 
@@ -37,11 +54,10 @@ function Events() {
     setShowDetails(true);
   };
 
-  // events to display
-  const Events_Display = (eventsDesc) => {
+  const Events_Display = (arrEvents) => {
     return (
       <div className="Events_Display">
-        {eventsDesc.map((Event) => {
+        {arrEvents.map((Event) => {
           return (
             <>
               <div className="Container">
@@ -50,7 +66,7 @@ function Events() {
                     onClick={ShowDetails}
                     key={Event.title}
                     className="EventDisplay"
-                    src={imgArray[eventsDesc.indexOf(Event)].src}
+                    src={Event.image}
                     alt={Event.title}
                   />
                 </div>
@@ -61,26 +77,10 @@ function Events() {
       </div>
     );
   };
-
-  // search bar
   const changeSearchElement = () => {
     setSearchElement((prev) => !prev);
   };
 
-  // searching feature
-  const searchEventsDesc = useMemo(() => {
-    return eventsDesc.filter((Event) => {
-      return (
-        Event.eventName.toLowerCase().includes(search.toLowerCase()) ||
-        Event.description.toLowerCase().includes(search.toLowerCase())
-      );
-    });
-  }, [eventsDesc, search]);
-  const searchFilter = (e) => {
-    setSearch(e.target.value);
-  };
-
-  // the fading effect animation
   const options = { threshold: 0.1 };
 
   useEffect(() => {
@@ -103,7 +103,6 @@ function Events() {
     };
   }, [options]);
 
-  // return the jsx
   return (
     <>
       <div className="Header">
@@ -131,13 +130,10 @@ function Events() {
       </div>
 
       {Events_Display(searchEventsDesc)}
-
       {showDetails && (
         <>
-          <div className="Box1"></div>
-          <div className="Box2"></div>
-          <div className="Box3"></div>
-          <div className="Box4"></div>
+          <div className="Overlay" onClick={() => setShowDetails(false)}></div>
+
           <div className="showDetails">
             <div className="closeButton">
               <button className="button" onClick={() => setShowDetails(false)}>
@@ -149,7 +145,7 @@ function Events() {
               Description={showEvent.description}
               Date={showEvent.eventDate}
               Time={showEvent.eventTime}
-              Venue={"IIT Patna"}
+              Venue={"IIT PATNA"}
               TeamSize={showEvent.teamsize}
               Register={showEvent.registrationFormLink}
               Rulebook={showEvent.ruleBook}
