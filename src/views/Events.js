@@ -15,7 +15,7 @@ function Events() {
   // fetching the events data
   useEffect(() => {
     fetch(
-      "https://script.google.com/macros/s/AKfycbyib7IpUot8p55gwrTLnYtF1bRwJqVtXErsXCi8TD9rqziqDJGGz-KXv-xSkeOsr93ELA/exec"
+      "https://script.google.com/macros/s/AKfycbyjxN11T-I56DGH_6nYngI3qdCEESbqWOwrzC94hDpD5lpk6UtZbZ-C9jBHiv8W0eA-wg/exec"
     ).then((res) => {
       res.json().then((data) => {
         // console.log(data);
@@ -153,6 +153,7 @@ function Events() {
               TeamSize={showEvent.teamsize}
               Register={showEvent.registrationFormLink}
               Rulebook={showEvent.ruleBook}
+              Payment={showEvent.paymentGatewayLink}
             />
           </div>
         </>

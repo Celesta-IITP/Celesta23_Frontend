@@ -17,7 +17,9 @@ function Footer() {
             <Link to="/events">Events</Link>
           </div>
           <div className="footer-link-items">
-            <Link to="/">Register</Link>
+            <a href="https://forms.gle/UZx9ejCQHnxX2wJbA" target={"_blank"}>
+              Register
+            </a>
           </div>
           <div className="footer-link-items">
             <HashLink to="#CA" smooth={true}>

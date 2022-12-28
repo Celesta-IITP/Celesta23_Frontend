@@ -2,20 +2,18 @@ import React from "react";
 import "./App.css";
 import "./index.css";
 import Home from "./views/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Events from "./views/Events";
-import CampAb from "./components/CampAm/CampAm";
 
 function App() {
   return (
     <>
-      <Router>
+      <HashRouter>
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/sign-up" />
         </Routes>
-      </Router>
+      </HashRouter>
     </>
   );
 }

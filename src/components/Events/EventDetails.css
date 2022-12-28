@@ -95,7 +95,8 @@
 }
 
 .Button1,
-.Button2 {
+.Button2,
+.Button3 {
   background-color: #000000;
   height: 100%;
   width: 50%;
@@ -106,11 +107,20 @@
   letter-spacing: -0.045em;
   font-size: 2vh;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-.Button2 {
-  position: relative;
-  left: 50%;
+.button-container {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 30px;
+}
+
+.button-container * {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
