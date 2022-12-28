@@ -1,11 +1,16 @@
 @font-face {
-  font-family: "Swiss 721"; 
-  src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot"); 
-  src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot?#iefix") format("embedded-opentype"), 
-  url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff2") format("woff2"), 
-  url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff") format("woff"), 
-  url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.ttf") format("truetype"), 
-  url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.svg#Swiss 721") format("svg");
+  font-family: "Swiss 721";
+  src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot");
+  src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.svg#Swiss 721")
+      format("svg");
 }
 
 /*Events Header*/
@@ -32,37 +37,37 @@
 }
 
 .Events_Header2 {
-    position: absolute;
-    top: 9.2%;
-    padding: 0%;
-    transform: translate(0.2vw);
-    font-size: 4.4vh;
-    color: #FFFFFF;
-    font-family: "Swiss 721";
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.17em;
-    background-color: #000000;
+  position: absolute;
+  top: 9.2%;
+  padding: 0%;
+  transform: translate(0.2vw);
+  font-size: 4.4vh;
+  color: #ffffff;
+  font-family: "Swiss 721";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.17em;
+  background-color: #000000;
 }
 
 /*Search Box*/
 
-.Events_search{
-    position: relative;
-    left: 25%;
-    width: 50%;
-    height: 5vh;
-    background-color: #000000;
-    font-family: 'Gotham';
-    font-size: 0.9rem;
-    letter-spacing: 0.28em;
-    border: 1px solid #000000;
-    color: #FFFFFF;
-    margin: auto;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    padding: 0.2% 0.5% 0.5% 0.5%;
-    cursor: pointer;
+.Events_search {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  height: 5vh;
+  background-color: #000000;
+  font-family: "Gotham";
+  font-size: 0.9rem;
+  letter-spacing: 0.28em;
+  border: 1px solid #000000;
+  color: #ffffff;
+  margin: auto;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  padding: 0.2% 0.5% 0.5% 0.5%;
+  cursor: pointer;
 }
 
 .Events_search:hover {
@@ -119,87 +124,79 @@
 
 /*Displaying the events*/
 
-.Container{
-    height: 20vh;
-    width: 14vw;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform .4s;
+.Container {
+  height: 20vh;
+  width: 14vw;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s;
 }
 
-.Events_Display{
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-column-gap: 4.67vw;
-    grid-row-gap: 7vh;
-    margin: 8vh 15vw 8vh 15vw;
-    
-    
-    
+.Events_Display {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 4.67vw;
+  grid-row-gap: 7vh;
+  margin: 8vh 15vw 8vh 15vw;
 }
 
-
-
-.Display{
-    height: 100%;
-    width: 100%;
+.Display {
+  height: 100%;
+  width: 100%;
 }
 
-.EventDisplay{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    
+.EventDisplay {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
-.Container:hover{
+.Container:hover {
   transform: scale(1.1);
 }
 
-@media screen and (min-width:450px) and (max-width: 600px) {
-    .Events_Display{
-        grid-template-columns: repeat(3, auto);
-        grid-column-gap: 5vw;
-        grid-row-gap: 5vh;
-        margin: 5vh 15vw 5vh 15vw;
-        
-    }
+@media screen and (min-width: 450px) and (max-width: 600px) {
+  .Events_Display {
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 5vw;
+    grid-row-gap: 5vh;
+    margin: 5vh 15vw 5vh 15vw;
+  }
 
-    .Events_search{
-        margin-top: 2vh;
-    }
+  .Events_search {
+    margin-top: 2vh;
+  }
 
-    .Events_searchInput{
-        margin-top: 2vh;
-    }
+  .Events_searchInput {
+    margin-top: 2vh;
+  }
 
-    .Container{
-        height: 15vh;
-        width: 20vw;
-    }
+  .Container {
+    height: 15vh;
+    width: 20vw;
+  }
 }
 
-@media screen and (max-width:450px){
-    .Events_Display{
-        grid-template-columns: repeat(2, auto);
-        grid-column-gap: 10vw;
-        grid-row-gap: 4vh;
-        margin: 2vh 15vw 5vh 15vw;
-        
-    }
+@media screen and (max-width: 450px) {
+  .Events_Display {
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 10vw;
+    grid-row-gap: 4vh;
+    margin: 2vh 15vw 5vh 15vw;
+  }
 
-    .Events_search{
-        margin-top: 2vh;
-    }
+  .Events_search {
+    margin-top: 2vh;
+  }
 
-    .Events_searchInput{
-        margin-top: 2vh;
-    }
+  .Events_searchInput {
+    margin-top: 2vh;
+  }
 
-    .Container{
-        height: 12vh;
-        width: 30vw;
-    }
+  .Container {
+    height: 12vh;
+    width: 30vw;
+  }
 }
 
 /*.Container {
@@ -314,18 +311,17 @@
 
 */
 
-
-.showDetails{
+.showDetails {
   position: fixed;
   top: 15vh;
   left: 20%;
   height: 70vh;
   width: 60%;
-  background: #FFFFFF;
+  background: #ffffff;
   z-index: 10001;
 }
 
-.overlay{
+.Overlay {
   position: fixed;
   height: 100%;
   width: 100%;
@@ -338,129 +334,128 @@
   height: 15%;
 }
 
-
-.button{
-    display: inline;
-    position: relative;
-    margin-left: 0;
-    margin-right: 0;
-    top: 20%;
-    left: 3%;
-    height: 3.5vh;
-    width: 3.5vh;
-    text-align: center;
-    font-size: 1.9vh;
-    font-weight: 400;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    border: solid #000000;
-    color: #000000;
-    cursor: pointer;
+.button {
+  display: inline;
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  top: 20%;
+  left: 3%;
+  height: 3.5vh;
+  width: 3.5vh;
+  text-align: center;
+  font-size: 1.9vh;
+  font-weight: 400;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: solid #000000;
+  color: #000000;
+  cursor: pointer;
 }
 
-.Box1{
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    height: 15vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 2;
+.Box1 {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 15vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
 }
 
-.Box2{
-    position: fixed;
-    top: 15%;
-    left: 0%;
-    height: 70vh;
-    width: 20%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 2;
+.Box2 {
+  position: fixed;
+  top: 15%;
+  left: 0%;
+  height: 70vh;
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
 }
 
-.Box3{
-    position: fixed;
-    top: 15%;
-    left: 80%;
-    height: 70vh;
-    width: 20%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 2;
+.Box3 {
+  position: fixed;
+  top: 15%;
+  left: 80%;
+  height: 70vh;
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
 }
 
-.Box4{
-    position: fixed;
-    top: 85%;
-    left: 0%;
-    height: 15vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 2;
+.Box4 {
+  position: fixed;
+  top: 85%;
+  left: 0%;
+  height: 15vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
 }
 
 @media screen and (max-width: 767px) {
-    .closeButton{
-        height: 10%;
-    }
+  .closeButton {
+    height: 10%;
+  }
 
-    .button{
-        top: 10%;
-        left: 1.5%;
-        height: 2.5vh;
-        width: 2.5vh;
-        border: 2px solid #000000;
-        font-size: 1.1vh;
-        font-weight: 600;
-    }    
+  .button {
+    top: 10%;
+    left: 1.5%;
+    height: 2.5vh;
+    width: 2.5vh;
+    border: 2px solid #000000;
+    font-size: 1.1vh;
+    font-weight: 600;
+  }
 
-    .showDetails{
-        top: 35vh;
-        left: 3%;
-        height: 30vh;
-        width: 94%;
-    }
+  .showDetails {
+    top: 35vh;
+    left: 3%;
+    height: 30vh;
+    width: 94%;
+  }
 
-    .Box1{
-        top: 0vh;
-        left: 0%;
-        height: 35vh;
-        width: 100%;
-    }
+  .Box1 {
+    top: 0vh;
+    left: 0%;
+    height: 35vh;
+    width: 100%;
+  }
 
-    .Box2{
-        top: 35vh;
-        left: 0%;
-        height: 30vh;
-        width: 3%;
-    }
+  .Box2 {
+    top: 35vh;
+    left: 0%;
+    height: 30vh;
+    width: 3%;
+  }
 
-    .Box3{
-        top: 35vh;
-        left: 97%;
-        height: 30vh;
-        width: 3%;
-    }
+  .Box3 {
+    top: 35vh;
+    left: 97%;
+    height: 30vh;
+    width: 3%;
+  }
 
-    .Box4{
-        top: 65vh;
-        left: 0%;
-        height: 35vh;
-        width: 100%;
-    }
+  .Box4 {
+    top: 65vh;
+    left: 0%;
+    height: 35vh;
+    width: 100%;
+  }
 }
 
-.searchBox{
-    z-index: 1;
-    position: absolute;
-    top: 32vh;
-    left: 20%;
-    max-height: 10vh;
-    width: 60%;
-    overflow-y: scroll;
+.searchBox {
+  z-index: 1;
+  position: absolute;
+  top: 32vh;
+  left: 20%;
+  max-height: 10vh;
+  width: 60%;
+  overflow-y: scroll;
 }
 
-.searchBoxEvents{
-    background-color: #FFFFFF;
+.searchBoxEvents {
+  background-color: #ffffff;
 }
 
 .button {
@@ -502,5 +497,4 @@
     height: 30vh;
     width: 94%;
   }
-
 }
