@@ -1,29 +1,11 @@
-import React, { useState, useEffect, useMemo, useRef } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import "../Events.css";
 import EventDetails from "../components/Events/EventDetails.js";
 import Footer from "../components/Footer/Footer";
-/*function useOutsideClick(ref, callback, when){
-  const saveCallback=useRef(callback);
-    useEffect(()=>{
-      saveCallback.current = callback;
-    })
-    function handler(e){
-      if(ref.current && !ref.current.contains(e.target)){
-        saveCallback.current();
-      }
-    }
-  useEffect(()=>{
-    if(when){
-      document.addEventListener("click", handler)
-      return () => document.removeEventListener("click", handler)
-    }
-  }, [when])
-}*/
 
 function Events() {
   const [searchElement, setSearchElement] = useState(false);
   const [search, setSearch] = useState("");
-  const [eventsSearchOver, setEventsSearchOver] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
   const [showEvent, setShowEvent] = useState({});
 
@@ -54,10 +36,10 @@ function Events() {
     setShowDetails(true);
   };
 
-  const Events_Display = (arrEvents) => {
+  const Events_Display = (eventsDesc) => {
     return (
       <div className="Events_Display">
-        {arrEvents.map((Event) => {
+        {eventsDesc.map((Event) => {
           return (
             <>
               <div className="Container">
@@ -66,7 +48,7 @@ function Events() {
                     onClick={ShowDetails}
                     key={Event.title}
                     className="EventDisplay"
-                    src={Event.image}
+                    src={imgArray[eventsDesc.indexOf(Event)].src}
                     alt={Event.title}
                   />
                 </div>
@@ -77,8 +59,22 @@ function Events() {
       </div>
     );
   };
-  const changeSearchElement = () => {
+  const changeSearchElement = (e) => {
+    if (e.target.value != "") return;
     setSearchElement((prev) => !prev);
+  };
+
+  // searching feature
+  const searchEventsDesc = useMemo(() => {
+    return eventsDesc.filter((Event) => {
+      return (
+        Event.eventName.toLowerCase().includes(search.toLowerCase()) ||
+        Event.description.toLowerCase().includes(search.toLowerCase())
+      );
+    });
+  }, [eventsDesc, search]);
+  const searchFilter = (e) => {
+    setSearch(e.target.value);
   };
 
   const options = { threshold: 0.1 };
