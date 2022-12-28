@@ -18,12 +18,12 @@ function EventDetails(props) {
 
         <p className="Description">{props.Description}</p>
         <div className="Register">
-          <button className="Button1" onClick={() => openLink(props.Reglink)}>
+          <button className="Button1" onClick={() => openLink(props.Register)}>
             REGISTER
           </button>
         </div>
         <div className="Rulebook">
-          <button className="Button2" onClick={() => openLink(props.Rulelink)}>
+          <button className="Button2" onClick={() => openLink(props.Rulebook)}>
             RULEBOOK
           </button>
         </div>
