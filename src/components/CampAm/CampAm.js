@@ -8,12 +8,7 @@ function CampAb() {
   const isMobile = width <= 700;
   return (
     <>
-
-        
-            
-            
-
-      <div className="CampAb_bg fade-in">
+      <div className="CampAb_bg fade-in" id="CA">
         <div className="CampAb_Image">
           <img
             src={window.innerWidth <= 767 ? Campab_mobile : Campab}
