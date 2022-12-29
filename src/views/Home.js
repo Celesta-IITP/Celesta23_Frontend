@@ -53,7 +53,10 @@ function Home() {
   return (
     <>
       <BackgroundContainer />
-      <Description heading="About" content="lorem30" />
+      <Description
+        heading="About"
+        content="Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality."
+      />
       <Image location={isMobile ? DawnImage : DawnImageWeb} />
       <Description
         heading="Theme"
