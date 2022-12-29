@@ -1,7 +1,6 @@
 import React from "react";
 import "./ThemeVideo.css";
 import Video from "../../assets/video_text.svg";
-import VideoTheme from "../../assets/theme_video.mp4";
 
 function ThemeVideo() {
   return (
@@ -12,14 +11,13 @@ function ThemeVideo() {
         <img src={Video} className="header-video" alt="header-title"></img>
       </div>
       <div className="video-box">
-        <video
-          width="420"
+        <iframe
+          width="560"
           height="315"
-          src={VideoTheme}
+          src="https://www.youtube.com/embed/5NjFuS_24v8"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           className="video-element elem-size"
-          controls
-          autoPlay
-        />
+        ></iframe>
         <div className="overlay overlay-1"></div>
         <div className="overlay overlay-2"></div>
         <div className="overlay overlay-3"></div>
