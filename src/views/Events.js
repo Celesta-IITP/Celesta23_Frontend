@@ -2,8 +2,10 @@ import React, { useState, useEffect, useMemo } from "react";
 import "../Events.css";
 import EventDetails from "../components/Events/EventDetails.js";
 import Footer from "../components/Footer/Footer";
+import { Watch } from "react-loader-spinner";
 
 function Events() {
+  const [loader, setLoader] = useState(true);
   const [searchElement, setSearchElement] = useState(false);
   const [search, setSearch] = useState("");
   const [showDetails, setShowDetails] = useState(false);
@@ -19,6 +21,7 @@ function Events() {
       res.json().then((data) => {
         // console.log(data);
         setEventsDesc(data);
+        setLoader(false);
       });
     });
   }, []);
@@ -92,7 +95,22 @@ function Events() {
     };
   }, [options]);
 
-  return (
+  return loader ? (
+    <Watch
+      height="80"
+      width="80"
+      radius="48"
+      color="#4fa94d"
+      ariaLabel="watch-loading"
+      wrapperStyle={{
+        display: "flex",
+        "justify-content": "center",
+        transform: "translateY(45vh)",
+      }}
+      wrapperClassName=""
+      visible={true}
+    />
+  ) : (
     <>
       <div className="Header">
         <h1 className="Events_Header1">EVENTS</h1>
