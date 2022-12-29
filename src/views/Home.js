@@ -60,7 +60,8 @@ function Home() {
       <Image location={isMobile ? DawnImage : DawnImageWeb} />
       <Description
         heading="Theme"
-        content="Emerge from the dead and experience the dawn with an awestruckning transformation."
+        content={`Chrysalis dawn: Soaring of the Colossus
+                Emerge from the dead lockdown phase to an ever amazing offline fiesta that is going to increase your adrenaline rush for sure!`}
       />
       {isMobile ? (
         <>
