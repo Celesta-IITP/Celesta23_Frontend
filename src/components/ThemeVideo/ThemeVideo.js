@@ -10,22 +10,20 @@ function ThemeVideo() {
 
         <img src={Video} className="header-video" alt="header-title"></img>
       </div>
+
       <div className="video-box">
-        <video
-          width="320"
-          height="240"
-          controls
-          className="video-element elem-size"
-        >
-          <source src="" type="video/mp4" />
-          <source src="" type="video/ogg" />
-          Your browser does not support the video tag.
-        </video>
         <div className="overlay overlay-1"></div>
         <div className="overlay overlay-2"></div>
         <div className="overlay overlay-3"></div>
         <div className="overlay overlay-4"></div>
         <div className="overlay overlay-5"></div>
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/G3UDmUifQ9c"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          className="video-element elem-size"
+        />
       </div>
     </div>
   );

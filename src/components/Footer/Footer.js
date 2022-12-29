@@ -72,8 +72,8 @@ function Footer() {
               <img src={youtubeLogo} alt="youtube-logo"></img>
             </a>
           </div>
-          <a href="" className="website-rights">
-            CELESTAEMAILID@IDK.COM
+          <a href="mailto:celesta.iitp@gmail.com" className="website-rights">
+            celesta.iitp@gmail.com
           </a>
         </div>
       </section>

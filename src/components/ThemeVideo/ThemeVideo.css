@@ -28,14 +28,18 @@
 
 .video-box {
   position: relative;
+  height: 400px;
+  width: 500px;
 }
 
 .video-element {
   /* background-color: white; */
+  position: absolute;
   border-radius: 10px;
   box-shadow: inset 0 0 15px 2px #33e9e9;
   padding: 10px;
   margin-bottom: 40px;
+  z-index: 20;
 }
 
 .elem-size {
@@ -91,6 +95,11 @@
 
   .header-video {
     transform: translateY(-52px) scale(0.8);
+  }
+
+  .video-box {
+    width: 90vw;
+    height: 40vh;
   }
 
   .elem-size {

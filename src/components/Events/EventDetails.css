@@ -129,6 +129,10 @@
     grid-template-rows: 4fr 1fr 1fr 10fr 4fr;
   }
 
+  .button-container {
+    height: 15px;
+  }
+
   .Name {
     font-size: 4vh;
   }
@@ -141,14 +145,10 @@
   }
 
   .Button1,
-  .Button2 {
+  .Button2,
+  .Button3 {
     font-size: 1.2vh;
     width: 50%;
-  }
-
-  .Button2 {
-    position: relative;
-    left: 50%;
   }
 
   .Description {
