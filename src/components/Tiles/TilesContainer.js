@@ -1,4 +1,4 @@
-import { React, useEffect, useRef } from "react";
+import { React } from "react";
 import Tiles from "./Tiles";
 import "./Tiles.css";
 import DawnImage from "../../assets/dawn_img.png";

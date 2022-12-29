@@ -5,8 +5,6 @@ import BackgroundContainer from "../components/BackgroundContainer/BackgroundCon
 import DawnImage from "../assets/dawn_img.png";
 import DawnImageWeb from "../assets/dawn_img_web.png";
 import ChrysalisWeb from "../assets/chrysalis_web.png";
-import CelestaChrysalis from "../assets/celesta/celesta_chrysalis.png";
-import CelestaChrysalisWeb from "../assets/celesta/celesta_chrysalis_web.png";
 import Image from "../components/ImageContainer/Image";
 import Description from "../components/Description/Description";
 import ThemeVideo from "../components/ThemeVideo/ThemeVideo";
@@ -57,7 +55,10 @@ function Home() {
       <BackgroundContainer />
       <Description heading="About" content="lorem30" />
       <Image location={isMobile ? DawnImage : DawnImageWeb} />
-      <Description heading="Theme" content="lorem30" />
+      <Description
+        heading="Theme"
+        content="Emerge from the dead and experience the dawn with an awestruckning transformation."
+      />
       {isMobile ? (
         <>
           <div className="celesta-text fade-in">

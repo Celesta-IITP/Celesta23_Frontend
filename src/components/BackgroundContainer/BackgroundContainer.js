@@ -30,9 +30,13 @@ function BackgroundContainer() {
         <Link to="/events" className="landing-links">
           Events
         </Link>
-        <Link to="/" className="landing-links">
+        <a
+          href="https://forms.gle/UZx9ejCQHnxX2wJbA"
+          target={"_blank"}
+          className="landing-links"
+        >
           Register
-        </Link>
+        </a>
       </div>
     </>
   );

@@ -1,147 +1,105 @@
+@font-face {
+  font-family: "Swiss 721";
+  src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot");
+  src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.svg#Swiss 721")
+      format("svg");
+}
+
+/*Events Header*/
+
 .Header {
   height: 22vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .Events_Header1 {
-  /*position: absolute;
-    top: 8%;
-    left: 41%;
-    margin: auto;
-    font-family: 'Arsis';
-    
-    align-items: center;
-    color: #FFFFFF;
-    */
-
-  /*margin-bottom: 0%;
-    text-align: center;
-    color: #FFFFFF;
-    font-family: 'Arsis';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 4vh;*/
   align-items: center;
   justify-content: center;
-  transform: scaleY(3);
   text-align: center;
+  transform: scale(3);
   color: #ffffff;
   font-family: "Arsis";
   font-style: normal;
   font-weight: 400;
-  font-size: 3.22rem;
-  letter-spacing: 0.2em;
+  font-size: 6vh;
+  padding: 0%;
 }
 
 .Events_Header2 {
-  /*position: absolute;
-    top: 10.5%;
-    left: 41.1%;
-    padding: 0.1% 0 0.1% 0;
-    background-color: #1E1E1E;
-    font-family: 'Swiss 721';
-    text-align: center;
-    letter-spacing: 0.89em;
-    color: #FDFEFE;*/
-  /*position: relative;
-    width: 400px;
-    height: 50px;
-    */
-
-  /*margin-bottom: 0%;
-    text-align: center;
-    color: #FFFFFF;
-    font-family: '';
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.89em;*/
   position: absolute;
-  font-size: 2.4rem;
+  top: 9.2%;
+  padding: 0%;
+  transform: translate(0.2vw);
+  font-size: 4.4vh;
   color: #ffffff;
-  background-color: #000000;
-  font-family: "Swiss721";
+  font-family: "Swiss 721";
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0.2em;
-  top: 60px;
+  letter-spacing: 0.17em;
+  background-color: #000000;
 }
 
-/*.EventsHeader2{
-    font-family: 'Swiss 721';
-    color: #FDFEFE;
-    margin: auto;
-    text-align: center;
-    letter-spacing: 0.24em;
-}*/
+/*Search Box*/
 
 .Events_search {
   position: relative;
   left: 25%;
   width: 50%;
   height: 5vh;
-  background-color: #1e1e1e;
+  background-color: #000000;
   font-family: "Gotham";
   font-size: 0.9rem;
   letter-spacing: 0.28em;
-  border: 1px solid #1e1e1e;
+  border: 1px solid #000000;
   color: #ffffff;
   margin: auto;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
   padding: 0.2% 0.5% 0.5% 0.5%;
   cursor: pointer;
 }
 
-.Events_search {
-  position: relative;
-  left: 25%;
-  width: 50%;
-  height: 5vh;
-  background-color: #1e1e1e;
-  font-family: "Gotham";
-  font-size: 0.9rem;
-  letter-spacing: 0.28em;
-  border: 1px solid #1e1e1e;
-  color: #ffffff;
-  margin: auto;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  padding: 0.2% 0.5% 0.5% 0.5%;
-
-  transition: letter-spacing 800ms ease;
-  letter-spacing: 0.28em;
+.Events_search:hover {
+  animation-name: searchHover;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-.Events_search:hover {
-  letter-spacing: 0.7em;
+@keyframes searchHover {
+  from {
+    letter-spacing: 0.28em;
+  }
+
+  to {
+    letter-spacing: 0.7rem;
+  }
 }
 
 .Events_searchInput {
-  /*padding: 0.5% 0.5% 0.5% 0.5%;
-    display: block;
-    width: 26%;
-    background-color: #1E1E1E;
-    font-family: 'gotham';
-    border: 1px solid #FFFFFF;
-    color: white;
-    margin: auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    align-items: center;*/
   position: relative;
   left: 20%;
   width: 60%;
   height: 5vh;
-  background-color: #1e1e1e;
+  background-color: #000000;
   font-family: "Gotham";
   letter-spacing: 0.28em;
   border: 1px solid #ffffff;
   color: #ffffff;
   margin: auto;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
   padding: 0.2% 0.5% 0.5% 0.5%;
 }
 
@@ -164,11 +122,14 @@
   }
 }
 
+/*Displaying the events*/
+
 .Container {
   height: 20vh;
   width: 14vw;
   overflow: hidden;
   cursor: pointer;
+  transition: transform 0.4s;
 }
 
 .Events_Display {
@@ -177,7 +138,6 @@
   grid-column-gap: 4.67vw;
   grid-row-gap: 7vh;
   margin: 8vh 15vw 8vh 15vw;
-  height: 50vh;
 }
 
 .Display {
@@ -185,10 +145,14 @@
   width: 100%;
 }
 
-.Event_Display {
-  object-fit: inherit;
+.EventDisplay {
+  object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.Container:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 450px) and (max-width: 600px) {
@@ -197,7 +161,6 @@
     grid-column-gap: 5vw;
     grid-row-gap: 5vh;
     margin: 5vh 15vw 5vh 15vw;
-    height: 56vh;
   }
 
   .Events_search {
@@ -220,7 +183,6 @@
     grid-column-gap: 10vw;
     grid-row-gap: 4vh;
     margin: 2vh 15vw 5vh 15vw;
-    height: 60vh;
   }
 
   .Events_search {
@@ -237,7 +199,7 @@
   }
 }
 
-.Container {
+/*.Container {
   height: 20vh;
   width: 14vw;
   overflow: hidden;
@@ -248,7 +210,7 @@
   grid-template-columns: repeat(4, auto);
   grid-column-gap: 4.67vw;
   grid-row-gap: 7vh;
-  margin: 8vh 15vw 40vh 15vw;
+  margin: 8vh 15vw 0 15vw;
 }
 
 .Display {
@@ -305,6 +267,7 @@
     height: 12vh;
     width: 30vw;
   }
+
 }
 
 /*@media screen and (max-width: 900px) {
@@ -355,16 +318,15 @@
   height: 70vh;
   width: 60%;
   background: #ffffff;
-  z-index: 2;
+  z-index: 10001;
 }
 
-.showDetails {
+.Overlay {
   position: fixed;
-  top: 15vh;
-  left: 20%;
-  height: 70vh;
-  width: 60%;
-  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10000;
 }
 
 .closeButton {

@@ -5,7 +5,10 @@ function OurPartners() {
   return (
     <>
       <div className="OurPartners_bg fade-in">
-        <h1 className="OurPartners_Head">OUR PARTNERS</h1>
+        <div className="PartnerHead">
+          <h1 className="HeadBg"></h1>
+          <h1 className="OurPartners_Head">OUR PARTNERS</h1>
+        </div>
         <div className="OurPartners_Partners">
           <div className="Partner">
             <img
