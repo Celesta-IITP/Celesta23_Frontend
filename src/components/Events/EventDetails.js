@@ -17,27 +17,27 @@ function EventDetails(props) {
           <h3 className="TeamSize">TEAM SIZE: {props.TeamSize}</h3>
         )}
         <p className="Description">{props.Description}</p>
+      </div>
       <div className="button-container">
-        <div className="Register">
+        <span className="Register">
           <button className="Button1" onClick={() => openLink(props.Register)}>
             REGISTER
           </button>
-        </div>
+        </span>
         {props.Payment != "" ? (
-          <div className="Payment">
-            <button className="Button2" onClick={() => openLink(props.Payment)}>
+          <span className="Payment">
+            <button className="Button3" onClick={() => openLink(props.Payment)}>
               PAYMENT
             </button>
-          </div>
+          </span>
         ) : (
-          <div></div>
+          <span></span>
         )}
-        <div className="Rulebook">
-          <button className="Button3" onClick={() => openLink(props.Rulebook)}>
+        <span className="Rulebook">
+          <button className="Button2" onClick={() => openLink(props.Rulebook)}>
             RULEBOOK
           </button>
-        </div>
-      </div>
+        </span>
       </div>
     </>
   );

@@ -2,7 +2,7 @@
   margin-bottom: 20vh;
 }
 
-.PartnerHead{
+.PartnerHead {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,27 +10,28 @@
   height: 60px;
 }
 
-.HeadBg{
+.HeadBg {
   position: absolute;
   align-items: center;
   justify-content: center;
   width: 551.02px;
   height: 40px;
-  background-image: 
-  radial-gradient(rgba(107, 192, 254, 0.35),rgba(107, 192, 254, 0));
+  background-image: radial-gradient(
+    rgba(107, 192, 254, 0.35),
+    rgba(107, 192, 254, 0)
+  );
   z-index: 1;
   border-radius: 50%;
 }
 
-.OurPartners_Head{
+.OurPartners_Head {
   font-style: normal;
   font-weight: 400;
-  font-family: "Swiss 721";
+  font-family: "Swiss721BlkBT";
   color: #000000;
   text-align: center;
-  font-size: 50px;
+  font-size: 3.6rem;
   -webkit-text-stroke: 1px rgba(107, 192, 254, 1);
-  
 }
 
 .OurPartners_bg {
@@ -38,35 +39,35 @@
 }
 
 @media screen and (max-width: 900px) {
-  .OurPartners_Head{
-    font-size: 40px;
+  .OurPartners_Head {
+    font-size: 3rem;
   }
 
-  .HeadBg{
-      width: 440.81px;
-      height: 35px;
+  .HeadBg {
+    width: 440.81px;
+    height: 35px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .OurPartners_Head{
-    font-size: 25px;
+  .OurPartners_Head {
+    font-size: 2.5rem;
   }
 
-  .HeadBg{
-      width: 300px;
-      height: 30px;
+  .HeadBg {
+    width: 300px;
+    height: 30px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .OurPartners_Head{
-    font-size: 17px;
+  .OurPartners_Head {
+    font-size: 1.75rem;
   }
 
-  .HeadBg{
-      width: 220px;
-      height: 25px;
+  .HeadBg {
+    width: 220px;
+    height: 25px;
   }
 }
 
@@ -99,23 +100,21 @@
   .Partner {
     height: 15vh;
   }
-
-  
 }
 
 @media screen and (max-width: 450px) {
   .OurPartners_Partners {
     grid-template-columns: repeat(2, auto);
-    grid-column-gap: 8.67vw;
+    grid-column-gap: 4.67vw;
     grid-row-gap: 7vh;
-    margin: 3vh 13vw 5vh 13vw;
+    margin: 3vh 15vw 5vh 15vw;
   }
 
   .Partner {
     height: 12vh;
   }
 
-  .OurPartners_Partner{
+  .OurPartners_Partner {
     border-radius: 10px;
   }
 }
