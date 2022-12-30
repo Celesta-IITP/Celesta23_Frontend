@@ -23,10 +23,16 @@
 
 .Events_Header2 {
   position: absolute;
-  top: 9.2%;
-  padding: 0%;
-  transform: translate(0.2vw);
-  font-size: 5vh;
+
+  top: 9.7%;
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-top: 0.3%;
+  padding-bottom: 0.3%;
+  transform: translateX(1.3vh);
+  text-align: right;
+  font-size: 3.1vh;
+
   color: #ffffff;
   font-family: "Swiss721BlkBT";
   font-style: normal;
@@ -183,118 +189,6 @@
     width: 30vw;
   }
 }
-
-/*.Container {
-  height: 20vh;
-  width: 14vw;
-  overflow: hidden;
-}
-
-.Events_Display {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-column-gap: 4.67vw;
-  grid-row-gap: 7vh;
-  margin: 8vh 15vw 0 15vw;
-}
-
-.Display {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.Event_Display {
-  object-fit: cover;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-@media screen and (min-width: 450px) and (max-width: 600px) {
-  .Events_Display {
-    grid-template-columns: repeat(3, auto);
-    grid-column-gap: 5vw;
-    grid-row-gap: 5vh;
-    margin: 5vh 15vw 0 15vw;
-  }
-
-  .Events_search {
-    margin-top: 2vh;
-  }
-
-  .Events_searchInput {
-    margin-top: 2vh;
-  }
-
-  .Container {
-    height: 15vh;
-    width: 20vw;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .Events_Display {
-    grid-template-columns: repeat(2, auto);
-    grid-column-gap: 10vw;
-    grid-row-gap: 4vh;
-    margin: 2vh 15vw 0 15vw;
-  }
-
-  .Events_search {
-    margin-top: 2vh;
-  }
-
-  .Events_searchInput {
-    margin-top: 2vh;
-  }
-
-  .Container {
-    height: 12vh;
-    width: 30vw;
-  }
-
-}
-
-/*@media screen and (max-width: 900px) {
-    .EventsDisplay{
-        display: grid;
- 
-        
-    }
-
-    .EventsDisplay{
-        width: 70px;
-        height: 70px;
-        
-    }
-}
-
-@media screen and (min-width: 900px) {
-    .Events_Display{
-        display: grid;
-  
-        margin: 4vh auto 5vh auto;
-        grid-row-gap: 7vh;
-        grid-column-gap: 9vw;
-        box-sizing: border-box;
-    }
-
-    .EventsDisplay{
-        width: 150px;
-        height: 150px;
-        
-    }
-}
-
-
-
-
-
-*{
-
-}
-
-*/
 
 .showDetails {
   position: fixed;

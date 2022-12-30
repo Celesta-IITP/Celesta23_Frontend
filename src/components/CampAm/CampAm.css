@@ -1,5 +1,6 @@
-.CampAb_Image {
-  margin: 0 20vw 0 20vw;
+
+.CampAb_Image{
+  margin: 0 15vw 0 15vw;
   height: 70vh;
 }
 
@@ -7,12 +8,6 @@
   background-color: #000000;
   margin-bottom: 20vh;
 }
-
-/*.CampAb_Image {
-margin: 0 10vw 0 10vw;
-height: 70vh;
-
-}*/
 
 .Image {
   align-items: center;
@@ -26,6 +21,7 @@ height: 70vh;
   }
 }
 
+
 /*.CampAb_content{
   position: relative;
   bottom: 20%;
@@ -34,6 +30,7 @@ height: 70vh;
 }*/
 
 .CampAb_Header {
+
   position: relative;
   bottom: 40vh;
   width: 33vw;
@@ -99,8 +96,10 @@ height: 70vh;
   margin: 0 37vw 0 37vw;
   letter-spacing: 0.05rem;
   font-family: "Gotham";
+
   font-weight: 400;
   font-size: 1.1em;
+
   text-align: justify;
   color: #ffffff;
 }
@@ -170,7 +169,10 @@ height: 70vh;
     width: 112.44px;
     margin-left: calc(50vw - 56.22px);
   }
+
 }
+
+
 
 /*.CampAb_Header {
 position: relative;
