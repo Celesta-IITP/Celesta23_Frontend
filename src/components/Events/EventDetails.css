@@ -137,7 +137,7 @@
 
 @media screen and (max-width: 767px) {
   .Details {
-    height: 80%;
+    height: 90%;
     grid-template-rows: 8fr 2fr 2fr 20fr 13fr;
   }
 
@@ -156,6 +156,7 @@
   .Button2,
   .Button3 {
     font-size: 1.2vh;
+    top: 20%;
     width: 60%;
   }
 

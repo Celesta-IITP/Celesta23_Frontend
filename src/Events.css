@@ -322,6 +322,29 @@
   z-index: 10001;
 }
 
+/*.ExpandModal{
+  -webkit-animation-name: expandModal;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes expandModal {
+  from{
+    top: 50vh;
+    left: 50%;
+    height: 0;
+    width: 0;
+  }
+  to{
+    top: 15vh;
+    left: 20%;
+    height: 70vh;
+    width: 60%;
+  }
+}*/
+
 .Overlay {
   position: fixed;
   top: 0%;
