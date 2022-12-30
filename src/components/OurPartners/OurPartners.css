@@ -134,9 +134,9 @@
 @media screen and (max-width: 450px) {
   .OurPartners_Partners {
     grid-template-columns: repeat(2, auto);
-    grid-column-gap: 4.67vw;
+    grid-column-gap: 8.67vw;
     grid-row-gap: 7vh;
-    margin: 3vh 15vw 5vh 15vw;
+    margin: 3vh 13vw 5vh 13vw;
   }
 
   /*.OurPartners_Head {
