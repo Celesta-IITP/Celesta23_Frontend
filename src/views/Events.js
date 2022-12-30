@@ -104,7 +104,7 @@ function Events() {
       ariaLabel="watch-loading"
       wrapperStyle={{
         display: "flex",
-        "justify-content": "center",
+        justifyContent: "center",
         transform: "translateY(45vh)",
       }}
       wrapperClassName=""

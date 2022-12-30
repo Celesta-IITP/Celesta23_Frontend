@@ -25,7 +25,7 @@
 .Date {
   background-color: #ffffff;
   text-align: left;
-  font-family: "Gotham Black";
+  font-family: "Gotham";
   font-style: normal;
   font-weight: 700;
   font-size: 2.5vh;
@@ -34,7 +34,7 @@
 .Time {
   background-color: #ffffff;
   text-align: right;
-  font-family: "Gotham Black";
+  font-family: "Gotham";
   font-style: normal;
   font-weight: 700;
   font-size: 2.5vh;
@@ -43,7 +43,7 @@
 .Venue {
   background-color: #ffffff;
   text-align: left;
-  font-family: "Gotham Black";
+  font-family: "Gotham";
   font-style: normal;
   font-weight: 400;
   font-size: 2.5vh;
@@ -65,9 +65,9 @@
   margin-right: 15%;
   text-align: justify;
   font-size: 1.5vw;
-  font-family: "Swiss721";
+  font-family: "Swiss 721";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.03em;
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */

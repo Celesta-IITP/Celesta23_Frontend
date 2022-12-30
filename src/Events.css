@@ -1,18 +1,3 @@
-@font-face {
-  font-family: "Swiss 721";
-  src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot");
-  src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.svg#Swiss 721")
-      format("svg");
-}
-
 /*Events Header*/
 
 .Header {

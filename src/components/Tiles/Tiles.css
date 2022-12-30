@@ -52,19 +52,18 @@
 .grid-row {
   display: grid;
   gap: 2vw;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, 1fr);
   margin-bottom: 2vw;
 }
 
 .tiles-image-container {
   max-height: 25vh;
   display: flex;
-  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .tiles-image {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 767px) {
