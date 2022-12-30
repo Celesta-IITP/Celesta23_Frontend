@@ -1,11 +1,21 @@
-.CampAb_Image {
-  margin: 0 20vw 0 20vw;
+@font-face {
+  font-family: "Swiss 721"; 
+  src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot"); 
+  src: url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot?#iefix") format("embedded-opentype"), 
+  url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff2") format("woff2"), 
+  url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.woff") format("woff"), 
+  url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.ttf") format("truetype"), 
+  url("//db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.svg#Swiss 721") format("svg");
+}
+
+.CampAb_Image{
+  margin: 0 15vw 0 15vw;
   height: 70vh;
 }
 
 .CampAb_bg {
   background-color: #000000;
-  margin-bottom: 20vh;
+margin-bottom: 20vh;
 }
 
 /*.CampAb_Image {
@@ -15,16 +25,18 @@ height: 70vh;
 }*/
 
 .Image {
-  align-items: center;
-  height: 100%;
-  width: 100%;
+align-items: center;
+height: 100%;
+width: 100%;
 }
 
+
 @media screen and (max-width: 500px) {
-  .CampAb_Image {
-    margin: 0;
-  }
+.CampAb_Image {
+  margin: 0;
 }
+}
+
 
 /*.CampAb_content{
   position: relative;
@@ -33,92 +45,93 @@ height: 70vh;
   padding: 2vh 15vw 2vh 15vw;
 }*/
 
-.CampAb_Header {
+
+.CampAb_Header{
   position: relative;
   bottom: 40vh;
-  width: 33vw;
-  margin: 0 36vw 0 36vw;
+  width: 36vw;
+  margin: 0 32vw 0 32vw;
+  
   font-style: normal;
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 29px;
-  text-align: center;
-  color: #000000;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
-  background-color: white;
-  font-family: "Swiss721BlkBT";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 29px;
+      text-align: center;
+      color: #000000;
+      padding-top: 3vh;
+      padding-bottom: 3vh;
+      background-color: white;
+      font-family: "Swiss 721";
 }
 
-@media screen and (min-width: 900px) and (max-width: 1050px) {
-  .CampAb_Header {
-    font-size: 1.5rem;
+@media screen and (min-width:900px) and (max-width:1050px) {
+  .CampAb_Header{
+      font-size: 18px;
   }
 }
 
-@media screen and (min-width: 620px) and (max-width: 700px) {
-  .CampAb_Header {
-    font-size: 1.3rem;
+
+@media screen and (min-width:620px) and (max-width:700px) {
+  .CampAb_Header{
+      font-size: 16px;
   }
 }
 
-@media screen and (min-width: 700px) and (max-width: 900px) {
-  .CampAb_Header {
-    font-size: 1.3rem;
+@media screen and (min-width:700px) and (max-width:900px) {
+  .CampAb_Header{
+      font-size: 16px;
   }
 }
 
-@media screen and (max-width: 800px) {
-  .CampAb_Header {
-    width: 50vw;
-    margin: 0 25vw 0 25vw;
+@media screen and (max-width:800px) {
+  .CampAb_Header{
+      width: 50vw;
+      margin: 0 25vw 0 25vw;
   }
 }
 
-@media screen and (max-width: 620px) {
-  .CampAb_Header {
-    font-size: 1.2rem;
+@media screen and (max-width:620px) {
+  .CampAb_Header{
+      font-size: 14.5px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .CampAb_Image {
-    margin: 0;
+  .CampAb_Image{
+      margin: 0;
   }
 
-  .CampAb_Header {
-    width: 80vw;
-    margin: 0 10vw 0 10vw;
+  .CampAb_Header{
+      width: 80vw;
+      margin: 0 10vw 0 10vw;
   }
 }
 
-.CampAb_Desc {
+.CampAb_Desc{
   position: relative;
   top: -15vh;
   width: 26vw;
   margin: 0 37vw 0 37vw;
   letter-spacing: 0.05rem;
-  font-family: "Gotham";
-  font-weight: 400;
-  font-size: 1.1em;
+  font-family: "Gotham", sans-serif;
   text-align: justify;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
-@media screen and (max-width: 800px) {
-  .CampAb_Desc {
-    width: 40vw;
-    margin: 0 30vw 0 30vw;
+@media screen and (max-width:800px) {
+  .CampAb_Desc{
+      width: 40vw;
+      margin: 0 30vw 0 30vw;
   }
 }
 
-@media screen and (max-width: 450px) {
-  .CampAb_Desc {
-    font-size: 10px;
+@media screen and (max-width:450px) {
+  .CampAb_Desc{
+      font-size: 10px;
   }
 }
 
-.Leaderboard {
+.Leaderboard{
   position: relative;
   top: -15vh;
   height: 3.8vh;
@@ -126,47 +139,47 @@ height: 70vh;
   cursor: pointer;
   font-size: 20px;
   margin-top: 1vh;
-  font-family: "Gotham";
-  font-style: normal;
-  font-weight: 700;
-  line-height: 15px;
-  color: #ffffff;
+  font-family: 'Gotham';
+font-style: normal;
+font-weight: 700;
+line-height: 15px;
+color: #FFFFFF;
 }
 
-.Leaderboardbutton {
-  background-color: #1e1e1e;
-  color: #ffffff;
+.Leaderboardbutton{
+  background-color: #1E1E1E;
+  color: #FFFFFF;
   height: 15px;
   width: 15px;
   position: relative;
   top: -15%;
   font-weight: 700;
-  border: 2px solid #ffffff;
+  border: 2px solid #FFFFFF;
   font-size: 8px;
   border-radius: 50%;
 }
 
-.whiteline {
+.whiteline{
   width: 146.09px;
-  border: 1px solid #ffffff;
+  border: 1px solid #FFFFFF;
   text-align: center;
-  --left: calc(50vw-73.045px);
   margin-left: calc(50vw - 77.045px);
+  
 }
 
-@media screen and (max-width: 450px) {
-  .Leaderboard {
-    font-size: 15.43px;
+@media screen and (max-width:450px) {
+  .Leaderboard{
+      font-size: 15.43px;
   }
 
-  .Leaderboardbutton {
-    top: -13%;
-    height: 11.3px;
-    width: 11.3px;
-    font-size: 5px;
+  .Leaderboardbutton{
+      top: -13%;
+      height: 11.3px;
+      width: 11.3px;
+      font-size: 5px;
   }
 
-  .whiteline {
+  .whiteline{
     width: 112.44px;
     margin-left: calc(50vw - 56.22px);
   }
