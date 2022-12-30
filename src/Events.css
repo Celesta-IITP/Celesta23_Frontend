@@ -138,6 +138,7 @@
   grid-column-gap: 4.67vw;
   grid-row-gap: 7vh;
   margin: 8vh 15vw 8vh 15vw;
+  min-height: 67vh;
 }
 
 .Display {
@@ -323,6 +324,8 @@
 
 .Overlay {
   position: fixed;
+  top: 0%;
+  left: 0%;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -353,46 +356,6 @@
   cursor: pointer;
 }
 
-.Box1 {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  height: 15vh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 2;
-}
-
-.Box2 {
-  position: fixed;
-  top: 15%;
-  left: 0%;
-  height: 70vh;
-  width: 20%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 2;
-}
-
-.Box3 {
-  position: fixed;
-  top: 15%;
-  left: 80%;
-  height: 70vh;
-  width: 20%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 2;
-}
-
-.Box4 {
-  position: fixed;
-  top: 85%;
-  left: 0%;
-  height: 15vh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 2;
-}
-
 @media screen and (max-width: 767px) {
   .closeButton {
     height: 10%;
@@ -413,34 +376,6 @@
     left: 3%;
     height: 30vh;
     width: 94%;
-  }
-
-  .Box1 {
-    top: 0vh;
-    left: 0%;
-    height: 35vh;
-    width: 100%;
-  }
-
-  .Box2 {
-    top: 35vh;
-    left: 0%;
-    height: 30vh;
-    width: 3%;
-  }
-
-  .Box3 {
-    top: 35vh;
-    left: 97%;
-    height: 30vh;
-    width: 3%;
-  }
-
-  .Box4 {
-    top: 65vh;
-    left: 0%;
-    height: 35vh;
-    width: 100%;
   }
 }
 

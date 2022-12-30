@@ -9,7 +9,7 @@
 }
 
 .CampAb_Image{
-  margin: 0 20vw 0 20vw;
+  margin: 0 15vw 0 15vw;
   height: 70vh;
 }
 
@@ -49,12 +49,12 @@ width: 100%;
 .CampAb_Header{
   position: relative;
   bottom: 40vh;
-  width: 28vw;
-  margin: 0 36vw 0 36vw;
+  width: 36vw;
+  margin: 0 32vw 0 32vw;
   
   font-style: normal;
       font-weight: 400;
-      font-size: 17px;
+      font-size: 20px;
       line-height: 29px;
       text-align: center;
       color: #000000;
@@ -66,20 +66,20 @@ width: 100%;
 
 @media screen and (min-width:900px) and (max-width:1050px) {
   .CampAb_Header{
-      font-size: 15px;
+      font-size: 18px;
   }
 }
 
 
 @media screen and (min-width:620px) and (max-width:700px) {
   .CampAb_Header{
-      font-size: 14px;
+      font-size: 16px;
   }
 }
 
 @media screen and (min-width:700px) and (max-width:900px) {
   .CampAb_Header{
-      font-size: 13px;
+      font-size: 16px;
   }
 }
 
@@ -163,7 +163,6 @@ color: #FFFFFF;
   width: 146.09px;
   border: 1px solid #FFFFFF;
   text-align: center;
-  --left: calc(50vw-73.045px);
   margin-left: calc(50vw - 77.045px);
   
 }
