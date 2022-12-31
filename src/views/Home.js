@@ -101,7 +101,7 @@ function Home() {
       <CampAm />
       <Chrysalis isMobile={isMobile} />
       {isMobile && <TilesContainer />}
-      <OurPartners />
+      {/*<OurPartners />*/}
       <Footer />
     </>
   );
