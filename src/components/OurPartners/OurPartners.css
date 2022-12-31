@@ -1,8 +1,10 @@
+
+
 .OurPartners_bg {
   margin-bottom: 20vh;
 }
 
-.PartnerHead {
+.PartnerHead{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,90 +12,65 @@
   height: 60px;
 }
 
-.HeadBg {
+.HeadBg{
   position: absolute;
   align-items: center;
   justify-content: center;
   width: 551.02px;
   height: 40px;
-  background-image: radial-gradient(
-    rgba(107, 192, 254, 0.35),
-    rgba(107, 192, 254, 0)
-  );
+  background-image: 
+  radial-gradient(rgba(107, 192, 254, 0.35),rgba(107, 192, 254, 0));
   z-index: 1;
   border-radius: 50%;
 }
 
-.OurPartners_Head {
+.OurPartners_Head{
   font-style: normal;
   font-weight: 400;
-  font-family: "Swiss721BlkBT";
+  font-family: "Swiss 721";
   color: #000000;
   text-align: center;
-  font-size: 3.6rem;
+  font-size: 50px;
   -webkit-text-stroke: 1px rgba(107, 192, 254, 1);
+  
 }
-
-/*.PartnerHead {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  font-family: "Swiss721";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 7vw;
-  line-height: 96px;
-  background-color: 1px solid #6bc0fe;
-}*/
 
 .OurPartners_bg {
   margin-bottom: 40vh;
 }
 
 @media screen and (max-width: 900px) {
-  .OurPartners_Head {
-    font-size: 3rem;
+  .OurPartners_Head{
+    font-size: 40px;
   }
 
-  .HeadBg {
-    width: 440.81px;
-    height: 35px;
+  .HeadBg{
+      width: 440.81px;
+      height: 35px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .OurPartners_Head {
-    font-size: 2.5rem;
+  .OurPartners_Head{
+    font-size: 25px;
   }
 
-  .HeadBg {
-    width: 300px;
-    height: 30px;
+  .HeadBg{
+      width: 300px;
+      height: 30px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .OurPartners_Head {
-    font-size: 1.75rem;
+  .OurPartners_Head{
+    font-size: 17px;
   }
 
-  .HeadBg {
-    width: 220px;
-    height: 25px;
+  .HeadBg{
+      width: 220px;
+      height: 25px;
   }
 }
-
-/*.OurPartners_Head {
-  margin: 4vh 0 2vh 0;
-  font-family: "Swiss721";
-  font-style: normal;
-  font-weight: 400;
-  -webkit-text-stroke: 2px #6bc0fe;
-  font-size: 4rem;
-  line-height: 96px;
-  text-align: center;
-  text-shadow: 0px 0px 9px #6bc0fe, 0px 0px 31px #6bc0fe;
-}*/
 
 .OurPartners_Partners {
   display: grid;
@@ -121,122 +98,26 @@
     margin: 5vh 15vw 5vh 15vw;
   }
 
-  /*.OurPartners_Head {
-    font-size: 3.5rem;
-  }*/
-
   .Partner {
     height: 15vh;
   }
+
+  
 }
 
 @media screen and (max-width: 450px) {
   .OurPartners_Partners {
     grid-template-columns: repeat(2, auto);
-    grid-column-gap: 4.67vw;
+    grid-column-gap: 8.67vw;
     grid-row-gap: 7vh;
-    margin: 3vh 15vw 5vh 15vw;
+    margin: 3vh 13vw 5vh 13vw;
   }
-
-  /*.OurPartners_Head {
-    font-size: 2.5rem;
-  }*/
 
   .Partner {
     height: 12vh;
   }
 
-  .OurPartners_Partner {
+  .OurPartners_Partner{
     border-radius: 10px;
   }
 }
-
-/*@media screen and (max-width: 450px) {
-    .OurPartners_Head{
-        padding-top: 1vh;
-        text-align: center;
-        
-    }
-}
-
-@media screen and (min-width:450px) and (max-width: 600px) {
-    .OurPartners_Head{
-        padding-top: 9vh;
-        text-align: center;
-        font-family: 'Swis721 BlkEx BT';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 10vw;
-        line-height: 96px;
-        text-align: center;
-        text-shadow: 0px 0px 9px #6BC0FE, 0px 0px 31px #6BC0FE;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .OurPartners_Head{
-        padding-top: 9vh;
-        text-align: center;
-        font-family: 'Swis721 BlkEx BT';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 8vw;
-        line-height: 96px;
-        text-align: center;
-        text-shadow: 0px 0px 9px #6BC0FE, 0px 0px 31px #6BC0FE;
-    }
-}
-
-.OurPartners_Partners{
-    
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-column-gap: 4.67vw;
-    grid-row-gap: 2rem;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
-    border: 0;
-}
-
-.OurPartners_Partner{
-    object-fit: cover;
-    width: 14vw;
-    height: 26.3vh;
-}
-
-@media screen and (min-width: 450px) and (max-width: 800px){
-    .OurPartners_Partners{
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-column-gap: 6vw;
-        margin-left: 20vw;
-        margin-right: 20vw;
-    }
-
-    .OurPartners_Partner{
-        width: 16vw;
-        height: 15vh;
-    }
-}
-
-@media screen and (max-width: 450px){
-
-    .OurPartners_Partners{
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-column-gap: 6vw;
-        grid-row-gap: 4vh;
-        margin-top: 3vh;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        
-    }
-
-    .OurPartners_Partner{
-        width: 37vw;
-        height: 15vh;
-        border-radius: 10px;
-    }
-}*/
