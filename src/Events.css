@@ -18,7 +18,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 6vh;
-  padding: 0%;
+  padding: 0;
 }
 
 .Events_Header2 {
@@ -29,13 +29,13 @@
   padding-top: 0.3%;
   padding-bottom: 0.3%;
   transform: translateX(1.3vh);
-  text-align: right;
+  
   font-size: 3.1vh;
   color: #ffffff;
   font-family: "Swiss721BlkBT";
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0.89em;
+  letter-spacing: 2.77vh;
   background-color: #000000;
 }
 
