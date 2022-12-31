@@ -30,6 +30,7 @@ function Events() {
 
   const ShowDetails = () => {
     setShowDetails(true);
+    
   };
 
   const Events_Display = (eventsDesc) => {

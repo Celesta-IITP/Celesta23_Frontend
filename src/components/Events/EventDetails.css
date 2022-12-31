@@ -1,11 +1,11 @@
 .Details {
-  height: 70%;
+  height: 80%;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: 4fr 1fr 1fr 12fr 2fr;
+  grid-template-rows: 14fr 3.5fr 3.5fr 42fr 17fr;
   background-color: #ffffff;
   grid-row-gap: 0;
 }
@@ -25,7 +25,7 @@
 .Date {
   background-color: #ffffff;
   text-align: left;
-  font-family: "Gotham Black";
+  font-family: "Gotham";
   font-style: normal;
   font-weight: 700;
   font-size: 2.5vh;
@@ -34,7 +34,7 @@
 .Time {
   background-color: #ffffff;
   text-align: right;
-  font-family: "Gotham Black";
+  font-family: "Gotham";
   font-style: normal;
   font-weight: 700;
   font-size: 2.5vh;
@@ -43,7 +43,7 @@
 .Venue {
   background-color: #ffffff;
   text-align: left;
-  font-family: "Gotham Black";
+  font-family: "Gotham";
   font-style: normal;
   font-weight: 400;
   font-size: 2.5vh;
@@ -65,9 +65,9 @@
   margin-right: 15%;
   text-align: justify;
   font-size: 1.5vw;
-  font-family: "Swiss721";
+  font-family: "Swiss 721";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.03em;
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
@@ -98,8 +98,10 @@
 .Button2,
 .Button3 {
   background-color: #000000;
-  height: 100%;
-  width: 50%;
+  position: relative;
+  top: 30%;
+  height: 40%;
+  width: 60%;
   color: #ffffff;
   font-family: "Gotham";
   font-style: normal;
@@ -107,30 +109,36 @@
   letter-spacing: -0.045em;
   font-size: 2vh;
   cursor: pointer;
-  display: flex;
-  align-items: center;
+}
+.Button2{
+  position: relative;
+  left: 20%;
+}
+
+.Button3{
+  position: relative;
+  left: 40%;
 }
 
 .button-container {
-  padding: 0 20px;
+  /*padding: 0 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 30px;
+  height: 30px;*/
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.button-container * {
+/*.button-container * {
   display: flex;
   justify-content: center;
-}
+}*/
 
 @media screen and (max-width: 767px) {
   .Details {
-    height: 80%;
-    grid-template-rows: 4fr 1fr 1fr 10fr 4fr;
-  }
-
-  .button-container {
-    height: 15px;
+    height: 90%;
+    grid-template-rows: 8fr 2fr 2fr 20fr 13fr;
   }
 
   .Name {
@@ -148,10 +156,20 @@
   .Button2,
   .Button3 {
     font-size: 1.2vh;
-    width: 50%;
+    top: 20%;
+    width: 70%;
+  }
+
+  .Button2{
+    left: 15%;
+  }
+
+  .Button3{
+    left: 30%;
   }
 
   .Description {
+    margin-bottom: 1vh;
     margin-left: 8%;
     margin-right: 8%;
   }

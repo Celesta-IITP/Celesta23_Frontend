@@ -30,11 +30,11 @@ function CampAb() {
           media publicity. The campus ambassadors are entitled to exciting
           prizes, apart from the coveted certificate and many other goodies.
         </p>
-        <div className="Leaderboard">
+        {/*<div className="Leaderboard">
           Leaderboard
           <button className="Leaderboardbutton">➔</button>
           <div className="whiteline"></div>
-        </div>
+  </div>*/}
 
         {/*<button className="button">Leaderboard</button>*/}
       </div>

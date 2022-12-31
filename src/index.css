@@ -1,7 +1,7 @@
-/* @import url(https://db.onlinewebfonts.com/c/42a2faf48d222004e66477aca1ed11a4?family=Swiss+721);
+/* @import url(https://db.onlinewebfonts.com/c/42a2faf48d222004e66477aca1ed11a4?family=Swiss+721);*/
 
 @font-face {
-  font-family: "Swiss 721";
+  font-family: "Swiss";
   src: url("https://db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot");
   src: url("https://db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.eot?#iefix")
       format("embedded-opentype"),
@@ -13,7 +13,7 @@
       format("truetype"),
     url("https://db.onlinewebfonts.com/t/42a2faf48d222004e66477aca1ed11a4.svg#Swiss 721")
       format("svg");
-} */
+} 
 
 /* @font-face {
   font-family: "Swis721 BlkEx BT";
@@ -21,7 +21,20 @@
 } */
 
 @font-face {
-  font-family: "Swiss721";
+  font-family: "Gotham";
+  src: url(./assets/fonts/Gotham-Medium.woff) format("woff"),
+    url(./assets/fonts/Gotham-Medium.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Black";
+  src: url(./assets/fonts/Gotham-Black.woff) format("woff"),
+    url(./assets/fonts/Gotham-Black.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Swiss721BlkBT";
   src: url(./assets/fonts/Swiss721BT-Black.woff2) format("woff2"),
     url(./assets/fonts/Swiss721BT-Black.woff) format("woff");
   font-weight: 900;
@@ -48,6 +61,13 @@
   font-family: "SpeedometerW03-300R";
   src: url(./assets/fonts/SpeedometerW03-300R.woff2) format("woff2"),
     url(./assets/fonts/SpeedometerW03-300R.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Swiss 721";
+  src: url(./assets/fonts/Swiss721BT-Light.woff2) format("woff2"),
+    url(./assets/fonts/Swiss721BT-Light.woff) format("woff");
   font-weight: 300;
   font-style: normal;
 }
