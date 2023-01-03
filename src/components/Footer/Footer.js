@@ -23,7 +23,7 @@ function Footer() {
           </div>
           <div className="footer-link-items">
             <HashLink to="#CA" smooth={true}>
-              CA Programs
+              CA Program
             </HashLink>
           </div>
         </div>

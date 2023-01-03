@@ -152,7 +152,7 @@ function Events() {
               Description={showEvent.description}
               Date={showEvent.eventDate}
               Time={showEvent.eventTime}
-              Venue={"IIT PATNA"}
+              Venue={showEvent.venue}
               TeamSize={showEvent.teamsize}
               Register={showEvent.registrationFormLink}
               Rulebook={showEvent.ruleBook}

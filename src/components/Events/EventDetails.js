@@ -20,11 +20,17 @@ function EventDetails(props) {
       </div>
       <div className="button-container">
         <span className="Register">
-          <button className="Button1" onClick={() => openLink(props.Register)}>
+          <button
+            className="Button1"
+            onClick={() =>
+              openLink(props.Payment != "" ? props.Payment : props.Register)
+            }
+          >
             REGISTER
           </button>
         </span>
-        {props.Payment != "" ? (
+
+        {/* {props.Payment != "" ? (
           <span className="Payment">
             <button className="Button3" onClick={() => openLink(props.Payment)}>
               PAYMENT
@@ -32,7 +38,7 @@ function EventDetails(props) {
           </span>
         ) : (
           <span></span>
-        )}
+        )} */}
         <span className="Rulebook">
           <button className="Button2" onClick={() => openLink(props.Rulebook)}>
             RULEBOOK
