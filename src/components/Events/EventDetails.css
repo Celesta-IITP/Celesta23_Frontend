@@ -110,30 +110,10 @@
   font-size: 2vh;
   cursor: pointer;
 }
-.Button2{
+.Button2 {
   position: relative;
   left: 20%;
 }
-
-.Button3{
-  position: relative;
-  left: 40%;
-}
-
-.button-container {
-  /*padding: 0 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  height: 30px;*/
-  grid-column: 1 / span 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-/*.button-container * {
-  display: flex;
-  justify-content: center;
-}*/
 
 @media screen and (max-width: 767px) {
   .Details {
@@ -160,11 +140,11 @@
     width: 70%;
   }
 
-  .Button2{
+  .Button2 {
     left: 15%;
   }
 
-  .Button3{
+  .Button3 {
     left: 30%;
   }
 
