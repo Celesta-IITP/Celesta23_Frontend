@@ -30,6 +30,7 @@ function Events() {
 
   const ShowDetails = () => {
     setShowDetails(true);
+    
   };
 
   const Events_Display = (eventsDesc) => {
@@ -104,7 +105,7 @@ function Events() {
       ariaLabel="watch-loading"
       wrapperStyle={{
         display: "flex",
-        justifyContent: "center",
+        "justify-content": "center",
         transform: "translateY(45vh)",
       }}
       wrapperClassName=""

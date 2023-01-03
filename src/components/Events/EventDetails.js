@@ -17,33 +17,36 @@ function EventDetails(props) {
           <h3 className="TeamSize">TEAM SIZE: {props.TeamSize}</h3>
         )}
         <p className="Description">{props.Description}</p>
-      </div>
-      <div className="button-container">
-        <span className="Register">
-          <button
-            className="Button1"
-            onClick={() =>
-              openLink(props.Payment != "" ? props.Payment : props.Register)
-            }
-          >
-            REGISTER
-          </button>
-        </span>
+        <div className="button-container">
+          <span className="Register">
+            <button
+              className="Button1"
+              onClick={() =>
+                openLink(props.Payment != "" ? props.Payment : props.Register)
+              }
+            >
+              REGISTER
+            </button>
+          </span>
 
-        {/* {props.Payment != "" ? (
+          {/* {props.Payment != "" ? (
           <span className="Payment">
             <button className="Button3" onClick={() => openLink(props.Payment)}>
               PAYMENT
             </button>
-          </span>
+          </div>
         ) : (
           <span></span>
         )} */}
-        <span className="Rulebook">
-          <button className="Button2" onClick={() => openLink(props.Rulebook)}>
-            RULEBOOK
-          </button>
-        </span>
+          <span className="Rulebook">
+            <button
+              className="Button2"
+              onClick={() => openLink(props.Rulebook)}
+            >
+              RULEBOOK
+            </button>
+          </span>
+        </div>
       </div>
     </>
   );
