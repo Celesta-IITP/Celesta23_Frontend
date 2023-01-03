@@ -115,23 +115,6 @@
   left: 20%;
 }
 
-.Button3 {
-  position: relative;
-  left: 40%;
-}
-
-.button-container {
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 30px;
-}
-
-/*.button-container * {
-  display: flex;
-  justify-content: center;
-}*/
-
 @media screen and (max-width: 767px) {
   .Details {
     height: 90%;
