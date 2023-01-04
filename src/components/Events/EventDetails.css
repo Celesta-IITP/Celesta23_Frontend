@@ -58,7 +58,7 @@
   font-size: 2.5vh;
 }
 
-.Description {
+.content-description {
   grid-column: 1 / span 2;
   background-color: #ffffff;
   margin-left: 15%;
@@ -75,7 +75,7 @@
   margin-bottom: 20px;
 }
 
-.Description::-webkit-scrollbar {
+.content-description::-webkit-scrollbar {
   display: none;
 }
 
@@ -148,43 +148,43 @@
     left: 30%;
   }
 
-  .Description {
+  .content-description {
     margin-bottom: 1vh;
     margin-left: 8%;
     margin-right: 8%;
   }
 
-  .Description {
+  .content-description {
     font-size: 1.8vw;
   }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .Description {
+  .content-description {
     font-size: 1.8vw;
   }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1000px) {
-  .Description {
+  .content-description {
     font-size: 1.9vw;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 767px) {
-  .Description {
+  .content-description {
     font-size: 1.7vw;
   }
 }
 
 @media screen and (min-width: 4000px) and (max-width: 600px) {
-  .Description {
+  .content-description {
     font-size: 1.9vw;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .Description {
+  .content-description {
     font-size: 2.2vw;
   }
 }

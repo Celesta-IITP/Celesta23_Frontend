@@ -16,7 +16,7 @@ function EventDetails(props) {
         {props.TeamSize && (
           <h3 className="TeamSize">TEAM SIZE: {props.TeamSize}</h3>
         )}
-        <p className="Description">{props.Description}</p>
+        <p className="content-description">{props.Description}</p>
 
         <div className="Register">
           <button
