@@ -1,7 +1,6 @@
 import { React } from "react";
 import Tiles from "./Tiles";
 import "./Tiles.css";
-import DawnImage from "../../assets/dawn_img.png";
 import ArrowHead from "../../assets/gallery/Vector.png";
 import Picture1 from "../../assets/gallery/ha1.jpg";
 import Picture2 from "../../assets/gallery/ha2.jpg";

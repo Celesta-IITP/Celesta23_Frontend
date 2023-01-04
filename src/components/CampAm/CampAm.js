@@ -1,4 +1,5 @@
 import { React, useEffect, useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Campab from "../../assets/Campab/Campab.png";
 import Campab_mobile from "../../assets/Campab/Campab_mobile.png";
 import "./CampAm.css";
@@ -10,7 +11,7 @@ function CampAb() {
     <>
       <div className="CampAb_bg fade-in" id="CA">
         <div className="CampAb_Image">
-          <img
+          <LazyLoadImage
             src={window.innerWidth <= 767 ? Campab_mobile : Campab}
             alt="CA"
             className="Image"

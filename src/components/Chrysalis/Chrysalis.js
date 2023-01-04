@@ -2,6 +2,7 @@ import React from "react";
 import ChrysalisWeb from "../../assets/chrysalis/chrysalis_butterfly_web.png";
 import ChrysalisMobile from "../../assets/chrysalis/chrysalis_butterfly.png";
 import "./Chrysalis.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Chrysalis({ isMobile }) {
   return (
@@ -11,7 +12,7 @@ function Chrysalis({ isMobile }) {
           src={isMobile ? ChrysalisMobile : ChrysalisWeb}
           className="image"
           alt="chrysalis"
-        ></img>
+        />
       </div>
       <div className="chrysalis-text">
         Spontaneity <br />

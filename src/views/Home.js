@@ -13,7 +13,6 @@ import Chrysalis from "../components/Chrysalis/Chrysalis";
 
 import TilesContainer from "../components/Tiles/TilesContainer";
 import CampAm from "../components/CampAm/CampAm";
-import OurPartners from "../components/OurPartners/OurPartners";
 
 function Home() {
   const [width, setWidth] = useState(window.innerWidth);

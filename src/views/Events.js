@@ -41,7 +41,7 @@ function Events() {
             <>
               <div className="Container">
                 <div onClick={() => setShowEvent(Event)} className="Display">
-                  <LazyLoadImage
+                  <img
                     onClick={ShowDetails}
                     key={Event.eventName}
                     className="EventDisplay"
