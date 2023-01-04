@@ -12,7 +12,7 @@ function EventDetails(props) {
         <h1 className="Name">{props.Name.toUpperCase()}</h1>
         <h2 className="Date">DATE: {props.Date.toUpperCase()}</h2>
         <h2 className="Time">TIME: {props.Time.toUpperCase()}</h2>
-        <h3 className="Venue">VENUE: {props.Venue}</h3>
+        <h3 className="Venue">VENUE: {props.Venue.toUpperCase()}</h3>
         {props.TeamSize && (
           <h3 className="TeamSize">TEAM SIZE: {props.TeamSize}</h3>
         )}

@@ -3,6 +3,7 @@ import "../Events.css";
 import EventDetails from "../components/Events/EventDetails.js";
 import Footer from "../components/Footer/Footer";
 import { Watch } from "react-loader-spinner";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Events() {
   const [loader, setLoader] = useState(true);
@@ -30,7 +31,6 @@ function Events() {
 
   const ShowDetails = () => {
     setShowDetails(true);
-    
   };
 
   const Events_Display = (eventsDesc) => {
@@ -41,7 +41,7 @@ function Events() {
             <>
               <div className="Container">
                 <div onClick={() => setShowEvent(Event)} className="Display">
-                  <img
+                  <LazyLoadImage
                     onClick={ShowDetails}
                     key={Event.eventName}
                     className="EventDisplay"
@@ -131,6 +131,7 @@ function Events() {
             className="Events_searchInput"
             value={search}
             placeholder="SEARCH"
+            autoFocus
             onChange={searchFilter}
             onBlur={changeSearchElement}
           ></input>
