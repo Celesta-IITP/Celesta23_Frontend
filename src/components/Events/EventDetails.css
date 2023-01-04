@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "Gotham";
+  src: url(../../assets/fonts/Gotham-Medium.woff) format("woff"),
+    url(../../assets/fonts/Gotham-Medium.woff2) format("woff2"),
+    url(../../assets/fonts/Gotham-Medium.ttf) format("truetype"),
+    url(../../assets/fonts/Gotham-Medium.eot) format("embedded-opentype"),
+    url(../../assets/fonts/Gotham-Medium.svg) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .Details {
   height: 80%;
   width: 80%;
