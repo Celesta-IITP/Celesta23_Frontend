@@ -1,15 +1,15 @@
-import { React, useEffect, useState } from "react";
+import { forwardRef, React, useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Campab from "../../assets/Campab/Campab.png";
 import Campab_mobile from "../../assets/Campab/Campab_mobile.png";
 import "./CampAm.css";
 
-function CampAb() {
+const CampAb = forwardRef((props, ref) => {
   const [width, setWidth] = useState(window.innerWidth);
   const isMobile = width <= 700;
   return (
     <>
-      <div className="CampAb_bg fade-in" id="CA">
+      <div className="CampAb_bg fade-in" ref={ref}>
         <div className="CampAb_Image">
           <LazyLoadImage
             src={window.innerWidth <= 767 ? Campab_mobile : Campab}
@@ -41,6 +41,6 @@ function CampAb() {
       </div>
     </>
   );
-}
+});
 
 export default CampAb;

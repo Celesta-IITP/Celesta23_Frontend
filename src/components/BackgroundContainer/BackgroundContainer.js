@@ -4,6 +4,7 @@ import "../../App.css";
 import "./Background.css";
 import WebBackground from "../../assets/landing/bg_web1.png";
 import WebLogo from "../../assets/landing/logo_landing_web.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function BackgroundContainer() {
   const screenSize = window.innerWidth;

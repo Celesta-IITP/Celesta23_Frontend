@@ -5,7 +5,7 @@ import "./Image.css";
 function Image({ location }) {
   return (
     <div className="container fade-in">
-      <LazyLoadImage src={location} className="img" alt="images" />
+      <img src={location} className="img" alt="images" />
     </div>
   );
 }

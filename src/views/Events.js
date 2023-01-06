@@ -3,7 +3,6 @@ import "../Events.css";
 import EventDetails from "../components/Events/EventDetails.js";
 import Footer from "../components/Footer/Footer";
 import { Watch } from "react-loader-spinner";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Events() {
   const [loader, setLoader] = useState(true);
@@ -164,7 +163,7 @@ function Events() {
         </>
       )}
 
-      <Footer />
+      <Footer noHashLink={true} />
     </>
   );
 }
