@@ -47,7 +47,8 @@
   width: 50%;
   height: 5vh;
   background-color: #000000;
-  font-family: "Gotham";
+  font-family: "Swiss 721";
+  font-weight: 300;
   font-size: 0.9rem;
   letter-spacing: 0.28em;
   border: 1px solid #000000;
@@ -55,7 +56,7 @@
   margin: auto;
   margin-top: 3vh;
   margin-bottom: 3vh;
-  padding: 0.2% 0.5% 0.5% 0.5%;
+  padding: 0.2% 0.5% 0 0.5%;
   cursor: pointer;
 }
 
@@ -82,19 +83,21 @@
   width: 60%;
   height: 5vh;
   background-color: #000000;
-  font-family: "Gotham";
+  font-family: "Swiss 721";
   letter-spacing: 0.28em;
   border: 1px solid #ffffff;
   color: #ffffff;
   margin: auto;
   margin-top: 3vh;
   margin-bottom: 3vh;
-  padding: 0.2% 0.5% 0.5% 0.5%;
+  padding: 0.2% 0.5% 0 0.5%;
+  
 }
 
 ::-webkit-input-placeholder {
   color: white;
   font-size: 0.9rem;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 500px) {

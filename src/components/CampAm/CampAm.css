@@ -35,7 +35,7 @@
   padding-top: 3vh;
   padding-bottom: 3vh;
   background-color: white;
-  font-family: "Swiss";
+  font-family: "Swiss 721";
 }
 
 @media screen and (min-width: 900px) and (max-width: 1050px) {
@@ -86,7 +86,9 @@
   width: 26vw;
   margin: 0 37vw 0 37vw;
   letter-spacing: 0.05rem;
-  font-family: "Gotham";
+  font-family: "Swiss 721";
+  font-size: 1.3em;
+  font-weight: 300;
   text-align: justify;
   color: #ffffff;
 }
@@ -100,7 +102,7 @@
 
 @media screen and (max-width: 450px) {
   .CampAb_Desc {
-    font-size: 12px;
+    font-size: 1.1em;
   }
 }
 

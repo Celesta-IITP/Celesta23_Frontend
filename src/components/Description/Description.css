@@ -19,10 +19,10 @@
 .content {
   width: 40%;
   letter-spacing: 0.05rem;
-  font-family: "Gotham";
-  font-weight: 400;
+  font-family: "Swiss 721";
+  font-weight: 300;
   text-align: justify;
-  font-size: 1.15em;
+  font-size: 1.3em;
 }
 
 @media screen and (max-width: 426px) {
@@ -32,6 +32,6 @@
 
   .content {
     width: 60%;
-    font-size: 1em;
+    font-size: 1.1em;
   }
 }
