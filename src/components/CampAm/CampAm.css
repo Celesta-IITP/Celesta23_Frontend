@@ -26,7 +26,7 @@
   width: 36vw;
   margin: 0 32vw 0 32vw;
 
-  font-style: normal;
+ 
   font-weight: 400;
   font-size: 20px;
   line-height: 29px;
@@ -35,7 +35,7 @@
   padding-top: 3vh;
   padding-bottom: 3vh;
   background-color: white;
-  font-family: "Swiss 721";
+  font-family: "Swis721BT";
 }
 
 @media screen and (min-width: 900px) and (max-width: 1050px) {
