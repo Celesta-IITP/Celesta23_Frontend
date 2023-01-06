@@ -14,10 +14,10 @@
   grid-column: 1 / span 2;
   background-color: #ffffff;
   text-align: center;
-  font-family: "Gotham Black";
+  font-family: "Swiss 721";
   font-style: normal;
-  font-weight: 500;
-  font-size: 7vh;
+  font-weight: 600;
+  font-size: 5.8vh;
   letter-spacing: -0.045em;
   margin-bottom: 0%;
 }
@@ -25,25 +25,25 @@
 .Date {
   background-color: #ffffff;
   text-align: left;
-  font-family: "Gotham";
+  font-family: "Swiss 721";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2.5vh;
 }
 
 .Time {
   background-color: #ffffff;
   text-align: right;
-  font-family: "Gotham";
+  font-family: "Swiss 721";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2.5vh;
 }
 
 .Venue {
   background-color: #ffffff;
   text-align: left;
-  font-family: "Gotham";
+  font-family: "Swiss 721";
   font-style: normal;
   font-weight: 400;
   font-size: 2.5vh;
@@ -52,13 +52,13 @@
 .TeamSize {
   background-color: #ffffff;
   text-align: right;
-  font-family: "Gotham Black";
+  font-family: "Swiss 721";
   font-style: normal;
   font-weight: 400;
   font-size: 2.5vh;
 }
 
-.Description {
+.content-description {
   grid-column: 1 / span 2;
   background-color: #ffffff;
   margin-left: 15%;
@@ -75,7 +75,7 @@
   margin-bottom: 20px;
 }
 
-.Description::-webkit-scrollbar {
+.content-description::-webkit-scrollbar {
   display: none;
 }
 
@@ -92,6 +92,7 @@
 .Venue,
 .TeamSize {
   margin-bottom: 4%;
+  font-size: 2.2vh;
 }
 
 .Button1,
@@ -103,16 +104,24 @@
   height: 40%;
   width: 60%;
   color: #ffffff;
-  font-family: "Gotham";
+  font-family: "Swiss 721";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: -0.045em;
   font-size: 2vh;
   cursor: pointer;
+  padding-bottom: 0;
 }
 .Button2 {
   position: relative;
-  left: 20%;
+  left: 40%;
+}
+
+.Button1:hover,
+.Button2:hover,
+.Button3:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-color: rgba(0, 0, 0, 0.9);
 }
 
 @media screen and (max-width: 767px) {
@@ -122,7 +131,7 @@
   }
 
   .Name {
-    font-size: 4vh;
+    font-size: 3vh;
   }
 
   .Date,
@@ -141,50 +150,50 @@
   }
 
   .Button2 {
-    left: 15%;
+    left: 30%;
   }
 
   .Button3 {
     left: 30%;
   }
 
-  .Description {
+  .content-description {
     margin-bottom: 1vh;
     margin-left: 8%;
     margin-right: 8%;
   }
 
-  .Description {
+  .content-description {
     font-size: 1.8vw;
   }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .Description {
+  .content-description {
     font-size: 1.8vw;
   }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1000px) {
-  .Description {
+  .content-description {
     font-size: 1.9vw;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 767px) {
-  .Description {
+  .content-description {
     font-size: 1.7vw;
   }
 }
 
 @media screen and (min-width: 4000px) and (max-width: 600px) {
-  .Description {
+  .content-description {
     font-size: 1.9vw;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .Description {
+  .content-description {
     font-size: 2.2vw;
   }
 }

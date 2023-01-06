@@ -6,13 +6,13 @@ import DawnImage from "../assets/dawn_img.png";
 import DawnImageWeb from "../assets/dawn_img_web.png";
 import ChrysalisWeb from "../assets/chrysalis_web.png";
 import Image from "../components/ImageContainer/Image";
+
 import Description from "../components/Description/Description";
 import ThemeVideo from "../components/ThemeVideo/ThemeVideo";
 import Chrysalis from "../components/Chrysalis/Chrysalis";
+
 import TilesContainer from "../components/Tiles/TilesContainer";
 import CampAm from "../components/CampAm/CampAm";
-import OurPartners from "../components/OurPartners/OurPartners";
-
 
 function Home() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -54,10 +54,15 @@ function Home() {
   return (
     <>
       <BackgroundContainer />
-      <Description heading="About" content="Celesta is the annual Techno-Management Fest of IIT Patna.
+      <Description
+        heading="About"
+        content="Celesta is the annual Techno-Management Fest of IIT Patna.
        To promote technical and managerial enthusiasm amongst young and bright minds of our nation and 
-       to provide a platform to transform their innovative ideas into a meaningful reality." />
+       to provide a platform to transform their innovative ideas into a meaningful reality."
+      />
+
       <Image location={isMobile ? DawnImage : DawnImageWeb} />
+
       <Description
         heading="Theme"
         content="Chrysalis dawn: Soaring of the Colossus Emerge from the dead lockdown phase to an ever
@@ -98,8 +103,10 @@ function Home() {
           <TilesContainer />
         </>
       )}
+
       <CampAm />
       <Chrysalis isMobile={isMobile} />
+
       {isMobile && <TilesContainer />}
       {/*<OurPartners />*/}
       <Footer />

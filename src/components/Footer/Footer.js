@@ -7,6 +7,7 @@ import twitterLogo from "../../assets/footer/ic_twitter.png";
 import youtubeLogo from "../../assets/footer/ic_youtube.png";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Footer() {
   return (
@@ -37,7 +38,7 @@ function Footer() {
               target="_blank"
               aria-label="Instagram"
             >
-              <img src={instagramLogo} alt="instagram-logo"></img>
+              <LazyLoadImage src={instagramLogo} alt="instagram-logo" />
             </a>
             <a
               className="social-icon-link facebook"
@@ -45,7 +46,7 @@ function Footer() {
               target="_blank"
               aria-label="Facebook"
             >
-              <img src={facebookLogo} alt="facebook-logo"></img>
+              <LazyLoadImage src={facebookLogo} alt="facebook-logo" />
             </a>
             <a
               className="social-icon-link linkedin"
@@ -53,7 +54,7 @@ function Footer() {
               target="_blank"
               aria-label="LinkedIn"
             >
-              <img src={linkedInLogo} alt="linkedin-logo"></img>
+              <LazyLoadImage src={linkedInLogo} alt="linkedin-logo" />
             </a>
             <a
               className="social-icon-link twitter"
@@ -61,7 +62,7 @@ function Footer() {
               target="_blank"
               aria-label="Twitter"
             >
-              <img src={twitterLogo} alt="twitter-logo"></img>
+              <LazyLoadImage src={twitterLogo} alt="twitter-logo" />
             </a>
             <a
               className="social-icon-link youtube"
@@ -69,7 +70,7 @@ function Footer() {
               target="_blank"
               aria-label="Youtube"
             >
-              <img src={youtubeLogo} alt="youtube-logo"></img>
+              <LazyLoadImage src={youtubeLogo} alt="youtube-logo" />
             </a>
           </div>
           <a href="mailto:celesta.iitp@gmail.com" className="website-rights">

@@ -18,10 +18,10 @@ function BackgroundContainer() {
                 src={WebBackground}
                 className="web-background"
                 alt="landing-background"
-              ></img>
+              />
             </div>
             <div className="logo-container">
-              <img src={WebLogo} className="web-logo" alt="landing-title"></img>
+              <img src={WebLogo} className="web-logo" alt="landing-title" />
             </div>
           </>
         )}
