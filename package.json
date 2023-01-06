@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build_in_server": "react-scripts build && mv build ../public_html",
+    "build_in_server": "react-scripts build && rm -r ../public_html/* && cp -a build/* ../public_html/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
