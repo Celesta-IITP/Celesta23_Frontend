@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./Footer.css";
 import instagramLogo from "../../assets/footer/ic_instagram.png";
 import facebookLogo from "../../assets/footer/ic_facebook.png";
@@ -6,10 +6,13 @@ import linkedInLogo from "../../assets/footer/ic_linkedin.png";
 import twitterLogo from "../../assets/footer/ic_twitter.png";
 import youtubeLogo from "../../assets/footer/ic_youtube.png";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-function Footer() {
+const Footer = forwardRef((props, ref) => {
+  function scrollToView() {
+    console.log(ref.current);
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <div className="footer-container fade-in">
       <div className="footer-links">
@@ -23,9 +26,7 @@ function Footer() {
             </a>
           </div>
           <div className="footer-link-items">
-            <HashLink to="#CA" smooth={true}>
-              CA Program
-            </HashLink>
+            <a onClick={scrollToView}>CA Program</a>
           </div>
         </div>
       </div>
@@ -80,6 +81,6 @@ function Footer() {
       </section>
     </div>
   );
-}
+});
 
 export default Footer;

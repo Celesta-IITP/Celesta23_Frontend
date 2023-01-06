@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react";
+import { React, useEffect, useState, useRef } from "react";
 import "../App.css";
 import Footer from "../components/Footer/Footer";
 import BackgroundContainer from "../components/BackgroundContainer/BackgroundContainer.js";
@@ -50,6 +50,8 @@ function Home() {
       });
     };
   }, [options]);
+
+  const campAmb = useRef();
 
   return (
     <>
@@ -104,12 +106,12 @@ function Home() {
         </>
       )}
 
-      <CampAm />
+      <CampAm ref={campAmb} />
       <Chrysalis isMobile={isMobile} />
 
       {isMobile && <TilesContainer />}
       {/*<OurPartners />*/}
-      <Footer />
+      <Footer ref={campAmb} />
     </>
   );
 }

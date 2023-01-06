@@ -2,7 +2,6 @@ import React from "react";
 import ChrysalisWeb from "../../assets/chrysalis/chrysalis_butterfly_web.png";
 import ChrysalisMobile from "../../assets/chrysalis/chrysalis_butterfly.png";
 import "./Chrysalis.css";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Chrysalis({ isMobile }) {
   return (
