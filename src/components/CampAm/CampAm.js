@@ -2,11 +2,14 @@ import { forwardRef, React, useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Campab from "../../assets/Campab/Campab.png";
 import Campab_mobile from "../../assets/Campab/Campab_mobile.png";
+import Leaderboard from "../Leaderboard/Leaderboard";
 import "./CampAm.css";
 
 const CampAb = forwardRef((props, ref) => {
   const [width, setWidth] = useState(window.innerWidth);
+  const [showLeaderboard, setShowLeaderboard] = useState(false);
   const isMobile = width <= 700;
+
   return (
     <>
       <div className="CampAb_bg fade-in" ref={ref}>
@@ -31,14 +34,23 @@ const CampAb = forwardRef((props, ref) => {
           media publicity. The campus ambassadors are entitled to exciting
           prizes, apart from the coveted certificate and many other goodies.
         </p>
-        {/*<div className="Leaderboard">
+
+        <div className="Leaderboard" onClick={() => setShowLeaderboard(true)}>
           Leaderboard
           <button className="Leaderboardbutton">➔</button>
           <div className="whiteline"></div>
-  </div>*/}
-
-        {/*<button className="button">Leaderboard</button>*/}
+        </div>
       </div>
+      {showLeaderboard && (
+        <>
+          <div
+            className="leader-overlay"
+            onClick={() => setShowLeaderboard(false)}
+          >
+            <Leaderboard />
+          </div>
+        </>
+      )}
     </>
   );
 });

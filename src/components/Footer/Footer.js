@@ -10,7 +10,6 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Footer = forwardRef((props, ref) => {
   function scrollToView() {
-    console.log(ref.current);
     ref.current.scrollIntoView({ behavior: "smooth" });
   }
   return (

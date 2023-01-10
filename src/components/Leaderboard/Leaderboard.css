@@ -1,0 +1,50 @@
+.leader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(177, 177, 177, 0.5);
+}
+
+.leaderboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25vh;
+}
+
+.leader-header {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.leader-table {
+  margin-top: 20px;
+
+  background-color: white;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 15px;
+  border-bottom: 1px solid black;
+}
+
+.leader-column-header {
+  font-size: 1.16rem;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+}
+
+.column-data {
+  font-size: 1em;
+  font-family: "Swiss 721";
+  font-weight: 300;
+  text-align: center;
+}

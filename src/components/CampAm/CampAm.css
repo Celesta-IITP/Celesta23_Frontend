@@ -106,7 +106,7 @@
   }
 }
 
-/*.Leaderboard{
+.Leaderboard {
   position: relative;
   top: -15vh;
   height: 3.8vh;
@@ -114,48 +114,65 @@
   cursor: pointer;
   font-size: 20px;
   margin-top: 1vh;
-  font-family: 'Gotham';
-font-style: normal;
-font-weight: 700;
-line-height: 15px;
-color: #FFFFFF;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  color: #ffffff;
 }
 
-.Leaderboardbutton{
-  background-color: #1E1E1E;
-  color: #FFFFFF;
+.Leaderboardbutton {
+  background-color: #1e1e1e;
+  color: #ffffff;
   height: 15px;
   width: 15px;
   position: relative;
   top: -15%;
   font-weight: 700;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   font-size: 8px;
   border-radius: 50%;
 }
 
-.whiteline{
+.whiteline {
   width: 146.09px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   text-align: center;
   margin-left: calc(50vw - 77.045px);
-  
 }
 
-@media screen and (max-width:450px) {
-  .Leaderboard{
-      font-size: 15.43px;
+@media screen and (max-width: 450px) {
+  .Leaderboard {
+    font-size: 15.43px;
   }
 
-  .Leaderboardbutton{
-      top: -13%;
-      height: 11.3px;
-      width: 11.3px;
-      font-size: 5px;
+  .Leaderboardbutton {
+    top: -13%;
+    height: 11.3px;
+    width: 11.3px;
+    font-size: 5px;
   }
 
-  .whiteline{
+  .whiteline {
     width: 112.44px;
     margin-left: calc(50vw - 56.22px);
   }
-}*/
+}
+
+.close-button {
+  display: inline;
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  top: 20%;
+  height: 3.5vh;
+  width: 3.5vh;
+  text-align: center;
+  font-size: 1.9vh;
+  font-weight: 400;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: solid #000000;
+  color: #000000;
+  cursor: pointer;
+}
