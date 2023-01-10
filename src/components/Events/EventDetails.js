@@ -19,19 +19,22 @@ function EventDetails(props) {
         <p className="content-description">{props.Description}</p>
 
         <div className="Register">
-          <button
-            className="Button1"
-            onClick={() =>
-              openLink(props.Payment != "" ? props.Payment : props.Register)
-            }
+          <a href={props.Payment != "" ? props.Payment : props.Register}
+             target="_blank"
           >
+            <button className="Button1">
             REGISTER
-          </button>
+            </button>
+          </a>
         </div>
         <div className="Rulebook">
-          <button className="Button2" onClick={() => openLink(props.Rulebook)}>
+          <a href={props.Rulebook}
+             target="_blank"
+          >
+            <button className="Button2">
             RULEBOOK
-          </button>
+            </button>
+          </a>
         </div>
       </div>
     </>

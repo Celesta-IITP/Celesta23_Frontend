@@ -96,8 +96,9 @@
 
 ::-webkit-input-placeholder {
   color: white;
-  font-size: 0.9rem;
   font-weight: 300;
+  font-family: "Swiss 721";
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -136,11 +137,10 @@
 
 .Events_Display {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 4.67vw;
-  grid-row-gap: 7vh;
-  margin: 8vh 15vw 8vh 15vw;
-  min-height: 67vh;
+  grid-row-gap: 40px;
+  margin: 8vh 15vw 40vh 15vw;
 }
 
 .Display {

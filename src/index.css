@@ -15,10 +15,12 @@
       format("svg");
 } */
 
-/* @font-face {
-  font-family: "Swis721 BlkEx BT";
-  src: local("Swis721 BlkEx BT") url(./fonts/swz721k.ttf) format("truetype");
-} */
+@font-face {
+  font-family: "Swis721BT";
+  src: url(./assets/fonts/Swiss721BT.ttf) format("truetype"),
+  url(./assets/fonts/Swiss721.woff) format("woff"),
+  url(./assets/fonts/Swiss721.woff2) format("woff2");
+} 
 
 @font-face {
   font-family: "Gotham";

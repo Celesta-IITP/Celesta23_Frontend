@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  margin-bottom: 40vh;
+  margin-bottom: 20vh;
 }
 
 .header {
@@ -17,7 +17,7 @@
 }
 
 .content {
-  width: 40%;
+  width: 30%;
   letter-spacing: 0.05rem;
   font-family: "Swiss 721";
   font-weight: 300;
