@@ -47,6 +47,19 @@ const CampAb = forwardRef((props, ref) => {
             className="leader-overlay"
             onClick={() => setShowLeaderboard(false)}
           >
+          </div>
+          <div className="showLeaderboard">
+          <div className="LeadercloseButton">
+              <button className="Leaderclosebutton" onClick={() => setShowLeaderboard(false)}>
+                ✖
+              </button>
+            </div>
+            <div className="LeaderHead">
+            {/*<button className="Leaderclosebutton">
+                ✖
+      </button>*/}
+              <h2 className="leader-header">Leaderboard</h2>
+            </div>
             <Leaderboard />
           </div>
         </>
