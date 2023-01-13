@@ -1,20 +1,13 @@
 .leaderboard-container {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
   /*margin-top: 25vh;*/
-  
 }
 
-
-
-
-
-.LeaderTable{
+.LeaderTable {
   height: 80%;
   width: 100%;
-  
 }
 
 .LeaderTable::-webkit-scrollbar {
@@ -25,8 +18,6 @@
   /*margin-top: 20px;*/
   width: 100%;
   height: 100%;
-  
-  
 }
 
 table {
@@ -43,11 +34,11 @@ th {
   height: 10%;
 }*/
 
-th{
+th {
   height: 7vh;
 }
 
-.table-data{
+.table-data {
   max-height: 49vh;
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
@@ -61,51 +52,59 @@ th{
   color: 000000;
 }
 
-.rank-data, .name-data, .points-data, .celestaid-data {
+.rank-data,
+.name-data,
+.points-data,
+.celestaid-data {
   font-size: 1em;
   font-family: "Swiss 721";
   font-weight: 300;
   text-align: center;
-  
 }
 
 .rank-data {
   width: 11%;
 }
 
-.name-data{
+.name-data {
   width: 49%;
-  
 }
 
-.points-data{
+.points-data {
   width: 12%;
 }
 
-.celestaid-data{
+.celestaid-data {
   width: 28%;
 }
 
-@media screen and (max-width:800px) {
-  
-
+@media screen and (max-width: 800px) {
   .leader-column-header {
     font-size: 1rem;
   }
 
-  .rank-data, .name-data, .points-data, .celestaid-data {
+  .rank-data,
+  .name-data,
+  .points-data,
+  .celestaid-data {
     font-size: 0.85rem;
   }
 }
 
-@media screen and (max-width:700px) {
-  .rank-data, .name-data, .points-data, .celestaid-data {
+@media screen and (max-width: 700px) {
+  .rank-data,
+  .name-data,
+  .points-data,
+  .celestaid-data {
     font-size: 0.75rem;
   }
 }
 
-@media screen and (max-width:550px) {
-  .rank-data, .name-data, .points-data, .celestaid-data {
+@media screen and (max-width: 550px) {
+  .rank-data,
+  .name-data,
+  .points-data,
+  .celestaid-data {
     font-size: 0.75rem;
   }
 
@@ -134,8 +133,11 @@ th{
   }
 }*/
 
-@media screen and (max-width:400px) {
-  .rank-data, .name-data, .points-data, .celestaid-data {
+@media screen and (max-width: 400px) {
+  .rank-data,
+  .name-data,
+  .points-data,
+  .celestaid-data {
     font-size: 0.7rem;
   }
 
@@ -144,6 +146,6 @@ th{
   }
 }
 
-.leader-row:hover{
+.leader-row:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }

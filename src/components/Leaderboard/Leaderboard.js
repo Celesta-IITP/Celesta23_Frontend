@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Leaderboard.css";
+import { Watch } from "react-loader-spinner";
 
 function Leaderboard(show) {
+  const [loader, setLoader] = useState(true);
   const [data, setData] = useState([]);
   useEffect(() => {
     fetch(
@@ -9,15 +11,30 @@ function Leaderboard(show) {
     ).then((res) => {
       res.json().then((value) => {
         setData(value);
+        setLoader(false);
       });
     });
   }, []);
-  
-  return (
+
+  return loader ? (
+    <Watch
+      height="80"
+      width="80"
+      radius="48"
+      color="#4fa94d"
+      ariaLabel="watch-loading"
+      wrapperStyle={{
+        display: "flex",
+        "justify-content": "center",
+        transform: "translateY(20vh)",
+      }}
+      wrapperClassName=""
+      visible={true}
+    />
+  ) : (
     <>
-      
       <div className="LeaderTable">
-      <table className="leader-table">
+        <table className="leader-table">
           <thead className="table-titles">
             <tr className="header-row">
               <th className="leader-column-header">Rank</th>
@@ -88,23 +105,20 @@ function Leaderboard(show) {
               <td className="celestaid-data">CLST40180</td>
   </tr>*/}
             {data.map((row) => {
-      return (
-        <tr className="leader-row">
-          <td className="rank-data" >{data.indexOf(row)+1}</td>
-          <td className="name-data">{row.name}</td>
-          <td className="points-data">{row.Points}</td>
-          <td className="celestaid-data">{row.celestaId}</td>
-        </tr>
-      );
-    })}
+              return (
+                <tr className="leader-row">
+                  <td className="rank-data">{data.indexOf(row) + 1}</td>
+                  <td className="name-data">{row.name}</td>
+                  <td className="points-data">{row.Points}</td>
+                  <td className="celestaid-data">{row.celestaId}</td>
+                </tr>
+              );
+            })}
           </tbody>
           {/* <tbody>{DisplayData(data)}</tbody> */}
         </table>
       </div>
-        
-      
     </>
-      
   );
 }
 
