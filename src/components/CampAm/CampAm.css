@@ -106,7 +106,7 @@
   }
 }
 
-/*.Leaderboard{
+.Leaderboard {
   position: relative;
   top: -15vh;
   height: 3.8vh;
@@ -114,48 +114,181 @@
   cursor: pointer;
   font-size: 20px;
   margin-top: 1vh;
-  font-family: 'Gotham';
-font-style: normal;
-font-weight: 700;
-line-height: 15px;
-color: #FFFFFF;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  color: #ffffff;
 }
 
-.Leaderboardbutton{
-  background-color: #1E1E1E;
-  color: #FFFFFF;
+.Leaderboardbutton {
+  background-color: #1e1e1e;
+  color: #ffffff;
   height: 15px;
   width: 15px;
   position: relative;
   top: -15%;
   font-weight: 700;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   font-size: 8px;
   border-radius: 50%;
 }
 
-.whiteline{
+.whiteline {
   width: 146.09px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   text-align: center;
   margin-left: calc(50vw - 77.045px);
-  
 }
 
-@media screen and (max-width:450px) {
-  .Leaderboard{
-      font-size: 15.43px;
+@media screen and (max-width: 450px) {
+  .Leaderboard {
+    font-size: 15.43px;
   }
 
-  .Leaderboardbutton{
-      top: -13%;
-      height: 11.3px;
-      width: 11.3px;
-      font-size: 5px;
+  .Leaderboardbutton {
+    top: -13%;
+    height: 11.3px;
+    width: 11.3px;
+    font-size: 5px;
   }
 
-  .whiteline{
+  .whiteline {
     width: 112.44px;
     margin-left: calc(50vw - 56.22px);
   }
+}
+
+.close-button {
+  display: inline;
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  top: 20%;
+  height: 3.5vh;
+  width: 3.5vh;
+  text-align: center;
+  font-size: 1.9vh;
+  font-weight: 400;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: solid #000000;
+  color: #000000;
+  cursor: pointer;
+}
+
+/*.leader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(177, 177, 177, 0.5);
+  z-index: 10000;
+}
+
+.showLeaderboard{
+  position: fixed;
+  top: 15vh;
+  left: 20%;
+  height: 70vh;
+  width: 60%;
+  z-index: 10001;
 }*/
+
+.showLeaderboard {
+  position: fixed;
+  top: 15vh;
+  left: 20%;
+  height: 70vh;
+  width: 60%;
+  background: white;
+  z-index: 10001;
+}
+
+.leader-overlay {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(177, 177, 177, 0.5);
+  z-index: 10000;
+}
+
+@media screen and (max-width:700px) {
+  .showLeaderboard{
+    left: 10%;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .showLeaderboard{
+    left: 5%;
+    width: 90%;
+  }
+}
+
+.LeaderHead{
+  height: 13%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*border:2px solid red;*/
+}
+
+.leader-header {
+  align-items: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width:800px) {
+  .leader-header{
+    font-size: 2rem;
+  }
+}
+
+.Leaderclosebutton {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  top: 20%;
+  left: 1%;
+  height: 3.5vh;
+  width: 3.5vh;
+  text-align: center;
+  font-size: 1.9vh;
+  font-weight: 400;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: solid #000000;
+  color: #000000;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .Leaderclosebutton{
+    top: 10%;
+    left: 1.5%;
+    height: 2.5vh;
+    width: 2.5vh;
+    border: 2px solid #000000;
+    font-size: 1.1vh;
+    font-weight: 600;
+  }
+
+  .LeadercloseButton {
+    height: 7%;
+  }
+}
+
+.LeadercloseButton {
+  background-color: #ffffff;
+  height: 7%;
+}
+

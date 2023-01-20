@@ -1,0 +1,151 @@
+.leaderboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*margin-top: 25vh;*/
+}
+
+.LeaderTable {
+  height: 80%;
+  width: 100%;
+}
+
+.LeaderTable::-webkit-scrollbar {
+  display: none;
+}
+
+.leader-table {
+  /*margin-top: 20px;*/
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  /*padding: 8px;*/
+  border-bottom: 1px solid black;
+}
+
+/*td{
+  height: 10%;
+}*/
+
+th {
+  height: 7vh;
+}
+
+.table-data {
+  max-height: 49vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.leader-column-header {
+  font-size: 1.16rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: 000000;
+}
+
+.rank-data,
+.name-data,
+.points-data,
+.celestaid-data {
+  font-size: 1em;
+  font-family: "Swiss 721";
+  font-weight: 300;
+  text-align: center;
+}
+
+.rank-data {
+  width: 11%;
+}
+
+.name-data {
+  width: 49%;
+}
+
+.points-data {
+  width: 12%;
+}
+
+.celestaid-data {
+  width: 28%;
+}
+
+@media screen and (max-width: 800px) {
+  .leader-column-header {
+    font-size: 1rem;
+  }
+
+  .rank-data,
+  .name-data,
+  .points-data,
+  .celestaid-data {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .rank-data,
+  .name-data,
+  .points-data,
+  .celestaid-data {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .rank-data,
+  .name-data,
+  .points-data,
+  .celestaid-data {
+    font-size: 0.75rem;
+  }
+
+  .leader-column-header {
+    font-size: 0.85rem;
+  }
+}
+
+/*@media screen and (max-width:450px) {
+  .rank-data, .name-data, .points-data, .celestaid-data {
+    font-size: 0.75rem;
+  }
+
+  .leader-column-header {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .rank-data, .name-data, .points-data, .celestaid-data {
+    font-size: 0.7rem;
+  }
+
+  .leader-column-header {
+    font-size: 0.85rem;
+  }
+}*/
+
+@media screen and (max-width: 400px) {
+  .rank-data,
+  .name-data,
+  .points-data,
+  .celestaid-data {
+    font-size: 0.7rem;
+  }
+
+  .leader-column-header {
+    font-size: 0.75rem;
+  }
+}
+
+.leader-row:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
