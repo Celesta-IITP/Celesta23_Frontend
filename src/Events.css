@@ -58,24 +58,16 @@
   margin-bottom: 3vh;
   padding: 0.2% 0.5% 0 0.5%;
   cursor: pointer;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+  transition-property: letter-spacing;
 }
 
 .Events_search:hover {
-  animation-name: searchHover;
-  animation-duration: 0.4s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  letter-spacing: 0.7em;
 }
 
-@keyframes searchHover {
-  from {
-    letter-spacing: 0.28em;
-  }
 
-  to {
-    letter-spacing: 0.7rem;
-  }
-}
 
 .Events_searchInput {
   position: relative;
@@ -114,14 +106,8 @@
     font-size: 0.7rem;
   }
 
-  @keyframes searchHover {
-    from {
-      letter-spacing: 0.28em;
-    }
-  
-    to {
-      letter-spacing: 0.35rem;
-    }
+  .Events_search:hover {
+    letter-spacing: 0.5em;
   }
 }
 

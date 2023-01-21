@@ -10,7 +10,7 @@ import Image from "../components/ImageContainer/Image";
 import Description from "../components/Description/Description";
 import ThemeVideo from "../components/ThemeVideo/ThemeVideo";
 import Chrysalis from "../components/Chrysalis/Chrysalis";
-
+import OurPartners from "../components/OurPartners/OurPartners";
 import TilesContainer from "../components/Tiles/TilesContainer";
 import CampAm from "../components/CampAm/CampAm";
 
@@ -102,15 +102,16 @@ function Home() {
               <span className="celesta-top">dawn</span>
             </div>
           </div>
-          <TilesContainer />
+          
         </>
       )}
 
       <CampAm ref={campAmb} />
+      <TilesContainer />
       <Chrysalis isMobile={isMobile} />
 
       {isMobile && <TilesContainer />}
-      {/*<OurPartners />*/}
+      <OurPartners />
       <Footer ref={campAmb} />
     </>
   );
