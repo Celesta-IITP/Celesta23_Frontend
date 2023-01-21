@@ -107,7 +107,7 @@ function Home() {
       )}
 
       <CampAm ref={campAmb} />
-      <TilesContainer />
+      {!isMobile && <TilesContainer />}
       <Chrysalis isMobile={isMobile} />
 
       {isMobile && <TilesContainer />}
