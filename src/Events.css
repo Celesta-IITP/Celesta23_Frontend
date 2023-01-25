@@ -196,6 +196,19 @@
   width: 60%;
   background: #ffffff;
   z-index: 10001;
+  animation-name: openModal;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes openModal {
+  from{
+    scale: 0;
+  }
+  to{
+    scale: 1;
+  }
 }
 
 .Overlay {
@@ -307,5 +320,37 @@
     left: 3%;
     height: 30vh;
     width: 94%;
+  }
+}
+
+.closeModal{
+  animation-name: closeModal;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes closeModal {
+  from{
+    scale: 1;
+  }
+  to{
+    scale: 0;
+  }
+}
+
+.closeOverlay{
+  animation-name: closeOverlay;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes closeOverlay {
+  from{
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  to{
+    background-color: rgba(0, 0, 0, 0);
   }
 }
