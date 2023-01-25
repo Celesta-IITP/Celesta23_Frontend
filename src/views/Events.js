@@ -10,7 +10,6 @@ function Events() {
   const [search, setSearch] = useState("");
   const [showDetails, setShowDetails] = useState(false);
   const [showEvent, setShowEvent] = useState({});
-
   const [eventsDesc, setEventsDesc] = useState([]);
 
   // fetching the events data
@@ -74,6 +73,21 @@ function Events() {
   };
 
   const options = { threshold: 0.1 };
+  
+  const animate = () =>{
+    let modal=document.getElementById("showDetails");
+    let overlay=document.getElementById("Overlay");
+    overlay.classList.add("closeOverlay");
+    modal.classList.add("closeModal");
+    setTimeout(removeAnime, 300);
+    
+  }
+  const removeAnime = () =>{
+    
+    
+    setShowDetails(false);
+  }
+
 
   useEffect(() => {
     const faders = document.querySelectorAll(".fade-in");
@@ -140,11 +154,11 @@ function Events() {
       {Events_Display(searchEventsDesc)}
       {showDetails && (
         <>
-          <div className="Overlay" onClick={() => setShowDetails(false)}></div>
+          <div id="Overlay" className="Overlay" onClick={animate}></div>
 
-          <div className="showDetails">
+          <div id="showDetails" className="showDetails">
             <div className="closeButton">
-              <button className="button" onClick={() => setShowDetails(false)}>
+              <button className="button" onClick={animate}>
                 ✖
               </button>
             </div>
