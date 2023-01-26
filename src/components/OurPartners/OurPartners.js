@@ -16,6 +16,8 @@ import Patnaites from "../../assets/Partners/Patnaites.png";
 import RoboticsIndia from "../../assets/Partners/RoboticsIndia.png";
 import StoriesOfBihar from "../../assets/Partners/StoriesOfBihar.png";
 import SybyllineRobotics from "../../assets/Partners/SybyllineRobotics.png";
+import Radiomirchi from "../../assets/Partners/Radiomirchi_logo.png";
+import HotelAmalfiGrandPatna from "../../assets/Partners/HotelAmalfiGrandPatna.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function OurPartners() {
@@ -112,7 +114,7 @@ const [RoboticsMediaPartner, setRoboticsMediaPartner] = useState([
   {
     name: "Robotics India",
     logo: RoboticsIndia,
-    website: "" 
+    website: "https://roboticsindia.live/" 
   }
 ]);
 
@@ -121,6 +123,22 @@ const [MediaPartner, setMediaPartner] = useState([
     name: "Patna Beats",
     logo: PatnaBeats,
     website: "https://www.patnabeats.com/" 
+  }
+]);
+
+const [EntertainmentPartner, setEntertainmentPartner] = useState([
+  {
+    name: "Radio Mirchi",
+    logo: Radiomirchi,
+    website: "https://mirchi.in/" 
+  }
+]);
+
+const [HospitalityPartner, setHospitalityPartner] = useState([
+  {
+    name: "Hotel Amalfi Grand Patna",
+    logo: HotelAmalfiGrandPatna,
+    website: "https://www.amalfigrand.com/" 
   }
 ]);
 
@@ -176,6 +194,8 @@ const Partners_Display = (subHead, PartnerDetails) => {
         {Partners_Display("Social Media Partners", SocialMediaPartner)}
         {Partners_Display("Media Partner", MediaPartner)}
         {Partners_Display("Robotics Media Partner", RoboticsMediaPartner)}
+        {Partners_Display("Entertainment Partner", EntertainmentPartner)}
+        {Partners_Display("Hospitality Partner", HospitalityPartner)}
       </div>
     </>
   );

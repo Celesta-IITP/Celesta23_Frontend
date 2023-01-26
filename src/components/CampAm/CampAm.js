@@ -9,7 +9,20 @@ const CampAb = forwardRef((props, ref) => {
   const [width, setWidth] = useState(window.innerWidth);
   const [showLeaderboard, setShowLeaderboard] = useState(false);
   const isMobile = width <= 700;
-
+  const animate = () =>{
+    console.log("gug")
+    let modal=document.getElementById("showLeaderboard");
+    let overlay=document.getElementById("leader-overlay");
+    overlay.classList.add("closeLeadOverlay");
+    modal.classList.add("closeLeadModal");
+    setTimeout(removeAnime, 300);
+    
+  }
+  const removeAnime = () =>{
+    
+    
+    setShowLeaderboard(false);
+  }
   return (
     <>
       <div className="CampAb_bg fade-in" ref={ref}>
@@ -45,12 +58,13 @@ const CampAb = forwardRef((props, ref) => {
         <>
           <div
             className="leader-overlay"
-            onClick={() => setShowLeaderboard(false)}
+            id="leader-overlay"
+            onClick={animate}
           >
           </div>
-          <div className="showLeaderboard">
+          <div className="showLeaderboard" id="showLeaderboard">
           <div className="LeadercloseButton">
-              <button className="Leaderclosebutton" onClick={() => setShowLeaderboard(false)}>
+              <button className="Leaderclosebutton" onClick={animate}>
                 ✖
               </button>
             </div>
