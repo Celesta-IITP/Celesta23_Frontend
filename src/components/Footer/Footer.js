@@ -20,6 +20,9 @@ const Footer = forwardRef((props, ref) => {
             <Link to="/events">Events</Link>
           </div>
           <div className="footer-link-items">
+            <Link to="/teams">Our Team</Link>
+          </div>
+          <div className="footer-link-items">
             <a href="https://forms.gle/UZx9ejCQHnxX2wJbA" target={"_blank"}>
               Register
             </a>

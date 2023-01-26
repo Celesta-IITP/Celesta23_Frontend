@@ -161,6 +161,18 @@
   font-size: 100px;
 }
 
+.team-header {
+  margin-top: 30px;
+}
+
+.team-subheader {
+  color: white;
+  font-size: 2rem;
+  margin-top: 70px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 @media screen and (max-width: 769px) {
   .celesta-top {
     font-size: 2.5vw;
@@ -198,5 +210,8 @@
     font-size: 1.4rem;
     letter-spacing: 0.81rem;
     padding-inline-start: 0;
+  }
+  .team-subheader {
+    font-size: 1.7rem;
   }
 }
