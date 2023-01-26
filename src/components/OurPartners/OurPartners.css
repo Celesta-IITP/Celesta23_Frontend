@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   height: 60px;
-  margin-bottom: 12vh;
+  margin-bottom: 10vh;
 }
 
 .HeadBg{
@@ -36,7 +36,7 @@
   margin-bottom: 40vh;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 750px) {
   .OurPartners_Head{
     font-size: 40px;
   }
@@ -49,23 +49,23 @@
 
 @media screen and (max-width: 650px) {
   .OurPartners_Head{
-    font-size: 25px;
+    font-size: 35px;
   }
 
   .HeadBg{
-      width: 300px;
+      width: 385.7px;
       height: 30px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .OurPartners_Head{
-    font-size: 17px;
+    font-size: 23px;
   }
 
   .HeadBg{
-      width: 220px;
-      height: 25px;
+      width: 280px;
+      height: 28px;
   }
 }
 
@@ -160,6 +160,10 @@
 @media screen and (max-width:450px){
   .subHead{
     font-size: 15px;
+  }
+
+  .OurPartners_Partners{
+    padding: 6vh 10vw 6vh 10vw;
   }
 }
 
