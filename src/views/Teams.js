@@ -163,7 +163,6 @@ function Teams() {
             <ul className="cards__items">
               <TeamTiles
                 names={[
-                  { text: "Ghanta Utthistha Sai" },
                   { text: "Chethi Reddy Srinithya", src: Srinithya },
                   { text: "Rohit Nayak", src: Rohit },
                 ]}
