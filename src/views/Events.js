@@ -15,7 +15,7 @@ function Events() {
   // fetching the events data
   useEffect(() => {
     fetch(
-      "https://script.google.com/macros/s/AKfycbwn5KFkzD8-Jg9-GuzopdkFpQ5EquCDyCxfF8l3ORY0IgtOaDuQUXI3f6jlkxpAeD-Jfg/exec"
+      "https://script.google.com/macros/s/AKfycbzJFgh8e-afXpbxdTACrWwooGwyN5Fbhr9AmD5xbTiWPcV4rkH4xud37Vn55cQGyDY3/exec"
     ).then((res) => {
       res.json().then((data) => {
         // console.log(data);
