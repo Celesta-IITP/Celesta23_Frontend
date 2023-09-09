@@ -1,33 +1,67 @@
 import React from "react";
 import TeamTiles from "../components/OurTeams/TeamTiles";
-import Shivam from "../assets/team/shivam_fc.jpg";
-import Punit from "../assets/team/PUNIT_MPR.jpg";
-import Gaurav from "../assets/team/GAURAV_CND.jpeg";
-import Ayush from "../assets/team/Ayush_Agrawal_flagship.jpg";
-import Athul from "../assets/team/ATHUL_MPR.jpg";
-import Deepanshu from "../assets/team/Deepanshu_workshop.jpg";
-import Anushka from "../assets/team/AnushkaPandey_MarketingAndSponsorship.jpg";
-import Aarav from "../assets/team/Aarav_Arya_mpr.jpg";
-import Aditya from "../assets/team/Aditya_Kumar_Singh_web.jpg";
-import Chanya from "../assets/team/Chanya_Sardana_flagship.jpg";
-import Chetan from "../assets/team/chetan_kumar_registration.jpg";
-import Farhaan from "../assets/team/farhaan_cnd.jpeg";
-import Harsha from "../assets/team/Harsha_Dasari_flagship.jpg";
-import Kanishk from "../assets/team/Kanishk_Giri_mpr.jpg";
-import Kritish from "../assets/team/Kritish Kumar_hospitality.jpg";
-import Kushagra from "../assets/team/Kushagra_Yadav_mpr.jpg";
-import Piyush from "../assets/team/Piyush_Gautam_hospitality.jpg";
-import Prajyot from "../assets/team/Prajyot R. - Prajyot Ramteke.png";
-import Prashanth from "../assets/team/Prashanth_mpr.jpg";
-import Priyanshi from "../assets/team/Priyanshi_Singh_flagship.jpg";
-import Rohit from "../assets/team/ROHIT_NAYAK_events.jpg";
-import Shresth from "../assets/team/Shresth_Verma_workshop.jpg";
-import Spandan from "../assets/team/Spandan_Prasad_registration.jpg";
-import Srinithya from "../assets/team/srinithya_chethi_reddy_events.jpg";
-import Vikash from "../assets/team/Vikash_kumar_Rai_hospitality.jpg";
-import Yash from "../assets/team/Yash_cnd.jpeg";
-import Pratyush from "../assets/team/Pratyush_web.jpg";
-import Chirag from "../assets/team/Chirag_flagship.jpg";
+
+// fest cordinators
+import Ayush from "../assets/team_23/Ayush_Pal_fc.jpg";
+import Kirtan from "../assets/team_23/Kirtan_Jain_fc.jpg";
+
+// marketting and spons
+import Bhaskar from "../assets/team_23/Bhaskar_Mishra_spons.jpg";
+import Mamta from "../assets/team_23/blank.png";
+import Kshitij from "../assets/team_23/Kshitij_Chaudhary_spons.jpg";
+import Rajnish from "../assets/team_23/Rajnish_Bhagat_spons.jpg";
+
+//MPR
+import Nishita from "../assets/team_23/Nishita_Lath_mpr.jpg";
+import Ajay from "../assets/team_23/blank.png";
+import Shrishti from "../assets/team_23/blank.png";
+import Ajmeera from "../assets/team_23/blank.png";
+import Aditi from "../assets/team_23/Aditi_Verma_mpr.jpg";
+
+//dev
+import Saif from "../assets/team_23/Saif_dev.jpg";
+import Kartikay from "../assets/team_23/Kartikay_Saxena_web.jpeg";
+
+//registration
+import Shivam from "../assets/team_23/Shivam_Yadav_rsp.jpg";
+import Khushi from "../assets/team_23/Khushi_Pathak_rsp.jpg";
+import Ankur from "../assets/team_23/blank.png";
+
+//creatives
+import Mukund from "../assets/team_23/Mukund_Sharma_cnd.jpg";
+import Suryansh from "../assets/team_23/Suryansh_cnd.png";
+import Siddhant from "../assets/team_23/Siddhant_Senapati_cnd.jpg";
+import Sahil from "../assets/team_23/Sahil_Agrawal_cnd.jpg";
+import Vikramaditya from "../assets/team_23/blank.png";
+
+//hospi and logistics
+import Supratim from "../assets/team_23/Supratim_Das_hospi.jpeg";
+import Harshita from "../assets/team_23/blank.png";
+import Naveen from "../assets/team_23/Naveen_Kumar_hospi.jpg";
+import Pranav from "../assets/team_23/Pranav_Raj_hospi.png";
+
+//flagship
+import Alisha from "../assets/team_23/Alisha_Singh_flagship.jpg";
+import Vishesh from "../assets/team_23/blank.png";
+import Surya from "../assets/team_23/blank.png";
+import Harsh from "../assets/team_23/Harsh_Singh_flagship.png";
+import Piyusha from "../assets/team_23/PIYUSHA_JHA_flagship.jpg";
+
+//workshop,exhibhition and operations
+import Hansaraj from "../assets/team_23/D._Hansaraj_workshop.jpeg";
+import Shruti from "../assets/team_23/Shruti_Dey_workshop.jpg";
+
+//events
+import Sunny from "../assets/team_23/Sunny_Kumar_events.jpg";
+import Rizvi from "../assets/team_23/blank.png";
+import Nishta from "../assets/team_23/Nishtha_Taktewale_events.jpg";
+import Reshika from "../assets/team_23/Reshika_events.jpg";
+
+//gl and exhibhition
+import Aditya from "../assets/team_23/Aditya_Tomar_GL_exhibition.jpg";
+import Daud from "../assets/team_23/MD_Daud_gl_exhibhition.jpg";
+
+
 
 function Teams() {
   return (
@@ -36,9 +70,11 @@ function Teams() {
       <div className="cards__container">
         <div className="cards__wrapper">
           <div>
-            <h2 className="team-subheader">Fest Coordinator</h2>
+            <h2 className="team-subheader">Fest Coordinators</h2>
             <ul className="cards__items fc">
-              <TeamTiles names={[{ text: "Shivam Yadav", src: Shivam }]} />
+              <TeamTiles names={[{ text: "Ayush Pal", src: Ayush },
+            { text: "Kirtan Jain", src: Kirtan }
+            ]} />
             </ul>
           </div>
           <div>
@@ -46,9 +82,16 @@ function Teams() {
             <ul className="cards__items">
               <TeamTiles
                 names={[
-                  { text: "Anushka Pandey", src: Anushka },
-                  { text: "Kushagra Yadav", src: Kushagra },
-                  { text: "T. Prashanth", src: Prashanth },
+                  { text: "Bhaskar Mishra", src: Bhaskar },
+                  { text: "Mamta Kanwar", src: Mamta },
+                ]}
+              />
+            </ul>
+            <ul className="cards__items">
+              <TeamTiles
+                names={[
+                  { text: "Kshitij Chaudhary", src: Kshitij },
+                  { text: "Rajnish Bhagat", src: Rajnish },
                 ]}
               />
             </ul>
@@ -58,16 +101,17 @@ function Teams() {
             <ul className="cards__items">
               <TeamTiles
                 names={[
-                  { text: "Punit Jain", src: Punit },
-                  { text: "Athul Krishna", src: Athul },
+                  { text: "Nishita Lath", src: Nishita },
+                  { text: "Shrishti Ambastha", src: Shrishti },
+                  { text: "Ajay Saini", src: Ajay },
                 ]}
               />
             </ul>
             <ul className="cards__items">
               <TeamTiles
                 names={[
-                  { text: "Kanish Giri", src: Kanishk },
-                  { text: "Aarav Arya", src: Aarav },
+                  { text: "Ajmeera Jagadishwar", src: Ajmeera },
+                  { text: "Aditi Verma", src: Aditi },
                 ]}
               />
             </ul>
@@ -77,8 +121,8 @@ function Teams() {
             <ul className="cards__items">
               <TeamTiles
                 names={[
-                  { text: "Aditya Kumar Singh", src: Aditya },
-                  { text: "Pratyush Kumar", src: Pratyush },
+                  { text: "Kartikay Saxena", src: Kartikay },
+                  { text: "Saif Rahman", src: Saif },
                 ]}
               />
             </ul>
@@ -88,8 +132,9 @@ function Teams() {
             <ul className="cards__items">
               <TeamTiles
                 names={[
-                  { text: "Chetan Kumar", src: Chetan },
-                  { text: "Spandan Prasad", src: Spandan },
+                  { text: "Shivam Yadav", src: Shivam },
+                  { text: "Khushi Pathak", src: Khushi },
+                  { text: "Ankur Kumar", src: Ankur },
                 ]}
               />
             </ul>
@@ -99,16 +144,17 @@ function Teams() {
             <ul className="cards__items">
               <TeamTiles
                 names={[
-                  { text: "Gaurav", src: Gaurav },
-                  { text: "Ramateke Prajyot Anil", src: Prajyot },
+                  { text: "Mukund Sharma", src: Mukund },
+                  { text: "Suryansh", src: Suryansh },
+                  { text: "Siddhant Senapati", src: Siddhant },
                 ]}
               />
             </ul>
             <ul className="cards__items">
               <TeamTiles
                 names={[
-                  { text: "Farhaan Alam", src: Farhaan },
-                  { text: "Yash Ajitsaria", src: Yash },
+                  { text: "Sahil Agrawal", src: Sahil },
+                  { text: "Vikramaditya", src: Vikramaditya },
                 ]}
               />
             </ul>
@@ -118,53 +164,80 @@ function Teams() {
             <ul className="cards__items">
               <TeamTiles
                 names={[
-                  { text: "Kritish Kumar", src: Kritish },
-                  { text: "Vikash Kumar Rai", src: Vikash },
-                  { text: "Piyush Gautam", src: Piyush },
+                  { text: "Supratim Das", src: Supratim },
+                  { text: "Harshita Uppal", src: Harshita },
                 ]}
               />
             </ul>
+            <ul className="cards__items">
+              <TeamTiles
+                names={[
+                  { text: "Naveen Kumar", src: Naveen },
+                  { text: "Pranav Raj", src: Pranav },
+                ]}
+              />
+            </ul>
+            
           </div>
           <div>
             <h2 className="team-subheader">Flagship Events</h2>
             <ul className="cards__items">
               <TeamTiles
                 names={[
-                  { text: "Ayush Agrawal", src: Ayush },
-                  { text: "Priyanshi Singh", src: Priyanshi },
-                  { text: "Chirag Bharadwaj", src: Chirag },
+                  { text: "Alisha Singh", src: Alisha },
+                  { text: "Vishesh", src: Vishesh },
+                  { text: "Surya Prakash", src: Surya },
                 ]}
               />
             </ul>
             <ul className="cards__items">
               <TeamTiles
                 names={[
-                  { text: "Chanya", src: Chanya },
-                  { text: "Dasari Harsha Vardhan", src: Harsha },
+                  { text: "Harsh Singh", src: Harsh },
+                  { text: "Piyusha Jha", src: Piyusha },
                 ]}
               />
             </ul>
           </div>
           <div>
             <h2 className="team-subheader">
-              Workshop, Exhibition and Operations
+              Workshop, Exhibition and Operations 
             </h2>
             <ul className="cards__items">
               <TeamTiles
                 names={[
-                  { text: "Deepanshu", src: Deepanshu },
-                  { text: "Shresth Verma", src: Shresth },
+                  { text: "D Hansaraj", src: Hansaraj },
+                  { text: "Shruti Dey", src: Shruti },
                 ]}
               />
             </ul>
           </div>
           <div>
-            <h2 className="team-subheader">Events & Guest Lectures</h2>
+            <h2 className="team-subheader">Events</h2>
             <ul className="cards__items">
               <TeamTiles
                 names={[
-                  { text: "Chethi Reddy Srinithya", src: Srinithya },
-                  { text: "Rohit Nayak", src: Rohit },
+                  { text: "Sunny Kumar", src: Sunny },
+                  { text: "Rizvi Kumari", src: Rizvi },
+                ]}
+              />
+            </ul>
+            <ul className="cards__items">
+              <TeamTiles
+                names={[
+                  { text: "Nishta Taktewale", src: Nishta },
+                  { text: "Reshika V", src: Reshika },
+                ]}
+              />
+            </ul>
+          </div>
+          <div>
+            <h2 className="team-subheader">Guest Lectures & Exhibitions</h2>
+            <ul className="cards__items">
+              <TeamTiles
+                names={[
+                  { text: "Aditya Tomar", src: Aditya },
+                  { text: "Md Daud", src: Daud },
                 ]}
               />
             </ul>
