@@ -84,6 +84,12 @@ function Teams() {
                 names={[
                   { text: "Bhaskar Mishra", src: Bhaskar },
                   { text: "Mamta Kanwar", src: Mamta },
+                ]}
+              />
+            </ul>
+            <ul className="cards__items">
+              <TeamTiles
+                names={[
                   { text: "Kshitij Chaudhary", src: Kshitij },
                   { text: "Rajnish Bhagat", src: Rajnish },
                 ]}
