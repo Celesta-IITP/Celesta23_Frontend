@@ -10,7 +10,8 @@
   /* background-color: #242424; */
   background-image: url(../../assets/footer/bg_footer_web.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-position-x: 50%;
+  background-size: max(100%, 960px) 100%;
   box-shadow: inset 0 4px 12px 4px black;
 
   min-height: 850px;
@@ -24,7 +25,7 @@
 .footer-links {
   width: 100%;
   max-width: 1000px;
-  padding-left: 40px;
+  padding-left: 20px;
   margin-bottom: 20px;
 }
 
@@ -142,7 +143,7 @@
     margin-left: 1vw;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    gap: 13vw;
+    gap: 9vw;
     width: auto;
   }
 }

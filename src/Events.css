@@ -130,14 +130,14 @@
 }
 
 .Display {
-  height: 100%;
-  width: 100%;
+	height: inherit;
+	width: inherit;
 }
 
 .EventDisplay {
   object-fit: cover;
-  height: 100%;
-  width: 100%;
+	height: inherit;
+	width: inherit;
 }
 
 .Container:hover {

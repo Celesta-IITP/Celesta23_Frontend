@@ -44,7 +44,7 @@ function Events() {
                     key={Event.eventName}
                     className="EventDisplay"
                     src={Event.posterLink}
-                    alt={Event.eventName}
+					alt={""}
                   />
                 </div>
               </div>
