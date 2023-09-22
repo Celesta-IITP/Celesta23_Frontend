@@ -162,7 +162,17 @@
 }
 
 .team-header {
-  margin-top: 30px;
+  margin-top: 7.5vh;
+
+  @media screen and (max-width: 425px)
+  {
+	scale: 0.9;
+  }
+
+  @media screen and (max-width: 320px)
+  {
+	scale: 0.75;
+  }
 }
 
 .team-subheader {

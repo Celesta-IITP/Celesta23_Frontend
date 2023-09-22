@@ -1,5 +1,6 @@
 import React from "react";
 import TeamTiles from "../components/OurTeams/TeamTiles";
+import Navbar from "../components/Nav/Navbar";
 
 // fest cordinators
 import Ayush from "../assets/team_23/Ayush_Pal_fc.jpg";
@@ -66,6 +67,7 @@ import Daud from "../assets/team_23/MD_Daud_gl_exhibhition.jpg";
 function Teams() {
   return (
     <>
+	  <Navbar />
       <h1 className="header team-header">Our Team</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
