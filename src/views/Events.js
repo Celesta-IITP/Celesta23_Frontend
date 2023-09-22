@@ -3,6 +3,7 @@ import "../Events.css";
 import EventDetails from "../components/Events/EventDetails.js";
 import Footer from "../components/Footer/Footer";
 import { Watch } from "react-loader-spinner";
+import Navbar from "../components/Nav/Navbar";
 
 function Events() {
   const [loader, setLoader] = useState(true);
@@ -55,7 +56,7 @@ function Events() {
     );
   };
   const changeSearchElement = (e) => {
-    if (e.target.value != "") return;
+    if (e.target.value !== "") return;
     setSearchElement((prev) => !prev);
   };
 
@@ -126,6 +127,7 @@ function Events() {
     />
   ) : (
     <>
+	  <Navbar />
       <div className="Header">
         <h1 className="Events_Header1">EVENTS</h1>
         <h2 className="Events_Header2">EVENTS</h2>

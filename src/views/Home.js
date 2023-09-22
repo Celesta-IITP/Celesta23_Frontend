@@ -13,6 +13,7 @@ import Chrysalis from "../components/Chrysalis/Chrysalis";
 import OurPartners from "../components/OurPartners/OurPartners";
 import TilesContainer from "../components/Tiles/TilesContainer";
 import CampAm from "../components/CampAm/CampAm";
+import Navbar from "../components/Nav/Navbar";
 
 function Home() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -55,6 +56,7 @@ function Home() {
 
   return (
     <>
+	  <Navbar />
       <BackgroundContainer />
       <Description
         heading="About"

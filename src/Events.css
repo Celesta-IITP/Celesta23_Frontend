@@ -1,6 +1,7 @@
 /*Events Header*/
 
 .Header {
+	margin-top: 20px;
   height: 22vh;
   display: flex;
   flex-direction: column;
@@ -23,7 +24,7 @@
 
 .Events_Header2 {
   position: absolute;
-  top: 9.7%;
+  top: calc(9.7% + 100px);
   padding-left: 0%;
   padding-right: 0%;
   padding-top: 0.3%;
