@@ -19,9 +19,9 @@ const Footer = forwardRef((props, ref) => {
           <div className="footer-link-items">
             <Link to="/events">Events</Link>
           </div>
-          {/* <div className="footer-link-items">
+          <div className="footer-link-items">
             <Link to="/cryptech">Cryptech</Link>
-          </div> */}
+          </div>
           <div className="footer-link-items">
             <Link to="/teams">Our Team</Link>
           </div>

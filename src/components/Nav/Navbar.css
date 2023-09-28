@@ -68,7 +68,7 @@
     display: none;
   }
 
-  .hamburger {
+  .menu-icon-button {
     cursor: pointer;
 	font-size: 25px;
 	filter: invert(1);
