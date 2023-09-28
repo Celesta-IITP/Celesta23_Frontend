@@ -218,7 +218,21 @@
 	align-items: center;
 }
 
-.popup-title h2 {
+.popup-title h2, h3:hover {
+	font-family: Forte, 'Courier New', Courier, monospace;
+	font-size: x-large;
+
+	@media screen and (max-width: 350px) {
+		font-size: 1.2rem;
+	}
+
+	@media screen and (min-width: 1500px) {
+		font-size: 3rem;
+	}
+}
+
+.popup-title h2:hover, h3 {
+	font-family: 'Courier New', Courier, monospace;
 	font-size: x-large;
 
 	@media screen and (max-width: 350px) {
@@ -240,7 +254,8 @@
 	width: fit-content;
 	text-align: center;
 	max-width: 90%;
-	font-size: larger;
+	font-family: Harrington;
+	font-size: x-large;
 	white-space: break-spaces;
 
 	@media screen and (min-width: 1500px) {
