@@ -5,6 +5,31 @@ import Footer from "../components/Footer/Footer";
 import Canara_QR from "../assets/canara_qr.png";
 
 function Cryptech() {
+const handleSubmit = async (event) => {
+	event.preventDefault();
+	const formData = {
+	  teamName: document.getElementById("team").value,
+	  member1: document.getElementById("name1").value,
+	  member1_emailId: document.getElementById("email1").value,
+	  member2: document.getElementById("name2").value,
+	  member2_emailId: document.getElementById("email2").value,
+	  transactionId: document.getElementById("txnid").value,
+	  class_: document.getElementById("class").value,
+	  city: document.getElementById("city").value,
+	};
+	try {
+	  const response = await fetch(`https://script.google.com/macros/s/AKfycbyoc_hnWyP8huqqcdJrdgYBrn2JGJHmnvV7FjZoHDDNLCoEACJKw6vqvtZ9-m4cw8zz/exec?tN=${formData.teamName}&m1=${formData.member1}&m1_email=${formData.member1_emailId}&m2=${formData.member2}&m2_email=${formData.member2_emailId}&txnId=${formData.transactionId}&class_=${formData.class_}&city=${formData.city}`)
+	  console.log('Response from server:', response.data);
+	  if (response.ok) {
+        alert('Registration Successful');
+      } else {
+        console.error('Error:', response.statusText);
+        alert('Registration failed. Please try again later.');
+      }
+	} catch (error) {
+	  console.error('Error:', error);
+	}
+  };
 	const options = { threshold: 0.1 };
 
 	useEffect(() => {
@@ -36,7 +61,7 @@ function Cryptech() {
 					<p>Cryptech is a flagship event we are starting for the students who aspire to achieve mental excellence in various fields. It is open to two categories - Class 9 & 10, Class 11 & 12.</p>
 					<img src={Canara_QR} alt="qr_code" />
 				</div>
-				<form action="/" className="cryptech-right-bar">
+				<form onSubmit={handleSubmit} className="cryptech-right-bar">
 					<h1>Ensure that you have paid before submitting the form</h1>
 
 					{/* Team Name */}
@@ -117,15 +142,7 @@ function Cryptech() {
 								<path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
 							</svg>
 						</div>
-						<select className="cryptech-input" name="city" id="city">
-							<option selected={true} disabled={true} value="">
-								Choose City
-							</option>
-							<option value="patna">Patna</option>
-							<option value="city1">City 1</option>
-							<option value="city2">City 2</option>
-							<option value="city3">City 3</option>
-						</select>
+						<input className="cryptech-input" name="city" id="city" type="text" placeholder="Enter City" />
 					</div>
 
 					<input type="submit" className="cryptech-submit" value="Register for Cryptech" />
