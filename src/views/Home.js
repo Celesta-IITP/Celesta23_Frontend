@@ -21,7 +21,7 @@ function Popup({ setPopupVisible }) {
         <>
             <div className="popup-main">
                 <div className="popup-title">
-                    <h2>CRYPTECH</h2>
+                    <h2>C</h2><h2>R</h2><h2>Y</h2><h2>P</h2><h3>T</h3><h3>E</h3><h3>C</h3><h3>H</h3>
                     <svg onClick={() => setPopupVisible(false)} className="hamburger menu-icon-button" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
                 </div>
                 <div className="popup-content">{"Let the battle of minds begin.\n\nGet ready to push your intellect to the limit and have a shot at prizes worth ₹1,00,000"}</div>
