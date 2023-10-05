@@ -219,15 +219,15 @@
 }
 
 .popup-title h2, h3:hover {
-	font-family: Forte, 'Courier New', Courier, monospace;
-	font-size: x-large;
+	font-family: unset;
+	font-size: large;
 
 	@media screen and (max-width: 350px) {
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 
 	@media screen and (min-width: 1500px) {
-		font-size: 3rem;
+		font-size: 2.8rem;
 	}
 }
 
@@ -251,6 +251,7 @@
 
 .popup-content {
 	display: flex;
+	flex-direction: column;
 	width: fit-content;
 	text-align: center;
 	max-width: 90%;
@@ -260,6 +261,17 @@
 
 	@media screen and (min-width: 1500px) {
 		font-size: x-large;
+	}
+}
+
+.popup-content a {
+	color: #00b;
+	text-decoration: none;
+	font-size: large;
+	white-space: break-spaces;
+
+	@media screen and (min-width: 1500px) {
+		font-size: large;
 	}
 }
 
