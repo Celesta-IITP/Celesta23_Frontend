@@ -23,15 +23,16 @@ function Cryptech() {
     const [popupVisible, setPopupVisible] = useState(false);
 	const handleSubmit = async (event) => {
 		event.preventDefault();
+		const form = event.currentTarget;
 		const formData = {
-		teamName: document.getElementById("team").value,
-		member1: document.getElementById("name1").value,
-		member1_emailId: document.getElementById("email1").value,
-		member2: document.getElementById("name2").value,
-		member2_emailId: document.getElementById("email2").value,
-		transactionId: document.getElementById("txnid").value,
-		class_: document.getElementById("class").value,
-		city: document.getElementById("city").value,
+		teamName: form.team.value,
+		member1: form.name1.value,
+		member1_emailId: form.email1.value,
+		member2: form.name2.value,
+		member2_emailId: form.email2.value,
+		transactionId: form.txnid.value,
+		class_: form.class.value,
+		city: form.city.value,
 		};
 		try {
 			const response = await fetch(`https://script.google.com/macros/s/AKfycbyoc_hnWyP8huqqcdJrdgYBrn2JGJHmnvV7FjZoHDDNLCoEACJKw6vqvtZ9-m4cw8zz/exec?tN=${formData.teamName}&m1=${formData.member1}&m1_email=${formData.member1_emailId}&m2=${formData.member2}&m2_email=${formData.member2_emailId}&txnId=${formData.transactionId}&class_=${formData.class_}&city=${formData.city}`)
